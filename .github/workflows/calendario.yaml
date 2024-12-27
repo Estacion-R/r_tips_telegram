@@ -1,0 +1,43 @@
+on:
+#  push:
+#    branches:
+#      - master
+  schedule:
+   - cron: '0 10 * * 1-5'
+   #- cron: '*/10 * * * *'
+
+      
+  workflow_dispatch:
+    
+name: rtip
+    
+
+jobs:
+  run-r-script:
+    runs-on: ubuntu-latest
+    env:
+      RTOOT_DEFAULT_TOKEN: ${{ secrets.TELEGRAM_TOKEN_BOT }}
+      #RTWEET_API_SECRET: ${{ secrets.RTWEET_API_SECRET }}
+      #RTWEET_TOKEN: ${{ secrets.RTWEET_TOKEN }}
+      #RTWEET_TOKEN_SECRET: ${{ secrets.RTWEET_TOKEN_SECRET }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+          
+      # - name: instalacion de paquetes
+      #   run: "Rscript 01_instalacion_paquetes.R"
+      # - name: Install R packages
+      #   run: |
+      #     install.packages('curl')
+      #   shell: Rscript {0}
+      - name: Crea y postea
+        run: "Rscript script_bot.R"
+      - name: Commit results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add -A
+          git commit -m "posteo r tip" || echo "No changes to commit"
+          git push origin || echo "No changes to commit"

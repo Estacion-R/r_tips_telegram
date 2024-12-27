@@ -44,30 +44,6 @@ updates <- bot$clean_updates()
 hoy <- Sys.Date()
 
 
-# ### MENSAJE DE BIENVENIDA (APRETANDO /start)
-# updater <- Updater(token = token)
-# 
-# start <- function(bot, update){
-#   bot$sendMessage(chat_id = update$message$chat_id,
-#                   text = sprintf("Hola! %s!", update$message$from$first_name))
-# }
-# 
-# start_handler <- CommandHandler("start", start)
-# 
-# 
-# ### MENSAJE DE RESPUESTA PARA CUANDO ESCRIBEN AL BOT
-# echo <- function(bot, update){
-#   bot$sendMessage(chat_id = update$message$chat_id, 
-#                   text = "Lo siento, por el momento sólo soy un bot recordatorio")
-# }
-# 
-# echo_handler <- MessageHandler(echo, MessageFilters$text)
-# 
-# updater <- updater + start_handler + echo_handler
-# 
-# 
-# updater$start_polling()
-
 
 # FUNCION DE AVISO PARA HACER FACTURA
 enviar_tip <- function(bot) {
@@ -85,7 +61,15 @@ enviar_tip <- function(bot) {
   
 }
 
-enviar_tip(bot)
+tryCatch(
+  expr = {
+    enviar_tip(bot)
+  },
+  error = function(e){ 
+    cat("surgió un error pero fijate bien si corrió el tip en Telegram")
+  }
+)
+
 
 
   

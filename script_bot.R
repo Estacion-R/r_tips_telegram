@@ -8,6 +8,7 @@ install.packages("lubridate")
 library(dplyr)
 library(telegram.bot)
 library(glue)
+library(googlesheets4)
 source("scripts/armar_tip.R")
 
 

@@ -16,7 +16,7 @@ jobs:
   run-r-script:
     runs-on: ubuntu-latest
     env:
-      RTOOT_DEFAULT_TOKEN: ${{ secrets.TELEGRAM_TOKEN_BOT }}
+      TELEGRAM_TOKEN_BOT: ${{ secrets.TELEGRAM_TOKEN_BOT }}
       #RTWEET_API_SECRET: ${{ secrets.RTWEET_API_SECRET }}
       #RTWEET_TOKEN: ${{ secrets.RTWEET_TOKEN }}
       #RTWEET_TOKEN_SECRET: ${{ secrets.RTWEET_TOKEN_SECRET }}

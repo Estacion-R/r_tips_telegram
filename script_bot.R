@@ -3,6 +3,7 @@ library(dplyr)
 library(telegram.bot)
 library(glue)
 library(googlesheets4)
+library(readr)
 source("02-armar_tip.R")
 
 

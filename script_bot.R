@@ -1,15 +1,9 @@
-install.packages("googlesheets4")
-install.packages("dplyr")
-#install.packages("stringr")
-install.packages("telegram.bot")
-install.packages("glue")
-install.packages("lubridate")
 
 library(dplyr)
 library(telegram.bot)
 library(glue)
 library(googlesheets4)
-source("scripts/armar_tip.R")
+source("02-armar_tip.R")
 
 
 token <- Sys.getenv("TELEGRAM_TOKEN_BOT")

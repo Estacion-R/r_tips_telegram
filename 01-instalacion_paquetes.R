@@ -1,0 +1,6 @@
+install.packages("googlesheets4")
+install.packages("dplyr")
+#install.packages("stringr")
+install.packages("telegram.bot")
+install.packages("glue")
+install.packages("lubridate")

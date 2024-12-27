@@ -26,12 +26,12 @@ jobs:
         with:
           use-public-rspm: true
           
-      # - name: instalacion de paquetes
-      #   run: "Rscript 01_instalacion_paquetes.R"
-      # - name: Install R packages
-      #   run: |
-      #     install.packages('curl')
-      #   shell: Rscript {0}
+      - name: instalacion de paquetes
+        run: "Rscript 01-instalacion_paquetes.R"
+      - name: Install R packages
+        run: |
+          install.packages('curl')
+        shell: Rscript {0}
       - name: Crea y postea
         run: "Rscript script_bot.R"
       - name: Commit results

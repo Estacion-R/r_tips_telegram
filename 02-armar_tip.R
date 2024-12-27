@@ -1,7 +1,7 @@
 
 
 
-source("scripts/00-funciones.R")
+source("00-funciones.R")
 
 
 # Link a la hoja de cálculo

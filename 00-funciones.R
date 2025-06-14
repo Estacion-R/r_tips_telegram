@@ -16,13 +16,13 @@ crear_base_historica <- function(){
                                            sheet = "Produccion")
   
   ### Las que se repitieron muchas veces
-  tip1 <- r_tips |>
+  tip1 <- base_r_tips |>
     dplyr::filter(
       stringr::str_detect(
         tip,
         "clean|numeric_to|Gente Sociable|pointblank|ARTofR|madre|read_sheet|Quarto|coalesce|of Us|Metropolitana"))
   
-  base_r_tips <- r_tips |>
+  base_r_tips <- base_r_tips |>
     dplyr::bind_rows(tip1)
   
   conteo_tuits <- base_r_tips |> 
@@ -65,153 +65,55 @@ seleccionar_tuit <- function(base){
 ##                    Función para armar el tuit a publicar                 ----
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ### Armado de tuit
-armar_tuit <- function(base){
-  
-  tema <- base$tema
+library(ellmer)
+library(glue)
+library(ellmer)
+library(glue)
+
+armar_tuit <- function(base, model = "gpt-3.5-turbo") {
+  tema_original <- base$tema
   tip <- base$tip
   autor <- base$autor
-  #web <- achicar_url(base$web)
   web <- base$web
   
-  ### unicode source: https://unicode.org/emoji/charts/full-emoji-list.html
-  funcion <- "\U0001F6E0"
-  recursos <- "\U0001f4da"
-  paquete <- "\U0001f4e6"
-  referentes <- "\U0001f5e3"
-  mapas <- "\U0001f5fa"
-  bot <- "\U0001F916"
-  shiny <- "\U0001F5A5"
-  referente <- "\U0001F9D1 \U0001F468 "
+  emoji_list <- list(
+    funcion = "\U0001F6E0",
+    paquete = "\U0001f4e6",
+    recurso = "\U0001f4da",
+    referente = "\U0001f5e3",
+    bot = "\U0001F916",
+    mapas = "\U0001f5fa",
+    shiny = "\U0001F5A5"
+  )
   
-  
-  
-  if(tema == "funcion"){
-    tema <- glue::glue("{toupper(tema)} {funcion}")
+  tema <- tema_original
+  if (tema %in% names(emoji_list)) {
+    tema <- glue("{toupper(tema)} {emoji_list[[tema]]}")
   }
   
-  if(tema == "paquete"){
-    tema <- glue::glue("{toupper(tema)} {paquete}")
-  }
+  hashtags <- "#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe"
   
-  if(tema == "recurso"){
-    tema <- glue::glue("{toupper(tema)} {recursos}")
-  }
+  prompt <- glue(
+    "Eres una cuenta de divulgación de R. Vas a escribir un texto para publicar en redes sociales. La información la vas a obtener de {web}. Escribe un texto, didáctico y atractivo .\n\n",
+    "Tema: {tema_original}\n",
+    "Tip: {tip}\n",
+    "El tono debe ser en argentino, no neutro y siempre la referencia es en plural, 'desde Estación R'.",
+    "Agrega espacios entre párrafos para mejorar la legibilidad del texto.",
+    "Si el {tema} es un paquete, trata de listar las principales funciones o usos del mismo identificando a qué comunidad le puede ser útil.",
+    if (!is.na(autor) && nzchar(autor)) glue("Autor: {autor}\n") else "",
+    if (!is.na(web) && nzchar(web)) glue("Fuente: {web}\n") else "",
+    "Incluye un llamado a la acción para que la comunidad aprenda o comparta.\nNo uses hashtags ni menciones, los agregaré después."
+  )
   
-  if(tema == "referente"){
-    tema <- glue::glue("{toupper(tema)} {referentes}")
-  }
+  chat <- chat_openai(model = model)
+  tuit_gpt <- chat$chat(prompt)  # <-- la respuesta es un character
   
-  if(tema == "bot"){
-    tema <- glue::glue("{toupper(tema)} {bot}")
-  }
+  tuit_gpt_web <- if (!is.na(web) && nzchar(web)) glue("{tuit_gpt}\n\n🌐 {web}") else tuit_gpt
+  tuit_gpt_web_autor <- if (!is.na(autor) && nzchar(autor)) glue("{tuit_gpt_web}\n✍🏼 {autor}") else tuit_gpt_web
   
-  if(tema == "mapas"){
-    tema <- glue::glue("{toupper(tema)} {mapas}")
-  }
+  tuit_final <- glue("[{tema}] {tuit_gpt_web_autor}\n\n{hashtags}")
   
-  if(tema == "shiny"){
-    tema <- glue::glue("{toupper(tema)} {shiny}")
-  }
-  
-  if(tema == "referente"){
-    tema <- glue::glue("{toupper(tema)} {referente}")
-  }
-  
-  hashtag_maxima <- "#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe"
-  #hashtag_minima <- "#RStats #RStatsES #Rtips"
-  #hashtag_minima_v2 <- "#RStats #Rtips"
-  #espacios <- 4
-  
-  
-  ### Estructura del tuit al 100%
-  ## tema
-  ## tip
-  ## web
-  ## hashtag_maxima / minima
-  
-  tuit_tema_tip <- glue::glue("[{tema}] - {tip}")
-  
-  ### Si hay web
-  if(!is.null(web)){
-    tuit_tema_tip_web <- glue::glue("{tuit_tema_tip} \n \n🌐 {web}")
-  } else {
-    tuit_tema_tip_web <- glue::glue("{tuit_tema_tip}")
-  }
-  
-  ### Si hay autor/a
-  if(!is.na(autor)){
-    tuit_tema_tip_web_autor <- glue::glue("{tuit_tema_tip_web}\n✍🏼 {autor} \n \n{hashtag_maxima}")
-  } else {
-    tuit_tema_tip_web_autor <- glue::glue("{tuit_tema_tip_web} \n \n{hashtag_maxima}")
-  }
-  
-  ### hashtag por tamaño
-  #if(nchar(tuit_tema_tip_web_autor) + nchar(hashtag_maxima) + espacios <= 280){
-  #  
-  #  tuit_tema_tip_web_autor_hash <- glue::glue("{tuit_tema_tip_web_autor} \n \n{hashtag_maxima}")
-  #  
-  #} else if(nchar(tuit_tema_tip_web_autor) + nchar(hashtag_minima) + espacios <= 280){
-  #  
-  #  tuit_tema_tip_web_autor_hash <- glue::glue("{tuit_tema_tip_web_autor} \n \n{hashtag_minima}")
-  #  
-  #} else if(nchar(tuit_tema_tip_web_autor) + nchar(hashtag_minima_v2) + espacios <= 280){
-  #  
-  #  tuit_tema_tip_web_autor_hash <- glue::glue("{tuit_tema_tip_web_autor} \n \n{hashtag_minima_v2}")
-  #  
-  #} else {
-  #  
-  #  tuit_tema_tip_web_autor_hash <- tuit_tema_tip_web_autor
-  #  
-  #}
-  
-  
-  
-  # ### Tuit de menos de 252 caracteres y con autores
-  # if(nchar(tip) < 239 & (!is.na(autor) & !is.null(web))){
-  #   
-  #   ### Si hay dato en autor o web
-  #   tuit <- glue::glue("[{tema}] - {tip} \n \n🌐 {web} \ {autor}  \n {hashtag_maxima}")
-  #   
-  #   return(tuit)
-  # }
-  # 
-  # ### Tuit de menos de 252 caracteres y con autores
-  # if(nchar(tip) >= 240 & nchar(tip) < 252 & (!is.na(autor) & !is.null(web))){
-  #   
-  #   ### Si hay dato en autor o web
-  #   tuit <- glue::glue("[{tema}] - {tip} \n \n🌐 {web} \n✍🏼 {autor}  \n {hashtag_minima}")
-  #   
-  #   return(tuit)
-  # }
-  # 
-  # ### Tuit de menos de 252 caracteres y sin autores
-  # if(nchar(tip) < 252 & (is.na(autor) & is.null(web))){
-  #   
-  #   tuit <- glue::glue("[{tema}] - {tip} - \n #rstats #rstatsES #rtips")
-  #   
-  #   return(tuit)
-  #   
-  # }
-  # 
-  # ### Tuit con más de 252 caracteres y con autores
-  # if(nchar(base$tip) >= 252 & (!is.na(base$autor) & !is.null(web))){
-  #   
-  #   ### Tuit de más de 252 caracteres
-  #   tuit <- glue::glue("[{tema}] - {tip} - \n \n🌐 {web} \n✍🏼 {autor} ")
-  #   
-  #   return(tuit)
-  # }
-  # 
-  # ### Tuit con más de 252 caracteres y sin autores
-  # if(nchar(base$tip) >= 252 & (is.na(base$autor) & is.null(web))){
-  #   
-  #   ### Tuit de más de 252 caracteres
-  #   tuit <- glue::glue("[{tema}] - {tip}")
-  #   
-  #   return(tuit)
-  # }
-  
-  return(tuit_tema_tip_web_autor)
+  return(tuit_final)
 }
 
 
@@ -221,54 +123,49 @@ armar_tuit <- function(base){
 ##                              Preparar imágen                             ----
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-preparar_media <- function(imagen){
+library(httr)
+library(jsonlite)
+library(glue)
+
+genera_imagen_tip_dalle <- function(tip, 
+                                    output_path = tempfile(fileext = ".png"),
+                                    api_key = Sys.getenv("OPENAI_API_KEY")) {
+  # Prompt visual consistente y claro
+  prompt <- glue(
+    "Diseña una imagen tipo carrusel para Instagram, de estilo minimalista, profesional y educativo, para ilustrar el siguiente tip de R: '{tip}'. ",
+    "El fondo debe ser azul (#405BFF) o amarillo (#EAFF38). Si es un paquete de R, el logo original debe estar en el centro",
+    "con tipografía Ubuntu clara y legible (preferentemente Ubuntu). Deja márgenes generosos y que el diseño sea minimalista y limpio. ",
+    "Incluye un espacio en la esquina inferior derecha para el logo horizontal de Estación R (aquí el link al logo: https://github.com/Estacion-R/manual_estilo/blob/main/Logo_PNG_Baja_Mesa%20de%20trabajo%201.png), pero no escribas 'Estación R' ni otro texto extra.",
+    "Evita fotografías, usa solo los logos o imágenes originales ",
+    "No agregues texto adicional ni hashtags. "
+  )
   
-  if(!is.na(imagen)){
-    
-    if(stringr::str_ends(imagen, ".png")){
-      
-      ### Obtengo imagen de url
-      tryCatch(expr = {
-        
-        tuit_imagen <-  png::readPNG(RCurl::getURLContent(imagen))
-        
-        cat("imágen cargada sin problema")
-      }, 
-      
-      error = function(e) {
-        
-        message(glue::glue("Revisar links imágen, algo falló en el tuit nro {i}"))
-      }
-      )
-      
-      return(tuit_imagen)
-      
-    }
-    
-    if(stringr::str_ends(imagen, ".svg")){
-      
-      ### Transformo de svg a png
-      rsvg::rsvg_png(imagen, 'img/image.png', width = 800)
-      
-      ### Cargo png
-      tuit_imagen <-  png::readPNG("img/image.png")
-      
-      cat("imágen cargada sin problema")
-      
-      return(tuit_imagen)
-    }
-    
-    if(stringr::str_ends(imagen, ".gif")){
-      
-      tuit_imagen <-  magick::image_read(imagen)
-      
-      return(tuit_imagen)
-    }
-  } 
+  # Llama a la API de OpenAI/DALL·E
+  url <- "https://api.openai.com/v1/images/generations"
+  body <- list(
+    model = "dall-e-3",
+    prompt = prompt,
+    n = 1,
+    size = "1024x1024"
+  )
+  res <- POST(
+    url,
+    add_headers(
+      Authorization = paste("Bearer", api_key),
+      `Content-Type` = "application/json"
+    ),
+    body = toJSON(body, auto_unbox = TRUE)
+  )
   
-  tuit_imagen <-  NA_real_
+  if (http_status(res)$category != "Success") {
+    stop("No se pudo generar la imagen: ", content(res, as = "text"))
+  }
   
-  return(tuit_imagen)
+  response <- content(res, as = "parsed")
+  img_url <- response$data[[1]]$url
+  
+  download.file(img_url, destfile = output_path, mode = "wb")
+  return(output_path)
 }
 
 

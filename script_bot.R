@@ -55,7 +55,10 @@ enviar_tip <- function(bot) {
     bot$sendMessage(chat_id = user_send$id,
                     text = tip)
     
-    Sys.sleep(0.5)
+    # ruta_img <- generar_imagen_dalle(prompt)
+    # bot$sendPhoto(chat_id, photo = ruta_img)
+    
+    Sys.sleep(0.1)
     
   } 
   

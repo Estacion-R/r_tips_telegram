@@ -1,4 +1,6 @@
 
+
+token_openai <- Sys.getenv("OPENAI_API_KEY")
 source("00-funciones.R")
 
 

@@ -105,7 +105,7 @@ armar_tuit <- function(base, model = "gpt-3.5-turbo") {
     "Incluye un llamado a la acción para que la comunidad aprenda o comparta.\nNo uses hashtags ni menciones, los agregaré después."
   )
   
-  chat <- chat_openai(model = model)
+  chat <- ellmer::chat_openai(model = model, api_key = token_openai)
   tuit_gpt <- chat$chat(prompt)  # <-- la respuesta es un character
   
   tuit_gpt_web <- if (!is.na(web) && nzchar(web)) glue("{tuit_gpt}\n\n🌐 {web}") else tuit_gpt

@@ -1,6 +1,4 @@
 
-
-
 source("00-funciones.R")
 
 

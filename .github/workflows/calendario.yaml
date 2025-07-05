@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TELEGRAM_TOKEN_BOT: ${{ secrets.TELEGRAM_TOKEN_BOT }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       #RTWEET_API_SECRET: ${{ secrets.RTWEET_API_SECRET }}
       #RTWEET_TOKEN: ${{ secrets.RTWEET_TOKEN }}
       #RTWEET_TOKEN_SECRET: ${{ secrets.RTWEET_TOKEN_SECRET }}

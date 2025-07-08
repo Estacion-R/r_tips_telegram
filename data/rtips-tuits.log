@@ -2307,3 +2307,8 @@ Desde Estación R, les compartimos esta valiosa información para potenciar sus 
 🌐 https://www.matplotlib-journey.com/bonus/design-principles
 
 #RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe
+2025-07-07 21:30:37.202828 🚀 ¿Sabías que en el repositorio de GitHub de PachaDotDev encontrarás el paquete de R Redatam-Microdata? Este paquete te permite acceder y manipular datos de microdatos en formato Redatam de una manera sencilla. Con funciones como `read_redatam()` y `write_redatam()`, puedes importar y exportar datos fácilmente, además de realizar análisis detallados. Es ideal para usuarios que trabajan con datos de encuestas y censos. Desde Estación R, te animamos a probar esta herramienta y explorar todo su potencial. ¡A seguir investigando y aprendiendo juntos! 📊💡
+
+🌐 https://github.com/pachadotdev/redatam-microdata/
+
+#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe

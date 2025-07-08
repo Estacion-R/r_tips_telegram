@@ -11,7 +11,7 @@ url <- "https://docs.google.com/spreadsheets/d/1OKGyVgAy1YhKfaGP_p0rwXWdVnQfovFR
 googlesheets4::gs4_deauth()
 
 # Leo hoja de cálculo
-r_tips <- googlesheets4::read_sheet(url, sheet = "Produccion")
+r_tips <- googlesheets4::read_sheet(url, sheet = "Desarrollo")
 
 ### Cargo historial de tuits
 base_hist <- readr::read_rds("data/r_tips_historial.rds") |> 

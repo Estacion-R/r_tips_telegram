@@ -14,7 +14,7 @@ crear_base_historica <- function(){
   
   # Leo hoja de cálculo
   base_r_tips <- googlesheets4::read_sheet(url, 
-                                           sheet = "Produccion")
+                                           sheet = "Desarrollo")
   
   ### Las que se repitieron muchas veces
   tip1 <- base_r_tips |>
@@ -72,9 +72,6 @@ library(ellmer)
 library(glue)
 
 armar_tuit <- function(base, model = "gpt-3.5-turbo") {
-  tema_original <- base$tema
-  tip <- base$tip
-  autor <- base$autor
   web <- base$web
   
   emoji_list <- list(
@@ -95,24 +92,36 @@ armar_tuit <- function(base, model = "gpt-3.5-turbo") {
   hashtags <- "#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe"
   
   prompt <- glue(
-    "Eres una cuenta de divulgación de R. Vas a escribir un texto para publicar en redes sociales. La información la vas a obtener de {web}. Escribe un texto, didáctico y atractivo .\n\n",
-    "Tema: {tema_original}\n",
-    "Tip: {tip}\n",
-    "El tono debe ser en argentino, no neutro y siempre la referencia es en plural, 'desde Estación R'.",
-    "Agrega espacios entre párrafos para mejorar la legibilidad del texto.",
-    "Si el {tema} es un paquete, trata de listar las principales funciones o usos del mismo identificando a qué comunidad le puede ser útil.",
-    if (!is.na(autor) && nzchar(autor)) glue("Autor: {autor}\n") else "",
-    if (!is.na(web) && nzchar(web)) glue("Fuente: {web}\n") else "",
-    "Incluye un llamado a la acción para que la comunidad aprenda o comparta.\nNo uses hashtags ni menciones, los agregaré después."
+    "Eres una cuenta de divulgación de R. Vas a escribir un texto para publicar en redes sociales basándote ÚNICAMENTE en el contenido de esta URL: {web}\n\n",
+    "INSTRUCCIONES ESPECÍFICAS:\n",
+    "1. ACCEDE Y ANALIZA el contenido completo de la URL proporcionada\n",
+    "2. IDENTIFICA si es sobre: paquetes de R, funciones, técnicas, tutoriales, recursos, datasets, libros, cursos, herramientas, etc.\n",
+    "3. EXTRAE la información más relevante: qué hace, cómo se usa, para qué sirve, ejemplos prácticos\n",
+    "4. Si es un paquete: menciona las funciones principales, casos de uso, y a qué tipo de usuario le sirve\n",
+    "5. Si es un tutorial/artículo: resume los puntos clave y aprendizajes principales\n",
+    "6. Si es una herramienta/recurso: explica su utilidad y cómo puede ayudar a la comunidad\n\n",
+    "ESTRUCTURA DEL TEXTO:\n",
+    "- Inicia con una frase que capture la atención\n",
+    "- Explica de manera didáctica y clara el concepto principal\n",
+    "- Menciona casos de uso específicos o ejemplos prácticos\n",
+    "- Incluye por qué es útil para la comunidad de R\n",
+    "- Termina con una llamada a la acción motivadora\n\n",
+    "ESTILO Y TONO:\n",
+    "- Usa tono argentino, no neutro (che, boludo, genial, etc.)\n",
+    "- Siempre habla en plural: 'desde Estación R', 'les compartimos', 'nos parece'\n",
+    "- Sé didáctico pero entusiasta\n",
+    "- Agrega espacios entre párrafos para legibilidad\n",
+    "- Máximo 400 caracteres para el texto principal\n\n",
+    "IMPORTANTE: NO uses hashtags ni menciones, los agregaré después. El texto debe ser completo y autosuficiente basándose únicamente en la información de la URL.\n\n",
+    "Al final del texto, agrega los hashtags relevantes según el contenido: #RStats #RStatsES #Rtips #DataScience y otros específicos del tema tratado."
   )
   
   chat <- ellmer::chat_openai(model = model, api_key = token_openai)
   tuit_gpt <- chat$chat(prompt)  # <-- la respuesta es un character
   
   tuit_gpt_web <- if (!is.na(web) && nzchar(web)) glue("{tuit_gpt}\n\n🌐 {web}") else tuit_gpt
-  tuit_gpt_web_autor <- if (!is.na(autor) && nzchar(autor)) glue("{tuit_gpt_web}\n✍🏼 {autor}") else tuit_gpt_web
   
-  tuit_final <- glue("[{tema}] {tuit_gpt_web_autor}\n\n{hashtags}")
+  tuit_final <- glue("{tuit_gpt_web}\n\n{hashtags}")
   
   return(tuit_final)
 }

@@ -84,10 +84,7 @@ armar_tuit <- function(base, model = "gpt-3.5-turbo") {
     shiny = "\U0001F5A5"
   )
   
-  tema <- tema_original
-  if (tema %in% names(emoji_list)) {
-    tema <- glue("{toupper(tema)} {emoji_list[[tema]]}")
-  }
+  # Emoji logic removed since we only use web column now
   
   hashtags <- "#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe"
   

@@ -20,18 +20,18 @@ base_hist <- readr::read_rds("data/r_tips_historial.rds") |>
 
 ### Calculo los tuis menos frecuentes en publicacion
 conteo_tuits <- base_hist |> 
-  dplyr::group_by(tip) |> 
+  dplyr::group_by(web) |> 
   dplyr::summarise(cant_tuits = dplyr::n()) |> 
   dplyr::ungroup()
 
 ### Traigo la columna cant_tuit a la base
 base_hist <- base_hist |> 
-  dplyr::left_join(conteo_tuits)
+  dplyr::left_join(conteo_tuits, by = "web")
 
 
 ### TUIT INEDITO
 tip_inedito <- r_tips |> 
-  dplyr::anti_join(base_hist)
+  dplyr::anti_join(base_hist, by = "web")
 
 if(nrow(tip_inedito) > 0){
   

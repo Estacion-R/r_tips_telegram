@@ -2276,3 +2276,34 @@ Con `zonebuilder`, podrás llevar a cabo estudios detallados y completos, identi
 ✍🏼 -
 
 #RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe
+2025-07-07 21:14:04.32288 ¡Che, boludos! En el mundo de R, una herramienta clave es el Scatterplot. En este playground podés ver cómo crear y personalizar tus gráficos de dispersión. Es ideal para visualizar la relación entre dos variables y detectar patrones fácilmente. Por ejemplo, podés usarlo para analizar la correlación entre el precio de una casa y su tamaño. ¡Genial para tomar decisiones basadas en datos! Desde Estación R, les compartimos este recurso para potenciar sus análisis. ¡A jugar con Scatterplot! 💻📊 #RStats #RStatsES #DataScience #Visualización de Datos #Scatterplot
+
+🌐 https://www.react-graph-gallery.com/example/scatterplot-r2-playground
+
+#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe
+2025-07-07 21:15:39.02886 🚀 ¿Quieres realizar pruebas t de manera sencilla en R? En este playground interactivo podrán entender y practicar esta técnica estadística. Solo necesitan ingresar sus datos y ¡listo! Perfecto para analizar diferencias entre grupos. ¡Desde Estación R les compartimos este recurso para potenciar sus análisis! #RStats #RStatsES #DataScience #Estadística
+
+🌐 https://www.react-graph-gallery.com/example/t-test-playground
+
+#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe
+2025-07-07 21:17:20.075456 ¡Atención, comunidad de R! Les compartimos un artículo sobre TidyCensus, un paquete de R que facilita la extracción de datos censales de EE. UU. Se usa para visualizar y analizar información demográfica de forma sencilla. Ideal para usuarios interesados en estudios de población, urbanismo o políticas públicas. Con TidyCensus, podrán crear mapas interactivos y gráficos informativos con datos precisos. ¡Descúbranlo y potencien sus análisis demográficos! #RStats #RStatsES #DataScience #TidyCensus
+
+🌐 https://waterdata.usgs.gov/blog/tidycensus-viz/
+
+#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe
+2025-07-07 21:18:17.724765 🚀 ¿Buscás una fuente autoritativa en R? Te presentamos un recurso que reúne información clave sobre paquetes, funciones y técnicas 📚 Descubrí cómo optimizar tu trabajo y potenciar tus análisis con este enlace 👉 ¡No te lo pierdas! #RStats #RStatsES #DataScience 📊
+
+🌐 https://epiverse-connect.github.io/authoritative/
+
+#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe
+2025-07-07 21:20:04.071374 🚀 ¿Querés mejorar tus visualizaciones en R de forma sencilla y efectiva? Encontramos un artículo que nos enseña los principios de diseño en Matplotlib. Esta herramienta nos permite crear gráficos personalizados y atractivos para nuestros proyectos. Con estos principios, podemos mejorar la legibilidad y la estética de nuestras visualizaciones, ¡haciendo que nuestros datos hablen por sí solos! 📊
+
+Uno de los puntos clave es la simplicidad, evitando el exceso de elementos y colores que puedan distraer al espectador. También se recomienda usar una paleta de colores bien pensada y contraste para resaltar la información importante. Con solo aplicar estos principios, nuestras gráficas pasarán de ser simples a impactantes en un instante.
+
+Este artículo es útil para cualquier persona que trabaje con visualizaciones de datos en R, desde estudiantes hasta profesionales. Nos ayuda a transmitir eficazmente la información, facilitando la interpretación de los resultados. ¡No esperes más para implementar estos principios en tus próximos gráficos! 💡
+
+Desde Estación R, les compartimos esta valiosa información para potenciar sus habilidades en visualización de datos. ¿Qué esperás para aplicar estos principios en tus propias gráficas? ¡Dale un vistazo al artículo y llevá tus visualizaciones al siguiente nivel! 💪📈 #RStats #DataViz
+
+🌐 https://www.matplotlib-journey.com/bonus/design-principles
+
+#RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe

@@ -16,23 +16,23 @@ crear_base_historica <- function(){
   base_r_tips <- googlesheets4::read_sheet(url, 
                                            sheet = "Desarrollo")
   
-  ### Las que se repitieron muchas veces
+  ### Las que se repitieron muchas veces (ahora basado en web)
   tip1 <- base_r_tips |>
     dplyr::filter(
       stringr::str_detect(
-        tip,
+        web,
         "clean|numeric_to|Gente Sociable|pointblank|ARTofR|madre|read_sheet|Quarto|coalesce|of Us|Metropolitana"))
   
   base_r_tips <- base_r_tips |>
     dplyr::bind_rows(tip1)
   
   conteo_tuits <- base_r_tips |> 
-    dplyr::group_by(tip) |> 
+    dplyr::group_by(web) |> 
     dplyr::summarise(cant_tuits = dplyr::n()) |> 
     dplyr::ungroup()
   
   base_r_tips <- base_r_tips |> 
-    dplyr::left_join(conteo_tuits)
+    dplyr::left_join(conteo_tuits, by = "web")
   
   if(file.exists("data/r_tips_historial.rds")){
     
@@ -52,7 +52,7 @@ crear_base_historica <- function(){
 
 seleccionar_tuit <- function(base){
   ### Saco al azar uno de esos tuits
-  base_tuit <- base_hist |> 
+  base_tuit <- base |> 
     dplyr::slice_min(order_by = cant_tuits, n = 2) |> 
     dplyr::select(-cant_tuits) |> 
     dplyr::sample_n(1)
@@ -104,13 +104,14 @@ armar_tuit <- function(base, model = "gpt-3.5-turbo") {
     "- Incluye por qué es útil para la comunidad de R\n",
     "- Termina con una llamada a la acción motivadora\n\n",
     "ESTILO Y TONO:\n",
-    "- Usa tono argentino, no neutro (che, boludo, genial, etc.)\n",
+    "- Usa tono argentino, no neutro, informal pero profesional\n",
+    "- Siempre hablale al público en singular\n",
     "- Siempre habla en plural: 'desde Estación R', 'les compartimos', 'nos parece'\n",
     "- Sé didáctico pero entusiasta\n",
     "- Agrega espacios entre párrafos para legibilidad\n",
-    "- Máximo 400 caracteres para el texto principal\n\n",
-    "IMPORTANTE: NO uses hashtags ni menciones, los agregaré después. El texto debe ser completo y autosuficiente basándose únicamente en la información de la URL.\n\n",
-    "Al final del texto, agrega los hashtags relevantes según el contenido: #RStats #RStatsES #Rtips #DataScience y otros específicos del tema tratado."
+    "- Agrega alunos emojis o íconos, pero no satures el texto\n",
+    "- Máximo 800 caracteres para el texto principal\n\n",
+    "IMPORTANTE: NO uses hashtags ni menciones, los agregaré después. El texto debe ser completo y autosuficiente basándose únicamente en la información de la URL.\n\n"
   )
   
   chat <- ellmer::chat_openai(model = model, api_key = token_openai)
@@ -194,7 +195,7 @@ chequear_tuit <- function(){
   base <- googlesheets4::read_sheet(url, sheet = "Desarrollo")
   
   
-  for (i in seq_along(base$tip)) {
+  for (i in seq_along(base$web)) {
     
     base_tuit <- base[i, ]
     

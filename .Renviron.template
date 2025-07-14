@@ -1,0 +1,16 @@
+# Template for environment variables
+# Copy this file to .Renviron and fill in your actual values
+
+# OpenAI API Key for content generation
+OPENAI_API_KEY=your-openai-api-key-here
+
+# Telegram Bot Token
+TELEGRAM_TOKEN_BOT=your-telegram-bot-token-here
+
+# Email configuration for newsletter (optional)
+NEWSLETTER_EMAIL=your-email@example.com
+EMAIL_FROM=your-email@example.com
+EMAIL_USER=your-email@example.com
+EMAIL_PASSWORD=your-app-password-here
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587

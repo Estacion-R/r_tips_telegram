@@ -1,8 +1,7 @@
+# Script simplificado - Lee tips pre-escritos de Google Sheets
+# La generación con IA se hace por separado con /agregar-tip
 
-
-token_openai <- Sys.getenv("OPENAI_API_KEY")
 source("00-funciones.R")
-
 
 # Link a la hoja de cálculo
 url <- "https://docs.google.com/spreadsheets/d/1OKGyVgAy1YhKfaGP_p0rwXWdVnQfovFRsgzo5qRQ3eo/edit#gid=0"
@@ -10,8 +9,8 @@ url <- "https://docs.google.com/spreadsheets/d/1OKGyVgAy1YhKfaGP_p0rwXWdVnQfovFR
 # Habilito acceso público
 googlesheets4::gs4_deauth()
 
-# Leo hoja de cálculo
-r_tips <- googlesheets4::read_sheet(url, sheet = "Desarrollo")
+# Leo hoja de cálculo - PRODUCCION tiene los tips ya escritos
+r_tips <- googlesheets4::read_sheet(url, sheet = "Produccion")
 
 ### Cargo historial de tuits
 base_hist <- readr::read_rds("data/r_tips_historial.rds") |> 

@@ -1,10 +1,13 @@
+# Script simplificado para enviar tips de R via Telegram
+# Sin dependencia de OpenAI - los tips vienen pre-escritos de Google Sheets
 
 library(dplyr)
 library(telegram.bot)
 library(glue)
 library(googlesheets4)
 library(readr)
-library(ellmer)
+library(here)
+library(stringr)
 source("02-armar_tip.R")
 
 
@@ -65,12 +68,18 @@ enviar_tip <- function(bot) {
   
 }
 
+# Enviar tip con mejor manejo de errores
 tryCatch(
   expr = {
+    cat("Enviando tip a", nrow(usuarios), "usuarios...\n")
+    cat("Tip a enviar:\n", tip, "\n\n")
     enviar_tip(bot)
+    cat("Tips enviados exitosamente!\n")
   },
-  error = function(e){ 
-    cat("surgió un error pero fijate bien si corrió el tip en Telegram")
+  error = function(e){
+    cat("ERROR al enviar tip:\n")
+    cat(conditionMessage(e), "\n")
+    stop(e)  # Re-lanzar error para que el workflow falle visiblemente
   }
 )
 

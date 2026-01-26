@@ -49,39 +49,43 @@ hoy <- Sys.Date()
 
 
 
-# FUNCION DE AVISO PARA HACER FACTURA
+# Función para enviar tip a todos los usuarios
+# Continúa aunque falle algún envío individual
 enviar_tip <- function(bot) {
-  
+
+  enviados <- 0
+  fallidos <- 0
+
   for (o in 1:nrow(usuarios)) {
-    
+
     user_send <- usuarios[o,]
-    
-    bot$sendMessage(chat_id = user_send$id,
-                    text = tip)
-    
-    # ruta_img <- generar_imagen_dalle(prompt)
-    # bot$sendPhoto(chat_id, photo = ruta_img)
-    
+
+    tryCatch({
+      bot$sendMessage(chat_id = user_send$id, text = tip)
+      cat("✓ Enviado a:", user_send$user, "\n")
+      enviados <- enviados + 1
+    }, error = function(e) {
+      cat("✗ Falló envío a:", user_send$user, "(ID:", user_send$id, ")\n")
+      cat("  Error:", conditionMessage(e), "\n")
+      fallidos <<- fallidos + 1
+    })
+
     Sys.sleep(0.1)
-    
-  } 
-  
+  }
+
+  cat("\nResumen: ", enviados, "enviados,", fallidos, "fallidos\n")
+
+  # Solo fallar si NO se envió a nadie
+  if (enviados == 0) {
+    stop("No se pudo enviar a ningún usuario")
+  }
 }
 
-# Enviar tip con mejor manejo de errores
-tryCatch(
-  expr = {
-    cat("Enviando tip a", nrow(usuarios), "usuarios...\n")
-    cat("Tip a enviar:\n", tip, "\n\n")
-    enviar_tip(bot)
-    cat("Tips enviados exitosamente!\n")
-  },
-  error = function(e){
-    cat("ERROR al enviar tip:\n")
-    cat(conditionMessage(e), "\n")
-    stop(e)  # Re-lanzar error para que el workflow falle visiblemente
-  }
-)
+# Enviar tip
+cat("Enviando tip a", nrow(usuarios), "usuarios...\n")
+cat("Tip a enviar:\n", tip, "\n\n")
+enviar_tip(bot)
+cat("\n¡Proceso completado!\n")
 
 
 

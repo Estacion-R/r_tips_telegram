@@ -1,7 +1,8 @@
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##                Función para armar una base de tuits de cero              ----
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-token_openai <- Sys.getenv("OPENAI_API_KEY")
+# Usar Claude (Anthropic) en lugar de OpenAI
+token_anthropic <- Sys.getenv("ANTHROPIC_API_KEY")
 
 crear_base_historica <- function(){
   
@@ -179,7 +180,12 @@ armar_tuit <- function(base, model = "gpt-3.5-turbo") {
 # Función para un solo tip - genera ambos formatos
 armar_contenido_simple <- function(base, model = "gpt-3.5-turbo") {
   web <- base$web
-  
+
+  # Si hay múltiples URLs separadas por |, tomar solo la primera
+  if(grepl("\\|", web)) {
+    web <- trimws(strsplit(web, "\\|")[[1]][1])
+  }
+
   # Obtener contenido real de la URL
   contenido_url <- obtener_contenido_url(web)
   
@@ -190,27 +196,37 @@ armar_contenido_simple <- function(base, model = "gpt-3.5-turbo") {
   # PROMPT PARA REDES SOCIALES CON CONTENIDO REAL
   prompt_redes <- glue(
     "Eres el redactor de contenido de 'Estación R'. Te proporciono el contenido REAL de esta URL: {web}\n\n",
-    
+
     "CONTENIDO REAL DE LA PÁGINA:\n",
     "---\n{contenido_url$contenido}\n---\n\n",
-    
+
     "INSTRUCCIONES:\n",
     "- Analiza ÚNICAMENTE el contenido proporcionado arriba\n",
-    "- Identifica el TEMA al que pertenece: visualización, procesamiento, bibliografía, notas, referentes, experiencias, etc.\n",
+    "- Identifica el TIPO de recurso: PAQUETE, RECURSO, TUTORIAL, ARTÍCULO, HERRAMIENTA, etc.\n",
     "- Identifica el nombre EXACTO del paquete/herramienta según aparece en el contenido\n",
     "- Describe SOLO las funciones/características mencionadas en el texto\n\n",
-    
-    "FORMATO PARA REDES SOCIALES:\n",
-    "- Estructura: [TEMA] Nombre exacto según el contenido\n",
-    "- Descripción basada 100% en el contenido real\n",
-    "- 2-3 características verificadas del texto\n",
+
+    "FORMATO OBLIGATORIO PARA REDES SOCIALES:\n",
+    "- PRIMERA LÍNEA (obligatoria): [TIP de R - {{TIPO}} {{EMOJI}}] - {{Titular atractivo como pregunta}}\n",
+    "  Ejemplos de primera línea:\n",
+    "    [TIP de R - PAQUETE 📦] - ¿Necesitás crear gráficos interactivos?\n",
+    "    [TIP de R - RECURSO 📚] - ¿Querés aprender Shiny desde cero?\n",
+    "    [TIP de R - TUTORIAL 🎓] - ¿Cómo dominar las expresiones regulares en R?\n",
+    "- Emojis según tipo: 📦 paquete, 📚 recurso, 🎓 tutorial, 📝 artículo, 🛠️ herramienta, 🌍 mapas, 📊 visualización\n",
+    "- Después de la primera línea, una línea en blanco\n",
+    "- Descripción basada 100% en el contenido real (2-3 párrafos cortos)\n",
+    "- Lista de beneficios con ✔️ (2-3 items)\n",
+    "- Un tip destacado con 🔥 Tip:\n",
     "- Tono argentino con voseo: 'les compartimos desde Estación R'\n",
-    "- Incluye emojis relevantes: 💡 🎓 📊 🛠️ 📈 ⚡\n",
     "- Al final: mensaje de engagement pidiendo experiencias de la audiencia\n",
-    "- Hashtags: Siempre incluir #RStats #RStatsES #EstacionR #Rtips + otros relevantes según popularidad\n",
+    "- NO incluyas ninguna URL ni link en tu respuesta (se agrega automáticamente después)\n",
+    "- Hashtags al final: #RStats #RStatsES #Rtips #DataScience\n",
     "- 800-1000 caracteres total\n\n",
-    
-    "IMPORTANTE: Solo usa información literal del contenido. NO inventes conexiones temáticas."
+
+    "IMPORTANTE:\n",
+    "- Solo usa información literal del contenido\n",
+    "- NO inventes conexiones temáticas\n",
+    "- NO incluyas ningún link/URL en tu respuesta"
   )
   
   # PROMPT PARA NEWSLETTER CON CONTENIDO REAL
@@ -238,12 +254,12 @@ armar_contenido_simple <- function(base, model = "gpt-3.5-turbo") {
     "IMPORTANTE: Usar ÚNICAMENTE información que aparece en el contenido proporcionado."
   )
   
-  chat <- ellmer::chat_openai(model = model, api_key = token_openai)
-  
+  chat <- ellmer::chat_claude(model = "claude-sonnet-4-20250514", api_key = token_anthropic)
+
   # Generar contenido para redes
   contenido_redes <- chat$chat(prompt_redes)
   redes_final <- if (!is.na(web) && nzchar(web)) glue("{contenido_redes}\n\n🌐 {web}") else contenido_redes
-  
+
   # Generar contenido para newsletter
   contenido_newsletter <- chat$chat(prompt_newsletter)
   newsletter_final <- if (!is.na(web) && nzchar(web)) glue("{contenido_newsletter}\n\n🌐 Recurso: {web}") else contenido_newsletter
@@ -355,13 +371,13 @@ armar_contenido_multiple <- function(base, model = "gpt-3.5-turbo") {
     "IMPORTANTE: Usar ÚNICAMENTE información literal del contenido proporcionado."
   )
   
-  chat <- ellmer::chat_openai(model = model, api_key = token_openai)
-  
+  chat <- ellmer::chat_claude(model = "claude-sonnet-4-20250514", api_key = token_anthropic)
+
   # Generar contenido para redes
   contenido_redes <- chat$chat(prompt_redes)
   # Las URLs ya están incluidas en cada descripción, no las agregamos al final
   redes_final <- contenido_redes
-  
+
   # Generar contenido para newsletter
   contenido_newsletter <- chat$chat(prompt_newsletter)
   # Las URLs ya están incluidas en cada descripción, no las agregamos al final
@@ -379,8 +395,52 @@ armar_tuit_multiple <- function(base, model = "gpt-3.5-turbo") {
   return(contenido$redes)
 }
 
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##          Función para generar un tip nuevo (bot interactivo)            ----
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+generar_tip_nuevo <- function(excluir_ultimo = TRUE, model = "gpt-3.5-turbo") {
+  # Lee tips de Google Sheets
+  url <- "https://docs.google.com/spreadsheets/d/1OKGyVgAy1YhKfaGP_p0rwXWdVnQfovFRsgzo5qRQ3eo/edit#gid=0"
+  googlesheets4::gs4_deauth()
+  r_tips <- googlesheets4::read_sheet(url, sheet = "Produccion")
 
+  # Lee historial
+  base_hist <- readr::read_rds("data/r_tips_historial.rds")
+
+  # Obtener último tip publicado (para excluirlo si se desea)
+  ultimo_publicado <- base_hist |>
+    dplyr::slice_tail(n = 1)
+
+  # Seleccionar tip diferente al último
+  tips_disponibles <- r_tips
+  if(excluir_ultimo && nrow(ultimo_publicado) > 0) {
+    tips_disponibles <- r_tips |>
+      dplyr::filter(web != ultimo_publicado$web)
+  }
+
+  # Priorizar inéditos
+  tip_inedito <- tips_disponibles |>
+    dplyr::anti_join(base_hist, by = "web")
+
+  if(nrow(tip_inedito) > 0) {
+    tip_seleccion <- tip_inedito |> dplyr::sample_n(1)
+    mensaje_seleccion <- "tip inédito"
+  } else {
+    # Si no hay inéditos, elegir al azar de los disponibles
+    tip_seleccion <- tips_disponibles |> dplyr::sample_n(1)
+    mensaje_seleccion <- "tip repetido (no hay inéditos)"
+  }
+
+  # Generar contenido
+  contenido <- armar_contenido(tip_seleccion, model = model)
+
+  return(list(
+    contenido = contenido,
+    tip_info = tip_seleccion,
+    tipo_seleccion = mensaje_seleccion
+  ))
+}
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##                              Preparar imágen                             ----

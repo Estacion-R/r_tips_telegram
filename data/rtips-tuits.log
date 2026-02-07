@@ -2312,3 +2312,23 @@ Desde Estación R, les compartimos esta valiosa información para potenciar sus 
 🌐 https://github.com/pachadotdev/redatam-microdata/
 
 #RStats #RStatsES #Rtips #DataScience @rstats@a.gup.pe
+2026-02-07 17:44:21.361068 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés asegurarte de que tus PDFs sean accesibles?
+
+{Check PDF accessibility} te permite validar la accesibilidad de tus archivos PDF.
+
+Este paquete de R usa la potencia de verapdf (una herramienta de código abierto) para analizar tus PDFs y generar reportes detallados sobre cualquier problema de accesibilidad. Así podés estar seguro de que tus documentos son inclusivos y que todas las personas, incluyendo aquellas con discapacidades, puedan acceder y entender su contenido.
+
+✔️ Beneficios:
+✔️ Validación fácil y automática de accesibilidad PDF: No tenés que ser un experto, el paquete hace todo el trabajo pesado por vos.
+✔️ Reportes detallados: Obtené información precisa sobre los problemas de accesibilidad encontrados para solucionarlos.
+✔️ Mejorá la inclusión: Asegurate de que tus PDFs sean accesibles e inclusivos para todos tus lectores.
+
+🔥 Tip: Instalá primero verapdf usando la función `pdfcheck::install_verapdf()` antes de usar el paquete.
+
+↪ https://pdfcheck.org/
+
+¿Ya usaste {Check PDF accessibility}? Contanos tu experiencia 👇 
+ 
+🌐 https://pdfcheck.org/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -2332,3 +2332,23 @@ Este paquete de R usa la potencia de verapdf (una herramienta de código abierto
 🌐 https://pdfcheck.org/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-07 17:48:53.981088 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés saber cuánta energía consume usar un asistente de IA?
+
+{Electricity use of AI coding agents} te muestra cuánta electricidad y agua gasta usar chatbots y modelos de IA.
+
+Este artículo resume investigaciones recientes que demuestran que, a menos que seas un usuario muy intensivo, hacer preguntas a asistentes de IA es apenas una gota en el océano de tu consumo energético total. De hecho, hasta 100 consultas por día representan solo el 0.01% del consumo de agua promedio de una persona.
+
+✔️ Beneficios:
+✔️ Entender el impacto ambiental real de usar IA: Muchos temen que sea altamente contaminante, pero los datos muestran que en la práctica es insignificante para la mayoría de usuarios.
+✔️ Tener datos concretos para evaluar el costo-beneficio de usar asistentes de IA: Podés aprovechar sus beneficios sin preocuparte por el impacto.
+✔️ Desmitificar ideas erróneas sobre la huella de carbono de la IA: Este tipo de información ayuda a tener una visión más realista.
+
+🔥 Tip: ¡Usá este artículo para fundamentar tus decisiones sobre usar o no asistentes de IA! Conocer los datos reales te permite aprovechar sus ventajas sin culpa.
+
+↪ https://www.simonpcouch.com/blog/2026-01-20-cc-impact/
+
+¿Sabías que el impacto ambiental de usar IA es mucho menor de lo que se cree? ¿Te sorprendió este dato? 
+ 
+🌐 https://www.simonpcouch.com/blog/2026-01-20-cc-impact/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

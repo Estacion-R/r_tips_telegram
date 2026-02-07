@@ -6,6 +6,9 @@ on:
 
 name: rtip
 
+permissions:
+  contents: write
+
 jobs:
   run-r-script:
     runs-on: ubuntu-latest
@@ -33,6 +36,5 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add -A
-          git commit -m "posteo r tip" || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+          git add data/r_tips_historial.rds data/rtips-tuits.log
+          git diff --staged --quiet && echo "Sin cambios" || (git commit -m "posteo r tip" && git push origin)

@@ -28,10 +28,10 @@ if(nchar(Sys.getenv("TELEGRAM_TOKEN_BOT")) == 0) {
   quit(status = 1)
 }
 
-# Verificar API key de OpenAI
-if(nchar(Sys.getenv("OPENAI_API_KEY")) == 0) {
-  cat("❌ Error: OPENAI_API_KEY no está configurado\n")
-  cat("Agregá tu API key en el archivo .Renviron\n")
+# Verificar API key de Anthropic (Claude)
+if(nchar(Sys.getenv("ANTHROPIC_API_KEY")) == 0) {
+  cat("❌ Error: ANTHROPIC_API_KEY no está configurado\n")
+  cat("Agregá tu API key de Anthropic en el archivo .Renviron\n")
   quit(status = 1)
 }
 

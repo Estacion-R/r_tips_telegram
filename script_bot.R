@@ -20,11 +20,14 @@ updates <- bot$getUpdates()
 
 n_users <- length(updates)
 
+if (!file.exists("r_tips_bot_usuarios.rds")) {
+  stop("No se encontró r_tips_bot_usuarios.rds. El archivo es necesario para enviar tips.")
+}
 
 if (n_users == 0) {
-  
+
   usuarios <- readRDS("r_tips_bot_usuarios.rds")
-  
+
 } else {
   
   users <- data.frame()

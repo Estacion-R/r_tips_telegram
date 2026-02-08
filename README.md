@@ -27,14 +27,19 @@ Crear archivo `.Renviron` con:
 
 ```
 TELEGRAM_TOKEN_BOT=tu_token_de_telegram
-OPENAI_API_KEY=tu_api_key_de_openai
+ANTHROPIC_API_KEY=tu_api_key_de_anthropic  # solo para bot interactivo
 ```
 
 ## Uso
 
-### Envío automático (diario)
+### Produccion (GitHub Actions) - Recomendado
 
-Ejecuta el tip de la mañana:
+El tip se envia automaticamente de lunes a viernes a las 7:00 AM (Argentina).
+Tambien se puede ejecutar manualmente desde GitHub Actions > rtip > Run workflow.
+
+### Envio local (desarrollo)
+
+Ejecuta el tip manualmente:
 
 ```r
 source("run_telegram_bot.R")
@@ -105,5 +110,5 @@ Los tips se leen de Google Sheets:
 ## Notas
 
 - El bot interactivo debe correr en segundo plano para escuchar comandos
-- Cada `/nuevo_tip` genera contenido con OpenAI (puede tomar unos segundos)
+- Cada `/nuevo_tip` genera contenido con Claude API (puede tomar unos segundos)
 - El historial de tips publicados se guarda en `data/r_tips_historial.rds`

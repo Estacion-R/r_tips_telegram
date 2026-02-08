@@ -11,40 +11,36 @@ cp .Renviron.template .Renviron
 Edit `.Renviron` with your actual values:
 
 ```bash
-# OpenAI API Key (required)
-OPENAI_API_KEY=sk-your-actual-openai-key-here
+# Telegram Bot Token (requerido)
+TELEGRAM_TOKEN_BOT=tu-token-de-telegram
 
-# Telegram Bot Token (optional, for bot functionality)
-TELEGRAM_TOKEN_BOT=your-telegram-bot-token-here
-
-# Email configuration (optional, for email functionality)
-NEWSLETTER_EMAIL=your-email@gmail.com
-EMAIL_FROM=your-email@gmail.com
-EMAIL_USER=your-email@gmail.com
-EMAIL_PASSWORD=your-gmail-app-password
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
+# Anthropic API Key (requerido para bot interactivo)
+ANTHROPIC_API_KEY=tu-api-key-de-anthropic
 ```
 
-## 2. Get OpenAI API Key
-
-1. Go to https://platform.openai.com/account/api-keys
-2. Create a new API key
-3. Copy the full key (starts with `sk-`)
-
-## 3. Get Telegram Bot Token (Optional)
+## 2. Get Telegram Bot Token
 
 1. Open Telegram and search for @BotFather
 2. Send `/newbot` command
 3. Follow instructions to create a bot
 4. Copy the token provided
 
-## 4. Gmail App Password (Optional)
+## 3. Get Anthropic API Key (solo para bot interactivo)
 
-1. Enable 2-factor authentication on Gmail
-2. Go to Google Account → Security → App passwords
-3. Generate an app password for "Mail"
-4. Use the 16-character password (no spaces)
+1. Go to https://console.anthropic.com/
+2. Create a new API key
+3. Copy the full key (starts with `sk-ant-`)
+
+> Nota: El sistema de producción (GitHub Actions) no necesita esta key.
+> Solo es necesaria para el bot interactivo (`/nuevo_tip`).
+
+## 4. GitHub Actions Secrets
+
+Para que el envío automático funcione en GitHub Actions, configurar estos secrets en el repo:
+
+1. Go to Settings → Secrets and variables → Actions
+2. Add `TELEGRAM_TOKEN_BOT` with your bot token
+3. Add `OPENAI_API_KEY` (legacy, usado por el workflow)
 
 ## 5. Test Configuration
 
@@ -52,26 +48,32 @@ SMTP_PORT=587
 # Test API keys
 Rscript tests/check_keys.R
 
-# Test OpenAI connection
-Rscript tests/test_openai_key.R
-
 # Test newsletter generation
 Rscript tests/test_txt_newsletter.R
 ```
 
 ## 6. Run the System
 
-```bash
-# Generate newsletter only
-Rscript run_newsletter.R
+### Produccion (GitHub Actions) - Recomendado
 
-# Full system with Telegram
+El tip se envía automáticamente de lunes a viernes a las 7:00 AM (Argentina).
+También se puede ejecutar manualmente desde GitHub Actions → rtip → Run workflow.
+
+### Local (desarrollo)
+
+```bash
+# Bot interactivo con /nuevo_tip
+Rscript run_bot_interactivo.R
+
+# Envío directo (misma lógica que GitHub Actions)
 Rscript run_telegram_bot.R
+
+# Solo generar newsletter
+Rscript run_newsletter.R
 ```
 
 ## Important Notes
 
 - The `.Renviron` file contains sensitive information and should NOT be committed to Git
 - Keep your API keys secure and never share them publicly
-- The system works without Telegram token (newsletter-only mode)
 - Email configuration is optional (newsletter generates TXT files)

@@ -1,137 +1,83 @@
 # R Tips Telegram Bot - Project Structure
 
-## 📁 Folder Organization
+## Dos sistemas paralelos
+
+Este proyecto tiene dos modos de operacion:
+
+### 1. Produccion (root) - GitHub Actions
+Tips pre-escritos desde Google Sheets, sin IA. Se ejecuta automaticamente.
+
+```
+script_bot.R → 02-armar_tip.R → 00-funciones.R
+```
+- Lee tips de la hoja "Produccion"
+- Selecciona tip segun prioridad (nuevo > inedito > menos publicado)
+- Envia via Telegram
+- GitHub Actions persiste el historial automaticamente
+
+### 2. Desarrollo (scripts/) - Local
+Genera contenido con Claude AI (ellmer). Se ejecuta manualmente.
+
+```
+run_bot_interactivo.R → scripts/bot_interactivo.R → scripts/00-funciones.R
+run_telegram_bot.R    → scripts/script_bot.R      → scripts/02-armar_tip.R
+```
+- Lee tips de la hoja "Desarrollo"
+- Genera contenido con Claude API (ANTHROPIC_API_KEY)
+- Bot interactivo con comandos /nuevo_tip, /otro, /ayuda
+
+## Estructura de archivos
 
 ```
 r_tips_telegram/
-├── 📁 archive/                 # Old/unused files
-├── 📁 data/                    # Data files
-│   └── r_tips_historial.rds   # Historical tips data
-├── 📁 docs/                    # Documentation
-│   ├── PROJECT_STRUCTURE.md   # This file
-│   ├── README.md              # General documentation
-│   └── README_newsletter.md   # Newsletter documentation
-├── 📁 output/                  # Generated output files
-│   ├── 📁 logs/               # Log files
-│   │   └── rtips-tuits.log    # Tips publication log
-│   └── 📁 newsletters/        # Generated newsletters
-│       └── newsletter_*.txt   # TXT newsletter files
-├── 📁 scripts/                 # Main scripts
-│   ├── 00-funciones.R         # Core functions
-│   ├── 02-armar_tip.R         # Content generation
-│   └── script_bot.R           # Bot execution
-├── 📁 tests/                   # Test and utility files
-│   ├── check_keys.R           # API key validation
-│   ├── test_*.R               # Various test scripts
-│   └── email_*.R              # Email testing utilities
-├── .Renviron                   # Environment variables
-├── 01-instalacion_paquetes.R   # Package installation
-├── r_tips_bot_usuarios.rds     # Bot users data
-├── r_tips_telegram.Rproj       # R project file
-├── run_newsletter.R            # Main newsletter runner
-└── run_telegram_bot.R          # Main bot runner
+├── .github/workflows/
+│   └── calendario.yaml         # GitHub Actions (L-V 7:00 AM ARG)
+│
+├── # --- Sistema produccion (root) ---
+├── script_bot.R                # Entry point: selecciona y envia tip
+├── 02-armar_tip.R              # Logica de seleccion (3 prioridades)
+├── 00-funciones.R              # Funciones helper (emojis, formato)
+├── 01-instalacion_paquetes.R   # Instalacion de dependencias
+│
+├── # --- Sistema desarrollo (scripts/) ---
+├── scripts/
+│   ├── bot_interactivo.R       # Bot con comandos /nuevo_tip
+│   ├── script_bot.R            # Envio con newsletter
+│   ├── 02-armar_tip.R          # Seleccion + generacion IA
+│   └── 00-funciones.R          # Funciones con Claude API
+├── run_bot_interactivo.R       # Runner: bot interactivo
+├── run_telegram_bot.R          # Runner: envio directo
+├── run_newsletter.R            # Runner: solo newsletter
+│
+├── # --- Datos ---
+├── data/
+│   ├── r_tips_historial.rds    # Historial de tips publicados
+│   └── rtips-tuits.log         # Log de publicaciones
+├── r_tips_bot_usuarios.rds     # Usuarios del bot
+│
+├── # --- Otros ---
+├── archive/                    # Codigo viejo archivado
+├── tests/                      # Scripts de test
+├── docs/                       # Documentacion
+├── .Renviron                   # Variables de entorno (NO en git)
+└── .Renviron.template          # Template de variables
 ```
 
-## 🚀 Main Entry Points
+## Variables de entorno
 
-### 1. Newsletter Generation Only
-```r
-source("run_newsletter.R")
-```
-- Generates 3 tips content
-- Creates TXT newsletter file
-- No Telegram sending required
+| Variable | Produccion (GH Actions) | Desarrollo (local) |
+|----------|------------------------|-------------------|
+| TELEGRAM_TOKEN_BOT | Requerido (secret) | Requerido (.Renviron) |
+| OPENAI_API_KEY | Secret legacy | No usado |
+| ANTHROPIC_API_KEY | No usado | Requerido para bot interactivo |
 
-### 2. Complete System with Telegram
-```r
-source("run_telegram_bot.R")
-```
-- Generates content
-- Sends social media tips via Telegram
-- Creates TXT newsletter file
-- Requires Telegram bot token
+## Flujo de datos
 
-## 📋 Core Scripts
-
-### `scripts/00-funciones.R`
-- Core functions for content generation
-- URL content fetching
-- OpenAI API integration
-- Tip selection logic
-
-### `scripts/02-armar_tip.R`
-- Main content generation logic
-- Google Sheets integration
-- Tip selection and formatting
-- Updates historical data
-
-### `scripts/script_bot.R`
-- Telegram bot integration
-- Newsletter TXT file creation
-- User management
-- Message sending logic
-
-## 🔧 Configuration Files
-
-### `.Renviron`
-Required environment variables:
-```
-OPENAI_API_KEY=sk-your-openai-key
-TELEGRAM_TOKEN_BOT=your-telegram-bot-token
-```
-
-### `01-instalacion_paquetes.R`
-Package installation script for dependencies
-
-## 📊 Data Files
-
-### `data/r_tips_historial.rds`
-- Historical tips data
-- Usage frequency tracking
-- Updated after each run
-
-### `r_tips_bot_usuarios.rds`
-- Telegram bot users
-- Chat IDs and user info
-
-## 📈 Output Files
-
-### `output/newsletters/newsletter_*.txt`
-- Generated newsletter files
-- Timestamped filenames
-- Ready for email copy/paste
-
-### `output/logs/rtips-tuits.log`
-- Publication history
-- URL tracking
-- Timestamp records
-
-## 🧪 Testing & Utilities
-
-### `tests/` folder contains:
-- API key validation scripts
-- Email testing utilities
-- System testing scripts
-- Troubleshooting tools
-
-## 📚 Documentation
-
-### `docs/` folder contains:
-- Project structure documentation
-- Usage instructions
-- Newsletter system documentation
-
-## 🎯 Workflow
-
-1. **Setup**: Configure API keys in `.Renviron`
-2. **Content Generation**: Run `run_newsletter.R`
-3. **Newsletter Distribution**: Use generated TXT file
-4. **Optional**: Run `run_telegram_bot.R` for Telegram integration
-5. **Review**: Check `output/` folder for generated files
-
-## 🔄 Maintenance
-
-- Historical data automatically updated
-- Log files track all publications
-- Archive folder for old unused files
-- Organized test scripts for troubleshooting
+1. Tips se escriben en Google Sheets (hoja "Produccion")
+2. GitHub Actions ejecuta `script_bot.R` (L-V 7:00 AM)
+3. Se selecciona un tip segun prioridad:
+   - Prioridad 1: Ultimo tip de la sheet (si es nuevo)
+   - Prioridad 2: Cualquier tip inedito al azar
+   - Prioridad 3: Tip menos publicado (repeticion)
+4. Se envia a todos los usuarios via Telegram
+5. Se actualiza `data/r_tips_historial.rds` y se pushea al repo

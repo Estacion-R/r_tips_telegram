@@ -2352,3 +2352,28 @@ Este artículo resume investigaciones recientes que demuestran que, a menos que 
 🌐 https://www.simonpcouch.com/blog/2026-01-20-cc-impact/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-09 10:57:36.496915 [FUNCION 🛠] - [TIP de R] 📊 ¿Tus variables categóricas te dan dolor de cabeza? 🤯
+
+¿Te has topado con el desafío de ordenar, agrupar y modificar los niveles de tus factores en R? ¡El paquete forcats tiene la solución perfecta!
+
+🎯 LA SOLUCIÓN
+→ `fct_reorder()`: Reordená tus factores según otra variable
+→ `fct_infreq()`: Reordená por la frecuencia de los niveles
+→ `fct_relevel()`: Cambiá manualmente el orden de los niveles
+→ `fct_lump()`: Agrupá los niveles menos/más frecuentes
+
+✨ 3 BENEFICIOS CLAVE
+✔️ Mejorá la visualización de tus datos al ordenar correctamente los factores
+✔️ Identificá y manejá niveles poco frecuentes con facilidad
+✔️ Personalizá los niveles de tus variables categóricas a tu gusto
+
+💡 TIP
+¿Sabías que podés combinar estas funciones de forcats para lograr resultados más avanzados? Por ejemplo, primero reordenar por frecuencia y luego agrupar los niveles menos frecuentes.
+
+📌 ¡Empezá a dominar tus variables categóricas con forcats hoy mismo!
+
+↪ Documentación: https://forcats.tidyverse.org/ 
+ 
+🌐 https://forcats.tidyverse.org/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

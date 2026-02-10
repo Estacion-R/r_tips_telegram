@@ -1,7 +1,7 @@
 # Script simplificado - Lee tips pre-escritos de Google Sheets
 # La generación con IA se hace por separado con /agregar-tip o bot de ingesta
 
-source("00-funciones.R")
+source("R/00-funciones.R")
 
 # Link a la hoja de cálculo
 url <- "https://docs.google.com/spreadsheets/d/1OKGyVgAy1YhKfaGP_p0rwXWdVnQfovFRsgzo5qRQ3eo/edit#gid=0"

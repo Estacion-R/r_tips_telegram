@@ -25,7 +25,7 @@ n_users <- length(updates)
 
 if (n_users == 0) {
   
-  usuarios <- readRDS("r_tips_bot_usuarios.rds")
+  usuarios <- readRDS("data/r_tips_bot_usuarios.rds")
   
 } else {
   
@@ -37,11 +37,11 @@ if (n_users == 0) {
                               user = updates[[i]]$message$chat$first_name))
   }
   
-  usuarios <- readRDS("r_tips_bot_usuarios.rds")
+  usuarios <- readRDS("data/r_tips_bot_usuarios.rds")
   
   usuarios <- rbind(usuarios, users) %>% distinct()
   
-  saveRDS(usuarios, "r_tips_bot_usuarios.rds")
+  saveRDS(usuarios, "data/r_tips_bot_usuarios.rds")
   
 }
 

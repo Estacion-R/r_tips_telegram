@@ -22,7 +22,7 @@ jobs:
           use-public-rspm: true
 
       - name: Instalacion de paquetes
-        run: "Rscript 01-instalacion_paquetes.R"
+        run: "Rscript R/01-instalacion_paquetes.R"
 
       - name: Install curl
         run: |
@@ -30,11 +30,11 @@ jobs:
         shell: Rscript {0}
 
       - name: Crea y postea tip
-        run: "Rscript script_bot.R"
+        run: "Rscript R/script_bot.R"
 
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/r_tips_historial.rds data/rtips-tuits.log
+          git add data/r_tips_historial.rds data/rtips-tuits.log data/r_tips_bot_usuarios.rds
           git diff --staged --quiet && echo "Sin cambios" || (git commit -m "posteo r tip" && git push origin)

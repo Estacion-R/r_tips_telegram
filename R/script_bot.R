@@ -8,7 +8,7 @@ library(googlesheets4)
 library(readr)
 library(here)
 library(stringr)
-source("02-armar_tip.R")
+source("R/02-armar_tip.R")
 
 
 token <- Sys.getenv("TELEGRAM_TOKEN_BOT")
@@ -20,13 +20,13 @@ updates <- bot$getUpdates()
 
 n_users <- length(updates)
 
-if (!file.exists("r_tips_bot_usuarios.rds")) {
-  stop("No se encontró r_tips_bot_usuarios.rds. El archivo es necesario para enviar tips.")
+if (!file.exists("data/r_tips_bot_usuarios.rds")) {
+  stop("No se encontró data/r_tips_bot_usuarios.rds. El archivo es necesario para enviar tips.")
 }
 
 if (n_users == 0) {
 
-  usuarios <- readRDS("r_tips_bot_usuarios.rds")
+  usuarios <- readRDS("data/r_tips_bot_usuarios.rds")
 
 } else {
   
@@ -38,11 +38,11 @@ if (n_users == 0) {
                               user = updates[[i]]$message$chat$first_name))
   }
   
-  usuarios <- readRDS("r_tips_bot_usuarios.rds")
+  usuarios <- readRDS("data/r_tips_bot_usuarios.rds")
   
   usuarios <- rbind(usuarios, users) %>% distinct()
   
-  saveRDS(usuarios, "r_tips_bot_usuarios.rds")
+  saveRDS(usuarios, "data/r_tips_bot_usuarios.rds")
   
 }
 

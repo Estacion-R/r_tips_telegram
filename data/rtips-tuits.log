@@ -2377,3 +2377,20 @@ Este artículo resume investigaciones recientes que demuestran que, a menos que 
 🌐 https://forcats.tidyverse.org/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-10 10:56:24.697609 [PAQUETE 📦] - 🧩 [RTIP] - flownet: Potentes herramientas de modelado de transporte en R
+
+¿Querés resolver problemas de rutas y asignación de tráfico de manera eficiente? El paquete flownet te da las herramientas que necesitás.
+
+✔️ `path_sized_logit()` realiza asignación de tráfico considerando el solapamiento de rutas.
+✔️ `network_from_linestrings()` convierte datos geográficos a grafos de red.
+✔️ `contract_network()` simplifica la complejidad de redes grandes.
+
+💡 Tip: Usá flownet para preparar rápidamente tus datos de transporte y aplicar modelos avanzados de asignación.
+
+🔗 https://sebkrantz.github.io/flownet/
+
+✍️ Mantenido por consultores de CPCS 
+ 
+🌐 https://sebkrantz.github.io/flownet/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

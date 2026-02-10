@@ -2394,3 +2394,23 @@ Este artículo resume investigaciones recientes que demuestran que, a menos que 
 🌐 https://sebkrantz.github.io/flownet/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-10 19:56:17.245754 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés hacer gráficos interactivos en R sin complicaciones?
+
+echarts4r Te permite crear visualizaciones interactivas usando la librería JavaScript ECharts.
+
+echarts4r es una excelente alternativa a otras librerías de gráficos en R. Permite acceder a más de 36 tipos de gráficos con funciones sencillas, aplicar temas personalizados, agregar animaciones y mucho más. Lo mejor es que podés integrar estos gráficos en aplicaciones Shiny sin problemas.
+
+✔️ Beneficios:
+✔️ Amplio catálogo de gráficos interactivos: Contás con una gran variedad de opciones visuales a tu disposición.
+✔️ Facilidad de uso: Podés crear gráficos complejos con código conciso y entendible.
+✔️ Integración con Shiny: Combiná tus visualizaciones interactivas con aplicaciones web dinámicas.
+
+🔥 Tip: Para comenzar, instalá el paquete desde CRAN y explorá los ejemplos en la documentación. ¡Vas a sorprenderte de lo mucho que podés hacer!
+
+↪ https://echarts4r.john-coene.com/
+
+¿Conocés otras librerías de gráficos interactivos en R? ¡Contanos en los comentarios! 
+ 
+🌐 https://echarts4r.john-coene.com/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

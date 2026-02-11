@@ -2414,3 +2414,26 @@ echarts4r es una excelente alternativa a otras librerías de gráficos en R. Per
 🌐 https://echarts4r.john-coene.com/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-11 10:54:40.872111 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés programar en R de forma más sencilla y rápida?
+
+The sassy system es un conjunto de paquetes de R que facilitan tareas comunes como crear registros, formatear valores, manejar datasets y generar reportes.
+
+Este sistema fue desarrollado para mejorar las debilidades de R en áreas como estas, aprovechando conceptos del software SAS que hacen que programar en R sea más accesible para todos los usuarios. 
+
+Podés explorar los diferentes paquetes de la suite sassy, que trabajan de forma integrada, y aprender cómo pueden agilizar tu flujo de trabajo en R.
+
+✔️ Beneficios:
+✔️ Programar en R se vuelve más rápido y fácil: los paquetes sassy simplifican tareas que normalmente son engorrosas
+✔️ Mayor eficiencia: evitás tener que reinventar la rueda y podés enfocarte en tu análisis
+✔️ Mejor organización: los paquetes trabajan en conjunto para mejorar la gestión de tus datos y reportes
+
+🔥 Tip: ¡Exploré los paquetes de la suite sassy y elegí los que más se adapten a tus necesidades!
+
+↪ https://r-sassy.org/
+
+¿Conocés otros recursos que faciliten la vida a los usuarios de R? 
+ 
+🌐 https://r-sassy.org/
+✍🏼 David J. Bosak 
+ 
+#RStats #RStatsES #Rtips #DataScience

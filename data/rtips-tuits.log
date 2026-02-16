@@ -2474,3 +2474,22 @@ The Warehouse es un buscador potente que te ayuda a encontrar los paquetes de R 
 🌐 https://openwashdata.github.io/fairenough/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-16 10:53:32.604631 [PAQUETE 📦] - 🧩 [RTIP] - readsas: Lee archivos SAS en R
+
+¿Trabajás con datos en formato SAS y necesitás leerlos en R? El paquete readsas te permite hacer eso de manera rápida y eficiente usando Rcpp.
+
+✔️ `read.sas()`() Lee archivos SAS .sas7bdat y los convierte a data.frames en R.
+✔️ Soporta archivos comprimidos y no comprimidos.
+✔️ Enfoque en precisión y confiabilidad, con velocidad como objetivo secundario.
+
+💡 Tip
+Para instalar readsas, podés usar `remotes::install_github("JanMarvin/readsas")` o agregarlo a tus paquetes de r-universe.
+
+🔗 https://github.com/JanMarvin/readsas
+
+✍️ JanMarvin 
+ 
+🌐 https://github.com/JanMarvin/readsas
+✍🏼 JanMarvin 
+ 
+#RStats #RStatsES #Rtips #DataScience

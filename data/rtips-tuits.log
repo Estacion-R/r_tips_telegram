@@ -2493,3 +2493,21 @@ Para instalar readsas, podés usar `remotes::install_github("JanMarvin/readsas")
 ✍🏼 JanMarvin 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-17 10:50:44.120305 [PAQUETE 📦] - 🧩 [RTIP] - metasurvey: Procesamiento de datos de encuestas con pipelines reproducibles
+
+¿Trabajás con datos de encuestas complejas y querés automatizar y documentar todo el proceso? Con el paquete metasurvey podés hacerlo de manera reproducible.
+
+✔️ `pipeline()`() Creá pipelines paso a paso para transformar y analizar tus datos de encuestas, incluyendo diseños de muestreo complejos.
+✔️ `recipe()`() Definí recetas reutilizables para compartir y reproducir workflows de transformación de datos entre diferentes ediciones de una encuesta.
+✔️ Soporte para diseños de muestreo complejos, incluyendo paneles rotatorios con pesos de réplica bootstrap.
+
+💡 Tip
+Usá el explorador web de recetas en metasurvey-shiny-production.up.railway.app para descubrir y reutilizar workflows existentes. ¡También podés contribuir tus propias recetas!
+
+🔗 https://metasurveyr.github.io/metasurvey/
+
+✍️ Autores del paquete metasurvey 
+ 
+🌐 https://metasurveyr.github.io/metasurvey/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

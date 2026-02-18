@@ -2533,3 +2533,21 @@ También incorpora `when_any()` y `when_all()`, funciones hermanas de `case_when
 🌐 https://tidyverse.org/blog/2026/02/dplyr-1-2-0/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-18 12:14:31.685297 [PAQUETE 📦] - 🧩 [RTIP] - printtree: Visualizá tus directorios de proyectos de R
+
+¿Cansado de intentar ubicar los archivos en tus proyectos de R? El paquete printtree te permite visualizar de manera compacta la estructura de directorios de tus proyectos o carpetas.
+
+✔️ `print_rtree()` imprime un árbol de directorios compacto de tu proyecto actual.
+✔️ `print_rt()` hace lo mismo pero para una ruta específica.
+✔️ Detecta los metadatos de proyectos comunes de R (como archivos .Rproj) y muestra el árbol desde la raíz del proyecto.
+
+💡 Tip
+¿Querés guardar una foto del árbol de directorios? Usá la función `snapshot_rtree()` para generar un archivo de imagen con la estructura de tu proyecto.
+
+🔗 https://prigasg.github.io/printtree/
+
+✍️ Prigent Gascuel 
+ 
+🌐 https://prigasg.github.io/printtree/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

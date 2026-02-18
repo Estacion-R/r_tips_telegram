@@ -2511,3 +2511,25 @@ Usá el explorador web de recetas en metasurvey-shiny-production.up.railway.app 
 🌐 https://metasurveyr.github.io/metasurvey/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-18 10:55:38.012414 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés filtrar datos de forma más eficiente en R?
+
+dplyr 1.2.0 te trae nuevas funciones para filtrar y recodificar datos.
+
+dplyr 1.2.0 agrega la función `filter_out()` que es el complemento perfecto de `filter()`. Mientras `filter()` te permite seleccionar filas que cumplan una condición, `filter_out()` te deja excluir las filas que no querés. ¡Perfecto para limpiar datasets complejos!
+
+También incorpora `when_any()` y `when_all()`, funciones hermanas de `case_when()` para hacer recoding más avanzado. `recode_values()`, `replace_values()` y `replace_when()` completan este set de herramientas poderosas para transformar tus datos.
+
+✔️ Beneficios:
+✔️ Filtrá datos más eficientemente: `filter_out()` hace que la limpieza de datos sea más simple y directa.
+✔️ Recodificá valores de forma avanzada: la familia `when_*()` y `recode_*()` te dan más control sobre transformaciones complejas.
+✔️ Trabajás con el estándar del ecosistema tidyverse.
+
+🔥 Tip: Mirá la documentación y ejemplos de estas nuevas funciones para aprovecharlas al máximo en tus proyectos.
+
+↪ https://tidyverse.org/blog/2026/02/dplyr-1-2-0/
+
+¿Ya conocías estas funcionalidades de dplyr? ¡Contame qué te parecen! 
+ 
+🌐 https://tidyverse.org/blog/2026/02/dplyr-1-2-0/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

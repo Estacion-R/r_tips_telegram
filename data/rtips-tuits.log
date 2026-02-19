@@ -2551,3 +2551,21 @@ También incorpora `when_any()` y `when_all()`, funciones hermanas de `case_when
 🌐 https://prigasg.github.io/printtree/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-19 10:46:04.237746 [PAQUETE 📦] - 🧩 [RTIP] - LLMAgentR: Agentes de modelos de lenguaje grande para workflows de IA en R
+
+¿Querés automatizar tareas de análisis y desarrollar workflows de IA reproducibles en R? El paquete LLMAgentR te permite construir agentes basados en modelos de lenguaje grande (LLM) para ejecutar iterativamente tareas como pronósticos, visualización, ingeniería de características y más.
+
+✔️ `create_agent()`() Creá agentes modulares que usan LLM para recomendar, generar y ejecutar pasos de análisis.
+✔️ `run_agent()`() Ejecutá el flujo de trabajo del agente de principio a fin, debugueando y explicando los resultados.
+✔️ Compatibilidad nativa con paquetes populares como tidymodels, plotly y prophet.
+
+💡 Tip
+Combiná múltiples agentes en un grafo para crear workflows AI complejos y reutilizables. Explorá la documentación para ver ejemplos avanzados de uso.
+
+🔗 https://knowusuboaky.github.io/LLMAgentR/
+
+✍️ Know U Suboaky 
+ 
+🌐 https://knowusuboaky.github.io/LLMAgentR/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

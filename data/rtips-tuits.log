@@ -2569,3 +2569,20 @@ Combiná múltiples agentes en un grafo para crear workflows AI complejos y reut
 🌐 https://knowusuboaky.github.io/LLMAgentR/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-20 10:40:24.913195 [PAQUETE 📦] - 🧩 [RTIP] - ggseg: Visualizá datos de atlas cerebrales con R
+
+¿Querés hacer visualizaciones de datos neuroanatómicos de forma sencilla y dinámica? El paquete ggseg te permite graficar datos de atlas cerebrales directamente en R.
+
+✔️ `ggseg()` te deja crear visualizaciones 2D de estructuras cerebrales usando la sintaxis amigable de ggplot2.
+✔️ `ggseg3d()` te permite hacer geniales gráficos 3D interactivos de mapas cerebrales.
+✔️ El ecosistema ggseg incluye diversos paquetes con datos de diferentes atlas cerebrales.
+
+💡 Tip: Empezá con `ggseg::download_atlases()` para instalar los atlas que necesitás, ¡y listo para graficar!
+
+🔗 https://ggseg.github.io/
+
+✍️ Equipo ggseg 
+ 
+🌐 https://ggseg.github.io/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

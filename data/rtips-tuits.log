@@ -2586,3 +2586,22 @@ Combiná múltiples agentes en un grafo para crear workflows AI complejos y reut
 🌐 https://ggseg.github.io/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-23 10:53:27.229364 [PAQUETE 📦] - 🧩 [RTIP] - istatR: Accedé a los datos del Instituto Nacional de Estadística de Italia
+
+¿Necesitás recuperar datos oficiales de Italia para tu análisis? El paquete istatR te permite acceder fácilmente a la API pública del Instituto Nacional de Estadística de Italia (ISTAT).
+
+✔️ `discover_datasets()` buscá y explorar todos los conjuntos de datos disponibles.
+✔️ `search_datasets()` filtrá por palabras clave para encontrar lo que necesitás.
+✔️ `get_data()` descargá los datos con opciones flexibles de filtrado.
+
+💡 Tip
+Combiná istatR con otras herramientas de R como tidyverse para limpiar y analizar los datos de ISTAT de manera más eficiente.
+
+🔗 https://github.com/jfulponi/istatR
+
+✍️ jfulponi 
+ 
+🌐 https://github.com/jfulponi/istatR
+✍🏼 jfulponi 
+ 
+#RStats #RStatsES #Rtips #DataScience

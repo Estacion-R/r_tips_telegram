@@ -2626,3 +2626,23 @@ Combiná istatR con otras herramientas de R como tidyverse para limpiar y analiz
 ✍🏼 Yohann Mansiaux 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-24 12:16:09.222402 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés llevar tus aplicaciones web al siguiente nivel?
+
+{nanonext} es una librería que te permite crear servidores web HTTP y WebSocket de bajo nivel en R.
+
+nanonext 1.8.0 agrega funcionalidades importantes como soporte para TLS, nuevos primitivos asíncronos y una documentación rediseñada. Esto te permite construir aplicaciones web más robustas y escalables directamente desde R, sin tener que depender de soluciones externas.
+
+✔️ Beneficios:
+✔️ Integración nativa en el ecosistema R: Podés aprovechar todo el poder del lenguaje y las librerías que conocés para construir tus apps web.
+✔️ Mayor control y flexibilidad: nanonext te da un mayor control de la capa de red, permitiéndote personalizar el comportamiento según tus necesidades.
+✔️ Mejor performance: Al ser un servidor de bajo nivel, nanonext puede ofrecer un mejor rendimiento que soluciones de más alto nivel como Shiny.
+
+🔥 Tip: Combiná nanonext con librerías como plumber2 para crear APIs REST robustas y escalables directamente en R.
+
+↪ https://tidyverse.org/blog/2026/02/nanonext-1-8-0/
+
+¿Ya probaste nanonext? ¡Contanos tu experiencia! 
+ 
+🌐 https://tidyverse.org/blog/2026/02/nanonext-1-8-0/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

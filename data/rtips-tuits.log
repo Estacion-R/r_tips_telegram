@@ -2668,3 +2668,23 @@ La app también tiene un diseño especial para iPad con 4 paneles, similar a alg
 🌐 https://www.linkedin.com/posts/jamesbalamuta_rstats-webr-ios-share-7421744451846422528-Jsnx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsj29YBa-195JLJh4Rb0JHfP5BfEwnM0NQ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-24 13:08:14.909861 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés acelerar tus modelos y simulaciones en R?
+
+mirai 2.6.0 es un framework poderoso para computación paralela y asíncrona en R.
+
+mirai te permite distribuir el trabajo pesado de tus análisis y aplicaciones Shiny a través de múltiples procesos, ya sea localmente o en infraestructura remota. Con esta última versión, ahora podés desplegar el mismo código que usás en tu máquina a Posit Workbench o cualquier API HTTP en la nube, con una sola función.
+
+✔️ Beneficios:
+✔️ Acelerar tus modelos y simulaciones: mirai aprovecha los múltiples núcleos de tu computadora o recursos en la nube para ejecutar tareas en paralelo.
+✔️ Desplegar fácilmente a infraestructura empresarial: el mismo código que usás localmente ahora se puede llevar a Posit Workbench o APIs en la nube.
+✔️ Debuggear y monitorear tareas asíncronas: mirai trae nuevas herramientas para inspeccionar y depurar trabajos asíncronos.
+
+🔥 Tip: Usá la función `mirai::cloud()` para desplegar tu código a la nube con un solo comando.
+
+↪ https://tidyverse.org/blog/2026/02/mirai-2-6-0/
+
+¿Ya conocías mirai? ¿Qué te parece esta nueva versión? 
+ 
+🌐 https://tidyverse.org/blog/2026/02/mirai-2-6-0/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -2605,3 +2605,24 @@ Combiná istatR con otras herramientas de R como tidyverse para limpiar y analiz
 ✍🏼 jfulponi 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-24 10:53:23.67753 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés aprender a desarrollar paquetes de Python siendo programador de R?
+
+{Nombre del recurso} Guía para desarrollar paquetes de Python viniendo del mundo de R.
+
+¿Sos un programador de R y querés incursionar en el desarrollo de paquetes de Python? Este post te va a interesar. Cuenta la experiencia del autor, que ha trabajado con ambos lenguajes, y comparte los aprendizajes que adquirió al pasar del ecosistema de paquetes de R al de Python. Vas a encontrar consejos prácticos para que la transición sea más fluida.
+
+✔️ Beneficios:
+✔️ Aprenderás estrategias probadas para desarrollar paquetes de Python siendo experto en R
+✔️ Conocerás las principales herramientas y flujos de trabajo para la creación de paquetes en Python
+✔️ Podrás aprovechar tu experiencia en R para ser más productivo en el desarrollo de paquetes de Python
+
+🔥 Tip: Usá este recurso para apalancarte en tus habilidades de programación en R y acelerar tu curva de aprendizaje al desarrollar paquetes de Python.
+
+↪ https://yohann-data.fr/posts/pkg_dev_python/?utm_content=367582721&utm_medium=social&utm_source=linkedin&hss_channel=lis-0cz8G74BJj
+
+¿Querés saber más sobre cómo abordar el desarrollo de paquetes en diferentes lenguajes? 
+ 
+🌐 https://yohann-data.fr/posts/pkg_dev_python/?utm_content=367582721&utm_medium=social&utm_source=linkedin&hss_channel=lis-0cz8G74BJj
+✍🏼 Yohann Mansiaux 
+ 
+#RStats #RStatsES #Rtips #DataScience

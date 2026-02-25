@@ -2688,3 +2688,22 @@ mirai te permite distribuir el trabajo pesado de tus análisis y aplicaciones Sh
 🌐 https://tidyverse.org/blog/2026/02/mirai-2-6-0/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-25 10:53:51.070951 [PAQUETE 📦] - 🧩 [RTIP] - washr: Toolkit to simplificar la publicación de datos de agua, saneamiento e higiene (WASH)
+
+¿Trabajás con datos WASH y querés publicarlos de manera profesional? El paquete washr te ayuda a automatizar tareas tediosas como exportar datos ordenados, documentar el diccionario de datos, generar el README y el sitio web, y manejar las citas.
+
+✔️ `create_package()` te crea una estructura de paquete de R lista para llenar con tus datos.
+✔️ `update_readme()` genera automáticamente un README completo con metadatos, descripción y documentación.
+✔️ `build_website()` construye un sitio web con toda la información de tu paquete de forma sencilla.
+✔️ Flujo de trabajo consistente y eficiente para publicar tus datos WASH.
+
+💡 Tip
+Usá `devtools::install_github("openwashdata/washr")` para instalar la última versión y empezá a publicar tus datos WASH de manera profesional.
+
+🔗 https://openwashdata.github.io/washr/
+
+✍️ Equipo de OpenWASHData 
+ 
+🌐 https://openwashdata.github.io/washr/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

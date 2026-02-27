@@ -2733,3 +2733,22 @@ https://gdemin.github.io/expss/
 ✍🏼 David J. Bosak, lbraglia 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-02-27 10:41:00.565284 [PAQUETE 📦] - 🧩 [RTIP] - sjlabelled: Manejá fácilmente datos etiquetados en R
+
+¿Trabajás con datos que vienen de otros programas estadísticos como SPSS, SAS o Stata? El paquete sjlabelled te ayuda a manejar esos datos etiquetados de forma sencilla en R.
+
+✔️ `get_label()`() Obtenés rápidamente las etiquetas de valor y variable de tus datos.
+✔️ `set_label()`() Asignás nuevas etiquetas a tus variables y valores de forma intuitiva.
+✔️ Convertís variables etiquetadas a factores o números de manera fácil.
+
+💡 Tip
+Usá sjlabelled para leer y escribir datos entre otros programas y R, y trabajar con esos datos etiquetados sin complicaciones.
+
+🔗 https://github.com/strengejacke/sjlabelled/
+
+✍️ strengejacke 
+ 
+🌐 https://github.com/strengejacke/sjlabelled/
+✍🏼 strengejacke 
+ 
+#RStats #RStatsES #Rtips #DataScience

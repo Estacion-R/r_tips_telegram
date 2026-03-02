@@ -2752,3 +2752,23 @@ Usá sjlabelled para leer y escribir datos entre otros programas y R, y trabajar
 ✍🏼 strengejacke 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-02 10:46:15.269454 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés saber cómo acceder a los datos de Meetup desde R?
+
+meetupr te permite interactuar con la API de Meetup de forma programática.
+
+Esta potente biblioteca de R te da acceso a la información de grupos, eventos y miembros de Meetup. Podés autenticarte fácilmente vía OAuth2 y usar funciones prearmadas para hacer consultas comunes y manipular los datos.
+
+✔️ Beneficios:
+✔️ Accedé a los datos de Meetup sin tener que lidiar con la API manualmente
+✔️ Automatizá tareas recurrentes como conseguir información de grupos o eventos
+✔️ Integrá los datos de Meetup en tus análisis y visualizaciones de R
+
+🔥 Tip: Usá la función `meetup_oauth()` para autenticarte la primera vez y luego tus tokens se guardarán automáticamente.
+
+↪ https://rladies.org/meetupr/
+
+¿Ya conocías esta herramienta? ¡Contame qué te parece! 
+ 
+🌐 https://rladies.org/meetupr/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

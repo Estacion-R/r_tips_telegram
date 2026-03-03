@@ -2772,3 +2772,21 @@ Esta potente biblioteca de R te da acceso a la información de grupos, eventos y
 🌐 https://rladies.org/meetupr/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-03 10:42:23.122936 [PAQUETE 📦] - 🧩 [RTIP] - typeR: Crea animaciones de tipeo para presentar tu código de R
+
+¿Querés impresionar a tu audiencia con presentaciones de código interactivas? El paquete typeR te permite simular efectos de tipeo en tus scripts de R, haciendo que tus demos cobren vida.
+
+✔️ type_code() crea una animación de tipeo de tu código de R, línea por línea.
+✔️ type_rmd() y type_quarto() hacen lo mismo para documentos de R Markdown y Quarto.
+✔️ Ejecución en vivo del código durante la animación, ¡sin problemas!
+
+💡 Tip
+Usá typeR para crear presentaciones dinámicas de tus proyectos de R. ¡Cautivá a tu público con ese efecto de tipeo profesional!
+
+🔗 https://fgazzelloni.github.io/typeR/
+
+✍️ Federico Gazzelloni 
+ 
+🌐 https://fgazzelloni.github.io/typeR/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

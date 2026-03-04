@@ -2790,3 +2790,22 @@ Usá typeR para crear presentaciones dinámicas de tus proyectos de R. ¡Cautiv�
 🌐 https://fgazzelloni.github.io/typeR/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-04 10:39:47.833066 [PAQUETE 📦] - 🧩 [RTIP] - kuzco: Biblioteca de visión computacional con LLMs en R
+
+¿Querés hacer tareas de visión computacional sin complicarte con redes neuronales profundas? {kuzco} es la solución que estabas buscando.
+
+✔️ `kuzco_classify()` clasificá imágenes de manera sencilla usando modelos de lenguaje.
+✔️ `kuzco_recognize()` identificá objetos, personas y más en tus imágenes.
+✔️ {kuzco} te permite aprovechar el poder de los LLMs (Modelos de Lenguaje de Gran Tamaño) para tareas de visión sin necesidad de entrenar tus propios modelos.
+
+💡 Tip
+Integrá {kuzco} en tu flujo de trabajo de análisis de imágenes para obtener predicciones estructuradas de manera rápida y sencilla. Además, podés customizar el modelo subyacente según tus necesidades.
+
+🔗 https://github.com/frankiethull/kuzco
+
+✍️ frankiethull 
+ 
+🌐 https://github.com/frankiethull/kuzco
+✍🏼 frankiethull 
+ 
+#RStats #RStatsES #Rtips #DataScience

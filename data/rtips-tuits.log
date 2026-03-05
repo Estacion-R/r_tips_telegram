@@ -2809,3 +2809,21 @@ Integrá {kuzco} en tu flujo de trabajo de análisis de imágenes para obtener p
 ✍🏼 frankiethull 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-05 10:42:35.708042 [PAQUETE 📦] - 🧩 [RTIP] - labelled: Etiquetas de variables y valores para un análisis más claro
+
+¿Alguna vez tuviste que descifrar nombres de variables kriptográficos o códigos numéricos sin sentido en tus datasets? El paquete labelled te permite asociar etiquetas descriptivas a tus variables y valores, haciendo que tu análisis sea más intuitivo y fácil de comunicar.
+
+✔️ `var_label()` te permite agregar una etiqueta descriptiva a cada variable.
+✔️ `val_labels()` te permite asociar etiquetas a los valores de tus variables.
+✔️ Trabajá con las clases `haven_labelled` y `haven_labelled_spss` para mantener la metadata de tus variables.
+
+💡 Tip
+Usá labelled en conjunto con paquetes como haven, readr o tidyverse para importar, limpiar y analizar tus datos de manera más clara y amigable.
+
+🔗 https://larmarange.github.io/labelled/articles/labelled.html
+
+✍️ Joseph Larmarange 
+ 
+🌐 https://larmarange.github.io/labelled/articles/labelled.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

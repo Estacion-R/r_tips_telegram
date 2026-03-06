@@ -2827,3 +2827,23 @@ Usá labelled en conjunto con paquetes como haven, readr o tidyverse para import
 🌐 https://larmarange.github.io/labelled/articles/labelled.html 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-06 10:39:33.825878 [RECURSO 📚] - 🎯 [TIP de R] ¿Necesitás un entorno de programación R más potente?
+
+IECA R 0.3.2: una caja de herramientas oficial de la Junta de Andalucía para trabajar con R.
+
+Este paquete te provee un entorno de programación R con funcionalidades avanzadas, pensado específicamente para las necesidades de los estadísticos y analistas de datos de la Junta de Andalucía. Incluye accesos directos a bases de datos, funciones personalizadas y más.
+
+✔️ Beneficios:
+✔️ Acceso a recursos oficiales de la Junta: podés aprovechar datos, análisis y metodologías oficiales.
+✔️ Funcionalidades extra para estadísticos: herramientas específicas para el análisis de datos de la región.
+✔️ Entorno de trabajo integrado: todo lo que necesitás para tus análisis en un solo lugar.
+
+🔥 Tip: Usá este paquete si trabajás con datos de la Junta de Andalucía o necesitás un entorno R más robusto.
+
+↪ https://www.juntadeandalucia.es/institutodeestadisticaycartografia/reutilizacion/entorno-programacion-r/IECA_0.3.2.tar.gz
+
+¿Ya conocías este recurso de la Junta de Andalucía? ¿Qué te parece? 
+ 
+🌐 https://www.juntadeandalucia.es/institutodeestadisticaycartografia/reutilizacion/entorno-programacion-r/IECA_0.3.2.tar.gz 
+ 
+#RStats #RStatsES #Rtips #DataScience

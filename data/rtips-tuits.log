@@ -2853,3 +2853,9 @@ Este paquete te provee un entorno de programación R con funcionalidades avanzad
 ✍🏼 @sctyner y @heyhayhay__ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-10 10:42:23.795956 [PAQUETE 📦] - 🔍 ¿Necesitas comparar textos o hacer fuzzy matching en R? Este paquete, basado en la potente biblioteca 'RapidFuzz', ofrece cálculos de similitudes y distancias entre cadenas con alto rendimiento y algoritmos de vanguardia. 🚀 
+ 
+🌐 https://github.com/StrategicProjects/RapidFuzz
+✍🏼 gh/milkway 
+ 
+#RStats #RStatsES #Rtips #DataScience

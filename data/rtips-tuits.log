@@ -2865,3 +2865,9 @@ Este paquete te provee un entorno de programación R con funcionalidades avanzad
 ✍🏼 @_wurli 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-12 10:42:16.312938 [PAQUETE 📦] - El paquete {bigrquery} facilita el trabajo con datos almacenados en Google BigQuery, ya que permite consultar tablas de BigQuery y recuperar metadatos sobre proyectos, conjuntos de datos, tablas y trabajos. 
+ 
+🌐 https://bigrquery.r-dbi.org/
+✍🏼 @hadleywickham | ☓: @JennyBryan | 🐘: @jennybryan@fosstodon.org | ☓: @posit_pbc | 🐘: @Posit@fosstodon.org 
+ 
+#RStats #RStatsES #Rtips #DataScience

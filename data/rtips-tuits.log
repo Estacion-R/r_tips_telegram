@@ -2877,3 +2877,25 @@ Este paquete te provee un entorno de programación R con funcionalidades avanzad
 ✍🏼 - 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-16 10:56:06.832098 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés usar R en tu iPhone o iPad?
+
+webRios es una app que te permite correr R localmente en tus dispositivos iOS.
+
+webRios es una app que te permite tener una consola de R casi completa en tu iPhone o iPad. Podés instalar paquetes del espejo CRAN de webR, trabajar con archivos, ver el historial de comandos y más. Todo esto sin necesidad de conexión a internet, ya que podés descargar los paquetes que necesitás y usarlos offline.
+
+La app también tiene un diseño especial para iPad con 4 paneles, similar a algunos IDEs populares de R. Aunque todavía necesita algunos ajustes, es una muy buena opción para programar en R desde tus dispositivos iOS.
+
+✔️ Beneficios:
+✔️ Usar R en tu iPhone o iPad sin necesidad de conexión a internet
+✔️ Acceso a cientos de paquetes R a través del espejo CRAN de webR
+✔️ Editor de scripts con resaltado de sintaxis y galería de gráficos
+
+🔥 Tip: ¡Aprovechá la versión para iPad con su diseño en 4 paneles para tener una experiencia más cercana a un IDE de escritorio!
+
+↪ https://www.linkedin.com/posts/jamesbalamuta_rstats-webr-ios-share-7421744451846422528-Jsnx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsj29YBa-195JLJh4Rb0JHfP5BfEwnM0NQ
+
+¿Vas a probar webRios? ¡Contanos qué te pareció! 
+ 
+🌐 https://www.linkedin.com/posts/jamesbalamuta_rstats-webr-ios-share-7421744451846422528-Jsnx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsj29YBa-195JLJh4Rb0JHfP5BfEwnM0NQ 
+ 
+#RStats #RStatsES #Rtips #DataScience

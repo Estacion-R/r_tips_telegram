@@ -2899,3 +2899,21 @@ La app también tiene un diseño especial para iPad con 4 paneles, similar a alg
 🌐 https://www.linkedin.com/posts/jamesbalamuta_rstats-webr-ios-share-7421744451846422528-Jsnx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsj29YBa-195JLJh4Rb0JHfP5BfEwnM0NQ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-17 10:54:38.642005 [PAQUETE 📦] - 🧩 [RTIP] - metasurvey: Procesamiento de datos de encuestas con pipelines reproducibles
+
+¿Trabajás con datos de encuestas complejas y querés automatizar y documentar todo el proceso? Con el paquete metasurvey podés hacerlo de manera reproducible.
+
+✔️ `pipeline()`() Creá pipelines paso a paso para transformar y analizar tus datos de encuestas, incluyendo diseños de muestreo complejos.
+✔️ `recipe()`() Definí recetas reutilizables para compartir y reproducir workflows de transformación de datos entre diferentes ediciones de una encuesta.
+✔️ Soporte para diseños de muestreo complejos, incluyendo paneles rotatorios con pesos de réplica bootstrap.
+
+💡 Tip
+Usá el explorador web de recetas en metasurvey-shiny-production.up.railway.app para descubrir y reutilizar workflows existentes. ¡También podés contribuir tus propias recetas!
+
+🔗 https://metasurveyr.github.io/metasurvey/
+
+✍️ Autores del paquete metasurvey 
+ 
+🌐 https://metasurveyr.github.io/metasurvey/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

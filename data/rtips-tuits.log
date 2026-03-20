@@ -2929,3 +2929,23 @@ Usá el explorador web de recetas en metasurvey-shiny-production.up.railway.app 
 ✍🏼 Allen Bargi 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-20 10:41:07.080867 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés correr R en tu celular sin necesidad de internet?
+
+webRoid: R on Android te permite tener un entorno casi completo de R en tu teléfono o tablet.
+
+webRoid es una app que te deja interactuar con R de forma local, sin necesidad de conexión a internet. Incluye una consola interactiva con autocompletado, historial, y salida resaltada por colores. También tenés un editor de scripts con pestañas, resaltado de sintaxis, y exportación a Gist de GitHub.
+
+✔️ Beneficios:
+✔️ Podés usar R en cualquier lado sin depender de una conexión: ideal para cuando estás de viaje o sin internet.
+✔️ Tenés todas las herramientas de R a mano en tu dispositivo móvil.
+✔️ No necesitás configurar nada, solo descargás la app y listo.
+
+🔥 Tip: Usá webRoid para practicar tus habilidades de R cuando estás esperando o en movimiento, ¡y mantené tus proyectos a mano en todo momento!
+
+↪ https://webroid.caffeinatedmath.com/
+
+¿Usaste alguna vez R en tu celular? ¡Contame tu experiencia! 
+ 
+🌐 https://webroid.caffeinatedmath.com/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

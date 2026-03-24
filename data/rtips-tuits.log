@@ -2967,3 +2967,20 @@ Usá bulkreadr para agilizar tus flujos de trabajo de preparación de datos, aho
 🌐 https://gbganalyst.github.io/bulkreadr/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-24 10:54:50.436806 [PAQUETE 📦] - 🧩 [RTIP] - marimekko: Crea visualizaciones tipo mosaico para tus datos en R
+
+¿Querés entender mejor la relación entre variables categóricas en tus datos? El paquete marimekko te permite crear visualizaciones tipo mosaico (o marimekko) directamente con ggplot2.
+
+✔️ `geom_marimekko()` te permite crear gráficos de mosaico que muestran las proporciones marginales y condicionales de tus variables.
+✔️ `formula =  ~ Class | Survived` define la jerarquía y dirección de los segmentos.
+✔️ Funciones nativas de ggplot2 como `aes()` y `labs()` te dan control total sobre la estética.
+
+💡 Tip: Usá marimekko para explorar relaciones complejas entre variables categóricas en tus análisis. Combinalo con otras funciones de ggplot2 para crear visualizaciones informativas.
+
+🔗 https://gogonzo.github.io/marimekko/index.html
+
+✍️ Gonzalo Medina 
+ 
+🌐 https://gogonzo.github.io/marimekko/index.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

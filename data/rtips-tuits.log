@@ -2984,3 +2984,25 @@ Usá bulkreadr para agilizar tus flujos de trabajo de preparación de datos, aho
 🌐 https://gogonzo.github.io/marimekko/index.html 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-25 10:52:29.187565 [PAQUETE 📦] - 🧩 [RTIP] - unicefData: Descargá indicadores de UNICEF con facilidad
+
+¿Querés acceder a datos de UNICEF de forma automática y sin dolor de cabeza? El paquete unicefData te permite descargar series de indicadores del UNICEF Data Warehouse de manera sencilla y eficiente.
+
+✔️ `get_unicef_data()` te permite descargar indicadores específicos con solo unos pocos argumentos.
+✔️ `get_sdg_indicators()` obtiene todos los indicadores de los Objetivos de Desarrollo Sostenible (ODS) de UNICEF.
+✔️ Incluye funciones de paginación automática, almacenamiento en caché y búsqueda de nombres de países.
+
+💡 Tip
+Usá `cache = TRUE` en tus funciones para evitar descargar los mismos datos múltiples veces. También podés inspeccionar los metadatos con `get_indicator_metadata()` antes de descargar los datos.
+
+🔗 https://cran.r-project.org/web/packages/unicefData/index.html
+
+✍️ Joao Pedro Azevedo, Lucas Rodrigues, Yang Liu, Karen Avanesian 
+ 
+🌐 https://cran.r-project.org/web/packages/unicefData/index.html
+✍🏼 Joao Pedro Azevedo [aut, cre],
+  Lucas Rodrigues [ctb],
+  Yang Liu [ctb],
+  Karen Avanesian [ctb] 
+ 
+#RStats #RStatsES #Rtips #DataScience

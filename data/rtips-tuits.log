@@ -3006,3 +3006,21 @@ Usá `cache = TRUE` en tus funciones para evitar descargar los mismos datos múl
   Karen Avanesian [ctb] 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-26 10:54:46.392414 [PAQUETE 📦] - 🧩 [RTIP] - presentes: Acceso a datos del Registro Único de Víctimas del Terrorismo de Estado
+
+¿Necesitás trabajar con datos históricos sensibles sobre las víctimas del terrorismo de estado en Argentina de manera ética y documentada? El paquete `presentes` te proporciona acceso directo a la información oficial del RUVTE (Registro Único de Víctimas del Terrorismo de Estado), compilada y digitalizada desde fuentes oficiales del Estado argentino.
+
+✔️ Acceso directo a ~30.000 registros oficiales de víctimas del terrorismo de estado durante la última dictadura militar.
+✔️ Datos provenientes de fuentes confiables: RUVTE-ILID, Parque de la Memoria y bases de datos del Ministerio de Justicia.
+✔️ Facilita investigaciones históricas, académicas y de derechos humanos con información estructurada y verificada.
+
+💡 Tip
+Usá este paquete en proyectos de análisis histórico, visualizaciones sobre memoria colectiva o reportes sobre derechos humanos. La información viene documentada y citada, así que es ideal para trabajos académicos o de comunicación institucional donde necesitás transparencia en tus fuentes.
+
+🔗 https://diegokoz.github.io/presentes/
+
+✍️ Diego Koz 
+ 
+🌐 https://diegokoz.github.io/presentes/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

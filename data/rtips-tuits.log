@@ -3024,3 +3024,25 @@ Usá este paquete en proyectos de análisis histórico, visualizaciones sobre me
 🌐 https://diegokoz.github.io/presentes/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-27 10:53:13.627204 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés acceder a más de 70,000 libros clásicos gratis para análisis de texto?
+
+**gutenbergr** - El paquete que te conecta directamente con Project Gutenberg para descargar y analizar obras de dominio público.
+
+gutenbergr es un wrapper de rOpensci que simplifica la descarga de textos clásicos desde Project Gutenberg. En lugar de navegar por la web o descargar archivos manualmente, vos podés obtener libros completos directamente en R con una sola línea de código. El paquete incluye metadatos completos (autor, idioma, año, género) que ya están organizados en tibbles listos para analizar.
+
+Lo más poderoso es que combinás metadata + textos sin fricción. Tenés acceso a `gutenberg_metadata` con información de más de 81,000 obras, y con funciones simples podés filtrar por autor, idioma o título, y luego descargar el contenido completo. Perfecto si hacés análisis de sentimiento, minería de textos o estudios lingüísticos.
+
+✔️ Beneficios:
+✔️ **Acceso ilimitado**: 70,000+ libros públicos sin costos ni restricciones de licencia
+✔️ **Metadata integrada**: Filtrar por autor, idioma, fecha sin salir de R
+✔️ **Análisis directo**: Textos listos para procesamiento con tidytext o similar
+
+🔥 Tip: Combiná gutenbergr con `stringr` y `tidytext` para hacer análisis estilo "¿cuál es el sentimiento en las novelas de Jane Austen?" en minutos.
+
+↪ https://docs.ropensci.org/gutenbergr/articles/intro.html
+
+**¿Ya usaste gutenbergr para algún proyecto de análisis textual? ¿Qué tema te gustaría explorar con estos datos?** 
+ 
+🌐 https://docs.ropensci.org/gutenbergr/articles/intro.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

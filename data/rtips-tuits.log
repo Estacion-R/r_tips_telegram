@@ -3069,3 +3069,22 @@ Ahora tenés acceso organizado a casi 30 años de conocimiento comunitario. Es c
 ✍🏼 James Balamuta 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-03-31 10:56:44.737446 [PAQUETE 📦] - 🧩 [RTIP] - bbplot: Hacé gráficos con el estilo profesional de la BBC News
+
+¿Tus gráficos en ggplot2 se ven amateuristas? bbplot es el paquete que usá la BBC News para crear visualizaciones con un estilo profesional, limpio y consistente. Con pocas líneas de código, podés transformar tus gráficos en productos de calidad editorial.
+
+✔️ bbc_style() aplicá automáticamente la paleta de colores, tipografía y formato que usa la BBC News en todos sus reportes.
+✔️ finalise_plot() exportá tus gráficos con las dimensiones y resolución correctas para publicación web y print.
+✔️ Estilo consistente sin configurar manualmente fuentes, ejes ni márgenes — ahorrá tiempo y garantizá coherencia visual.
+
+💡 Tip
+Instalá bbplot desde GitHub con `devtools::install_github('bbc/bbplot')` y combinalo con tu flujo de ggplot2 habitual. Aplicá `bbc_style()` al final de tu código antes de exportar. Perfecto si trabajás con reportes, dashboards o publicaciones que necesiten verse profesionales.
+
+🔗 https://github.com/bbc/bbplot
+
+✍️ BBC News data team 
+ 
+🌐 https://github.com/bbc/bbplot
+✍🏼 bbc 
+ 
+#RStats #RStatsES #Rtips #DataScience

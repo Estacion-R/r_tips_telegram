@@ -3088,3 +3088,21 @@ Instalá bbplot desde GitHub con `devtools::install_github('bbc/bbplot')` y comb
 ✍🏼 bbc 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-01 11:01:30.842648 [PAQUETE 📦] - 🧩 [RTIP] - bananarama: Generá imágenes para presentaciones con Google Gemini de forma reproducible
+
+¿Cansado de copiar y pegar prompts en la UI de Gemini, descargar imágenes y perder el rastro de cuál salió de dónde? El paquete bananarama te permite definir todas tus imágenes en un archivo YAML versionado y regenerarlas con una sola llamada a función. Adiós al caos, hola a la reproducibilidad.
+
+✔️ Definición en YAML: Guardá tus prompts en archivos versionados que podés compartir y reutilizar sin perder nada.
+✔️ Imágenes de referencia y estilos predeterminados: Pasá imágenes de ejemplo y configurá estilos globales para mantener coherencia visual en todas tus diapositivas.
+✔️ Generación paralela: Todas tus imágenes se generan al mismo tiempo, ahorrándote tiempo de espera.
+
+💡 Tip
+Integrá bananarama en tu flujo de trabajo de presentaciones: guardá el archivo YAML en el mismo repo que tu deck, y cuando necesites actualizar o regenerar imágenes, es un simple `regenerar_imagenes()`. Perfecto para colaborar: todos ven exactamente qué prompt generó cada imagen.
+
+🔗 https://hadley.github.io/bananarama/
+
+✍️ Hadley Wickham 
+ 
+🌐 https://hadley.github.io/bananarama/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -3106,3 +3106,22 @@ Integrá bananarama en tu flujo de trabajo de presentaciones: guardá el archivo
 🌐 https://hadley.github.io/bananarama/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-02 10:53:19.941412 [PAQUETE 📦] - 🧩 [RTIP] - dataviewR: Explorador interactivo de datos con generación automática de código
+
+¿Cansado de filtrar dataframes manualmente y perder el código que usaste? dataviewR te permite explorar tus datos de forma interactiva en una interfaz Shiny elegante, y lo mejor es que genera automáticamente el código dplyr reproducible de cada operación que hacés.
+
+✔️ Interfaz interactiva Shiny() — Visualizá y explorá tus dataframes y tibbles sin escribir una línea de código.
+✔️ Filtrado avanzado con generación de código dplyr — Aplicá filtros complejos y obtené el código listo para copiar.
+✔️ Selección de columnas y soporte multi-dataset — Trabajá con múltiples dataframes simultáneamente (ej: `dataviewer(iris, mtcars)`).
+✔️ Flujo reproducible — Generá reportes y scripts automáticamente sin perder trazabilidad.
+
+💡 Tip
+Usá dataviewR al inicio de tu proyecto de análisis para explorar los datos sin escribir código, luego copiá el código dplyr generado directamente a tu script. Ahorrás tiempo en limpieza de datos y tenés documentación automática de cada paso.
+
+🔗 https://madhankumarnagaraji.github.io/dataviewR/
+
+✍️ Madhan Kumar Nagaraji 
+ 
+🌐 https://madhankumarnagaraji.github.io/dataviewR/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

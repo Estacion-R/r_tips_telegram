@@ -3125,3 +3125,23 @@ Usá dataviewR al inicio de tu proyecto de análisis para explorar los datos sin
 🌐 https://madhankumarnagaraji.github.io/dataviewR/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-03 10:46:06.135805 [PAQUETE 📦] - 🧩 [RTIP] - debrief: Análisis de perfiles de código en texto plano para tu terminal
+
+¿Perfilaste tu código con `profvis` pero los gráficos interactivos no te cierran? `debrief` te da resúmenes en texto puro que podés leer en la terminal, compartir fácil y hasta usar con agentes de IA para optimizar tu código automáticamente.
+
+✔️ `pv_help()` obtiene documentación de todas las funciones disponibles para analizar perfiles - acceso rápido sin salir de la terminal.
+✔️ Hotspot analysis identifica exactamente dónde se va el tiempo de ejecución - sin distracciones visuales.
+✔️ Call trees y contexto de código fuente te muestran la cadena completa de llamadas - entendés el flujo completo.
+✔️ Análisis de relaciones caller/callee y memoria - información detallada en formato texto que podés piping a otros comandos.
+
+💡 Tip
+Ideal para workflows en terminal, CI/CD pipelines, y si querés que una IA analice automáticamente tus perfiles de rendimiento. Combiná con `profvis()` para obtener datos crudos y después procesalos con `debrief` en formato legible.
+
+🔗 https://github.com/r-lib/debrief
+
+✍️ r-lib 
+ 
+🌐 https://github.com/r-lib/debrief
+✍🏼 r-lib 
+ 
+#RStats #RStatsES #Rtips #DataScience

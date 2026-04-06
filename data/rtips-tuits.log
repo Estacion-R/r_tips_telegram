@@ -3145,3 +3145,26 @@ Ideal para workflows en terminal, CI/CD pipelines, y si querés que una IA anali
 ✍🏼 r-lib 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-06 11:00:04.52131 [RECURSO 📚] - 🎯 [RECURSO de R] ¿Cansado de perder horas eligiendo qué gráfico hacer y cómo formatearlo?
+
+**ggauto** es un paquete que elige automáticamente el mejor tipo de gráfico y estilo basándose en tus datos.
+
+Nicola Rennie creó ggauto como una extensión opinionada de ggplot2 que te saca del dilema: ¿scatter plot, barplot, boxplot? El paquete analiza los tipos y valores de tus datos y elige la mejor visualización automáticamente. No es magia, es inteligencia aplicada: funciona bajo tres principios clave: separar la manipulación de datos del gráfico, usar estilos accesibles por defecto, y opciones de gráficos sensatas.
+
+Lo copado es que ggauto no solo elige el tipo de gráfico, sino que también aplica automáticamente un estilo visual limpio y accesible. Podés dejar que el paquete maneje todo, o customizarlo si necesitás ajustes específicos. Funciona perfectamente integrado con el flujo de tidyverse que probablemente ya estés usando.
+
+✔️ Beneficios:
+✔️ **Ahorrás tiempo**: sin más debates sobre qué gráfico hacer para cada variable
+✔️ **Mejores gráficos por defecto**: estilos accesibles y profesionales sin configuración extra
+✔️ **Menos fricción**: swichear entre tipos de gráficos es cosa de segundos
+
+🔥 Tip: Ideal para reportes automáticos o cuando necesitás visualizar datos rápido en exploración. Dejá que ggauto haga el trabajo pesado y vos enfocate en los insights.
+
+↪ https://nrennie.rbind.io/blog/introducing-ggauto/
+
+¿Ya probaste ggauto? ¿Te anima a automatizar más tu flujo de visualización? 
+ 
+🌐 https://nrennie.rbind.io/blog/introducing-ggauto/
+✍🏼 Nicola Rennie 
+ 
+#RStats #RStatsES #Rtips #DataScience

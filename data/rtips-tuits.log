@@ -3168,3 +3168,22 @@ Lo copado es que ggauto no solo elige el tipo de gráfico, sino que también apl
 ✍🏼 Nicola Rennie 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-07 10:58:45.721793 [PAQUETE 📦] - 🧩 [RTIP] - ggpop: Gráficos de población con iconos que cuentan historias
+
+¿Querés comunicar datos de población de una forma que la gente realmente entienda y recuerde? Los gráficos tradicionales son aburridos. Con ggpop podés transformar números en personas visuales, creando gráficos circulares basados en iconos que hacen que tus datos sean memorables y atractivos.
+
+✔️ `geom_pop()` crea gráficos de población circular donde cada icono representa una unidad de datos—perfecto para comunicar estadísticas demográficas de forma intuitiva.
+✔️ Iconos personalizables que podés adaptar a tu historia—desde personas hasta símbolos específicos del dominio que estés analizando.
+✔️ Integración total con ggplot2—todos los elementos familiares de tidyverse y customización que ya conocés.
+
+💡 Tip
+Usá ggpop cuando necesites presentar datos a audiencias no técnicas o en reportes visuales. Los gráficos circulares de población son mucho más memorables que barras o líneas. Combinalo con tus datos limpios de dplyr y lograrás visualizaciones que la gente entiende al primer vistazo.
+
+🔗 https://github.com/jurjoroa/ggpop#geom_pop--population-charts
+
+✍️ jurjoroa 
+ 
+🌐 https://github.com/jurjoroa/ggpop#geom_pop--population-charts
+✍🏼 jurjoroa 
+ 
+#RStats #RStatsES #Rtips #DataScience

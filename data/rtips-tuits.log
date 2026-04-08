@@ -3187,3 +3187,25 @@ Usá ggpop cuando necesites presentar datos a audiencias no técnicas o en repor
 ✍🏼 jurjoroa 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-08 10:59:29.6164 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés mostrar los paquetes que usás en tu análisis de una forma visualmente increíble?
+
+**hexsession** Crea un mosaico HTML responsivo con logos hexagonales de los paquetes cargados en tu sesión de R.
+
+hexsession es un paquete que transforma la lista aburrida de paquetes en una visualización hermosa y profesional. Podés generar tiles con los paquetes que tenés cargados en tu sesión actual, o especificar un conjunto personalizado usando un vector de caracteres. ¿Lo mejor? La salida es completamente responsiva y se ve bien en cualquier dispositivo.
+
+Una característica que nos encanta es que también soporta imágenes locales, así que si creaste tu propio paquete con un logo personalizado, podés incluirlo sin problema. Además, podés exportar todo como una captura de pantalla en PNG usando un navegador sin interfaz, perfecto para incluir en presentaciones, reportes o en el README de tus proyectos.
+
+✔️ Beneficios:
+✔️ **Visualización profesional**: Transforma esa lista de paquetes en algo que se ve polished y listo para compartir
+✔️ **Flexibilidad total**: Elegís qué paquetes mostrar (cargados, personalizados, o con imágenes locales)
+✔️ **Fácil de exportar**: Generá capturas PNG sin necesidad de herramientas externas complicadas
+
+🔥 Tip: Usá hexsession en tu workflow de reportes automáticos. Agregá un chunk al final de tu documento Rmd que genere la imagen de tus paquetes, así documentás exactamente qué versiones de qué herramientas usaste en cada análisis.
+
+↪ https://hexsession.liomys.mx/
+
+**¿Ya usás hexsession para tus presentaciones? ¿Qué paquetes no pueden faltar en tu tiles?** 
+ 
+🌐 https://hexsession.liomys.mx/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -3209,3 +3209,26 @@ Una característica que nos encanta es que también soporta imágenes locales, a
 🌐 https://hexsession.liomys.mx/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-09 11:02:02.264088 [RECURSO 📚] - 🎯 [TIP de R] ¿Sabés que dplyr 1.2.0 cambió el juego de la manipulación de datos?
+
+**Working smarter with {dplyr} 1.2.0** Una charla completa de Isabella Velásquez sobre las nuevas funciones que transforman cómo trabajás con datos en R.
+
+dplyr sigue evolucionando y la versión 1.2.0 trae herramientas que hacen la manipulación de datos más expresiva y flexible que nunca. Esta charla, presentada en R-Ladies Rome, te muestra la filosofía detrás de estos cambios y cómo aplicarlos en tus proyectos reales. Isabella Velásquez (una referente en la comunidad tidyverse) explora cada función nueva con ejemplos prácticos que podés usar ya mismo.
+
+Lo mejor es que no solo te enseña *qué* hace cada función, sino *por qué* fue diseñada así. Eso es lo que te permite escribir código más limpio, legible y eficiente. Los slides están disponibles, hay grabación y hasta un repositorio para que practiques.
+
+✔️ Beneficios:
+✔️ **Actualizate sin perder tiempo**: Aprendé todas las novedades de dplyr 1.2.0 en una sola charla estructurada
+✔️ **Escribeá código más expresivo**: Entendés la filosofía detrás de cada función para sacarle el máximo provecho
+✔️ **Tenés recursos completos**: Slides, grabación y repo para practicar a tu ritmo
+
+🔥 Tip: Mirá la grabación mientras codifiás junto con los ejemplos. Es la mejor forma de aprender dplyr: viendo + haciendo.
+
+↪ https://ivelasq.rbind.io/talk/dplyr-1-2-0/
+
+¿Ya probaste las nuevas funciones de dplyr 1.2.0? ¿Cuál te sorprendió más? 
+ 
+🌐 https://ivelasq.rbind.io/talk/dplyr-1-2-0/
+✍🏼 Isabella Velásquez 
+ 
+#RStats #RStatsES #Rtips #DataScience

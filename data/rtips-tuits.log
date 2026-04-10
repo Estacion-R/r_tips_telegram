@@ -3232,3 +3232,25 @@ Lo mejor es que no solo te enseña *qué* hace cada función, sino *por qué* fu
 ✍🏼 Isabella Velásquez 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-10 10:58:16.495908 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés crear mapas interactivos sin depender de servidores externos?
+
+**freestiler** es un motor de vector tiles para R que convierte datos espaciales en archivos PMTiles listos para servir desde cualquier lado.
+
+freestiler te permite transformar objetos `sf`, archivos en disco o queries de DuckDB en un único archivo `.pmtiles` sin necesidad de instalar dependencias externas. El motor está escrito en Rust y corre in-process, lo que lo hace súper rápido y eficiente. Soporta dos formatos: MapLibre Tiles (MLT), un formato columnar de nueva generación que es el default, y Mapbox Vector Tiles (MVT), el formato protobuf ampliamente soportado.
+
+Lo mejor es que todo funciona con una sola salida: un archivo `.pmtiles` que podés servir desde cualquier servidor estático. Ideal si trabajás con datos geoespaciales grandes y querés evitar la complejidad de infraestructuras complicadas.
+
+✔️ Beneficios:
+✔️ **Sin dependencias extra**: Todo integrado en R, escrito en Rust y corre en el mismo proceso
+✔️ **Flexible con tus datos**: Funciona con sf objects, archivos en disco o queries de DuckDB
+✔️ **Portabilidad total**: Un archivo `.pmtiles` que servís desde cualquier lugar sin infraestructura pesada
+
+🔥 Tip: Combiná freestiler con Shiny o Quarto para crear dashboards geoespaciales que escalen sin quebraderos de cabeza.
+
+↪ https://walker-data.com/freestiler/articles/getting-started.html
+
+¿Ya trabajás con datos geoespaciales en R? ¿Qué herramientas usás actualmente para visualizarlos? 
+ 
+🌐 https://walker-data.com/freestiler/articles/getting-started.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

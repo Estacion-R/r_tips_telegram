@@ -3254,3 +3254,22 @@ Lo mejor es que todo funciona con una sola salida: un archivo `.pmtiles` que pod
 🌐 https://walker-data.com/freestiler/articles/getting-started.html 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-13 11:24:33.150226 [PAQUETE 📦] - 🧩 [RTIP] - ggalt: Hacé que tus gráficos sean accesibles para todes
+
+¿Creaste un gráfico hermoso con ggplot2 pero no sabés cómo describirlo para quienes usan lectores de pantalla? El paquete ggalt resuelve esto generando automáticamente texto alternativo descriptivo para tus visualizaciones, garantizando que tu comunicación de datos sea **verdaderamente accesible**.
+
+✔️ `generate_alt_text()` genera descripciones automáticas de tus gráficos ggplot2, sin necesidad de escribir manualmente el texto alternativo.
+✔️ Detecta el tipo de gráfico, número de facetas, título, subtítulo y caption para crear un resumen conciso y útil.
+✔️ Inclusión real: tu análisis de datos llega a todxs, independientemente de sus capacidades visuales.
+
+💡 Tip
+Integrá `generate_alt_text()` en tu flujo de trabajo para reportes automáticos. Simplemente pasá tu objeto ggplot2 y obtené el texto alt listo para usar en documentos, Shiny apps o publicaciones web. ¡Accesibilidad sin esfuerzo extra!
+
+🔗 https://github.com/y-sunflower/ggalt
+
+✍️ y-sunflower 
+ 
+🌐 https://github.com/y-sunflower/ggalt
+✍🏼 y-sunflower 
+ 
+#RStats #RStatsES #Rtips #DataScience

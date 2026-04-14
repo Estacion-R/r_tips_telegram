@@ -3273,3 +3273,25 @@ Integrá `generate_alt_text()` en tu flujo de trabajo para reportes automáticos
 ✍🏼 y-sunflower 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-14 11:05:43.239395 [RECURSO 📚] - 🎯 [TIP de R] ¿Querés controlar tu casa inteligente desde R? 🏠
+
+**{ha}** Te permite interactuar con Home Assistant directamente desde tu sesión de R, controlando luces, sensores y cualquier dispositivo IoT sin salir de tu script.
+
+Imaginate esto: estás corriendo un análisis de datos y querés que se apague la luz automáticamente cuando termines, o que se active una escena cuando detectes un patrón específico. Con el paquete `ha` podés hacer exactamente eso. Se conecta a la API de Home Assistant para controlar estados, servicios y eventos de tu ecosistema smart home, tanto en acceso local como remoto.
+
+Lo mejor es que la configuración es simple: editás tu `configuration.yaml` para habilitar la API, generás un token de acceso desde la UI de Home Assistant, y listo. Desde ahí, tenés control total sobre cada aspecto de tu casa inteligente usando el poder de R.
+
+✔️ Beneficios:
+✔️ **Automatización inteligente**: Combiná análisis de datos con acciones en tiempo real (ej: alertas que disparan acciones en tu hogar)
+✔️ **Integración sin fricciones**: Usá la misma sesión de R para análisis Y control del smart home
+✔️ **Acceso flexible**: Funciona tanto en red local como remota, así que controlás desde cualquier lado
+
+🔥 Tip: Combiná `ha` con triggers condicionales en tus scripts. Por ejemplo, si un sensor detecta humedad anómala, que se active automáticamente un actuador. ¡Análisis que toman decisiones!
+
+↪ https://christophertkenny.com/ha/
+
+¿Vos ya usás Home Assistant? ¿Qué dispositivos de tu smart home te gustaría controlar desde R? 
+ 
+🌐 https://christophertkenny.com/ha/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

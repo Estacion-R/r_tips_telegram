@@ -3315,3 +3315,9 @@ Aquí vas a encontrar Ideas, consejos y ejemplos (con código) para que los resu
 ✍🏼 ☓: @rafa_zamr | ☓: @karbartolome 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-18 13:04:22.372841 [PAQUETE 📦] - El proyecto DuckDB es un sistema integrado de gestión de datos analíticos compatible con el lenguaje de consulta estructurado (SQL). El paquete {duckdb} incluye todo DuckDB y un conector R Database Interface (DBI). 
+ 
+🌐 https://github.com/duckdb/duckdb-r
+✍🏼 @kirill@fosstodon.org | ☓: @hfmuehleisen | ☓: @mraasveldt 
+ 
+#RStats #RStatsES #Rtips #DataScience

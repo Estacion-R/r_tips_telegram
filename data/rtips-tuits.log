@@ -3340,3 +3340,17 @@ Aquí vas a encontrar Ideas, consejos y ejemplos (con código) para que los resu
 ✍🏼 🐘: @hadleywickham@fosstodon.org 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-20 11:20:11.195078 [PAQUETE 📦] - 🌍 ¿Necesitas datos meteorológicos históricos? El paquete {GHCNr} te conecta rápidamente con la base de datos Global Historical Climatology Network daily (GHCNd), que reúne resúmenes diarios de estaciones meteorológicas en todo el mundo. ☀️🌧️
+
+📊 Funcionalidades clave:
+
+    Descargar datos directamente desde la API de GHCNd. 🌐
+    Filtrar y procesar información relevante. 🛠️
+    Agregar datos a escalas mensuales y anuales para análisis avanzados. 📆📈
+
+✨ Ideal para climatólogos, investigadores y profesionales que trabajan con grandes volúmenes de datos climáticos. 
+ 
+🌐 https://github.com/emilio-berti/GHCNr
+✍🏼 Explora el trabajo de Emilio Berti en GitHub: @emilio-berti. 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -3354,3 +3354,23 @@ Aquí vas a encontrar Ideas, consejos y ejemplos (con código) para que los resu
 ✍🏼 Explora el trabajo de Emilio Berti en GitHub: @emilio-berti. 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-21 11:10:38.745111 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · ¿Querés mostrar la evolución de tus proyectos o eventos de forma atractiva en tus informes de Quarto?
+
+Te presento quarto-timeline, una extensión genial para Quarto que te permite crear líneas de tiempo interactivas y visualmente impactantes en tus documentos HTML y presentaciones RevealJS. Olvidate de las listas aburridas, esto le da vida a tus narrativas temporales.
+
+Su instalación es súper sencilla, solo tenés que agregarla a tu proyecto de Quarto y definir tus eventos con una estructura de divs simple en tu documento. Es ideal para documentar el progreso de un proyecto, la historia de un dataset o la secuencia de eventos importantes de una forma que realmente capte la atención.
+
+✔️ Beneficios:
+✔️ Visualización clara: Transformá datos secuenciales en gráficos fáciles de entender de un vistazo, haciendo tu información más digerible.
+✔️ Integración nativa: Funciona perfectamente dentro de tus documentos Quarto y presentaciones RevealJS, sin configuraciones complejas.
+✔️ Personalización sencilla: Definís los eventos con marcado HTML simple y la extensión hace el resto del trabajo de estilo, ahorrándote tiempo.
+
+🔥 Tip: Cuando diseñes tu línea de tiempo, pensá en la narrativa. Cada evento debe ser un hito clave que cuente una parte de la historia. ¡Menos es más para un impacto visual fuerte!
+
+↪ https://emilhvitfeldt.com/post/quarto-timeline/
+
+¿Qué tipo de historia te gustaría contar con una línea de tiempo en tus próximos informes? 
+ 
+🌐 https://emilhvitfeldt.com/post/quarto-timeline/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -3374,3 +3374,17 @@ Su instalación es súper sencilla, solo tenés que agregarla a tu proyecto de Q
 🌐 https://emilhvitfeldt.com/post/quarto-timeline/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-22 15:41:47.889156 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · quallmer: Herramientas para el análisis cualitativo asistido por IA.
+
+¿Te pasás horas codificando datos cualitativos a mano y sentís que nunca terminás, o que no podés escalar tu análisis? El paquete quallmer viene a revolucionar tu investigación, permitiéndote aplicar codificación cualitativa asistida por Modelos de Lenguaje Grandes (LLMs) a grandes volúmenes de texto, imágenes, PDFs, tablas y otros datos estructurados de forma eficiente.
+
+✔️ Con qlm_code() podés aplicar una codificación basada en libros de códigos para generar resultados estructurados e interpretables de forma rápida.
+✔️ Creá tus propios libros de códigos personalizados con qlm_codebook() o usá los predefinidos para aplicaciones comunes como análisis de sentimientos o codificación de políticas.
+✔️ El paquete te ayuda a garantizar la calidad y confiabilidad de tu codificación generada por IA con métricas de fiabilidad entre codificadores (como Krippendorff's alpha y Fleiss kappa) y de validación (precisión, recall, F1). Además, ofrece replicación sistemática y un registro de auditoría completo para documentar tus flujos de trabajo y establecer la confiabilidad de tu investigación.
+
+💡 Tip
+Integrá quallmer en tu pipeline de 
+ 
+🌐 https://quallmer.github.io/quallmer/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

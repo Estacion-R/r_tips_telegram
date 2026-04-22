@@ -21,13 +21,18 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Instalacion de paquetes
-        run: "Rscript R/01-instalacion_paquetes.R"
-
-      - name: Install curl
-        run: |
-          install.packages('curl')
-        shell: Rscript {0}
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::googlesheets4
+            any::dplyr
+            any::stringr
+            any::telegram.bot
+            any::glue
+            any::readr
+            any::magrittr
+            any::here
+            any::curl
 
       - name: Crea y postea tip
         run: "Rscript R/script_bot.R"

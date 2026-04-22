@@ -8,6 +8,7 @@ library(googlesheets4)
 library(readr)
 library(here)
 library(stringr)
+library(curl)
 source("R/02-armar_tip.R")
 
 

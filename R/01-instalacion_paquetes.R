@@ -1,6 +1,8 @@
 # Paquetes necesarios para r_tips_telegram
 # Versión simplificada sin OpenAI
 
+
+install.packages("curl")
 install.packages("googlesheets4")
 install.packages("dplyr")
 install.packages("stringr")

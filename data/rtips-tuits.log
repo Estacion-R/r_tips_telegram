@@ -3388,3 +3388,22 @@ Integrá quallmer en tu pipeline de
 🌐 https://quallmer.github.io/quallmer/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-23 11:12:35.595817 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · netmem: Un paquete para analizar redes complejas con matrices
+
+¿Te volvés loco/a intentando extraer información valiosa de redes complejas, multicapa o con vínculos valorados? El paquete netmem te ofrece herramientas potentes para analizar y manipular redes sociales usando matrices, simplificando el estudio de estructuras complejas y brindando medidas específicas.
+
+✔️ Te permite aplicar diversas medidas para el análisis y manipulación de redes complejas, desde una perspectiva matricial.
+✔️ Ideal para trabajar con redes multicapa, vínculos valorados (ponderados o multiplex) y diferentes niveles de análisis.
+✔️ Ofrece una perspectiva ego-céntrica para entender la posición y las relaciones de nodos individuales dentro de la red.
+
+💡 Tip
+Si ya estás trabajando con datos de redes en formatos como los de igraph o tidygraph, podés preparar tus matrices de adyacencia y luego usar netmem para calcular esas medidas específicas que otras librerías no cubren directamente para redes tan complejas. ¡Potenciá tu análisis!
+
+🔗 https://github.com/anespinosa/netmem
+
+✍️ Alejandro Espinosa-Rada 
+ 
+🌐 https://github.com/anespinosa/netmem
+✍🏼 anespinosa 
+ 
+#RStats #RStatsES #Rtips #DataScience

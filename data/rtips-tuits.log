@@ -3407,3 +3407,21 @@ Si ya estás trabajando con datos de redes en formatos como los de igraph o tidy
 ✍🏼 anespinosa 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-24 11:07:57.628189 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · shinydataviewer: Un módulo de Shiny para visualizar datos tabulares de forma interactiva.
+
+¿Necesitás mostrar tus datos en una app de Shiny de forma prolija y con funcionalidades avanzadas, pero no querés armar todo desde cero? El paquete shinydataviewer te trae un módulo reutilizable para que tus usuarios puedan explorar tablas de datos como un pro.
+
+✔️ data_viewer_ui() y data_viewer_server(): Integrá fácilmente un visualizador de tablas interactivas en tu app Shiny, con funcionalidades listas para usar y una estética moderna.
+✔️ Tablas interactivas con reactable y bslib: Tus datos se verán geniales y serán fáciles de explorar, con búsqueda, filtrado y paginación que mejoran la experiencia de usuario.
+✔️ Resumen de variables en sidebar: Tus usuarios pueden obtener un pantallazo rápido de cada columna (tipo de dato, valores únicos, distribución) sin salir de la vista principal.
+
+💡 Tip
+Usá este módulo en diferentes partes de tu app para mostrar distintos datasets sin reinventar la rueda. Es ideal para dashboards que requieren exploración de datos.
+
+🔗 https://ryan-w-harrison.github.io/shinydataviewer/
+
+✍️ Ryan W. Harrison 
+ 
+🌐 https://ryan-w-harrison.github.io/shinydataviewer/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -3425,3 +3425,24 @@ Usá este módulo en diferentes partes de tu app para mostrar distintos datasets
 🌐 https://ryan-w-harrison.github.io/shinydataviewer/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-27 11:46:30.73858 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · duckh3: Integrá el sistema de indexación H3 de Uber con R y DuckDB para análisis geoespacial rápido y escalable.
+
+¿Trabajás con datos geoespaciales gigantes y sentís que R se arrastra? ¿O quizás necesitás la eficiencia de H3 y DuckDB sin dejar tu ambiente de R?
+
+El paquete duckh3 es la solución que conecta el potente sistema de indexación jerárquica H3 de Uber y la velocidad de DuckDB directamente en R, sin complicarte la vida. Te permite analizar y manipular grandes datasets espaciales (y no espaciales) de forma súper eficiente.
+
+✔️ Análisis H3 escalable Te da funciones rápidas y eficientes para manejar grandes volúmenes de datos espaciales y no espaciales usando el sistema de indexación H3.
+✔️ Integración fluida Conecta el poder de la extensión H3 de DuckDB con tu ecosistema R (dplyr, sf, duckspatial), para que no tengas que cambiar de herramienta.
+✔️ Rendimiento optimizado Acelerá tus consultas y manipulaciones de datos geoespaciales aprovechando la potencia analítica de DuckDB sin salir de R. Es compatible con data frames, tibbles y objetos dbplyr.
+
+💡 Tip
+Si ya usás {duckspatial}, te va a resultar súper familiar, ya que {duckh3} sigue una API similar. Es ideal para cuando buscás rendimiento a la hora de trabajar con celdas H3 y grandes bases de datos directamente desde R.
+
+🔗 https://github.com/Cidree/duckh3
+
+✍️ Cidree 
+ 
+🌐 https://github.com/Cidree/duckh3
+✍🏼 Cidree 
+ 
+#RStats #RStatsES #Rtips #DataScience

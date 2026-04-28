@@ -3446,3 +3446,21 @@ Si ya usás {duckspatial}, te va a resultar súper familiar, ya que {duckh3} sig
 ✍🏼 Cidree 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-28 11:47:48.920536 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · pkgmatch: Encontrá paquetes de R que coincidan con descripciones de texto o con otros paquetes existentes.
+
+¿Necesitás encontrar un paquete de R pero no recordás el nombre exacto? ¿O querés saber qué otros paquetes hacen algo similar a uno que ya conocés? ¡El paquete pkgmatch es tu solución! Te ayuda a descubrir herramientas en CRAN, rOpenSci o Bioconductor, usando modelos de lenguaje para encontrar las mejores coincidencias.
+
+✔️ Buscá paquetes con una descripción de texto: ingresá lo que querés hacer y pkgmatch te sugiere opciones relevantes.
+✔️ Encontrá paquetes similares a los que ya usás: ideal para descubrir alternativas o complementos a tus herramientas favoritas.
+✔️ Accedé a un catálogo inmenso de CRAN, rOpenSci y Bioconductor, todo de forma inteligente y rápida.
+
+💡 Tip
+Usá pkgmatch cuando estés explorando un nuevo dominio en R o buscando maneras más eficientes de hacer algo. Es como tener un experto en paquetes siempre disponible para ayudarte a navegar el ecosistema de R.
+
+🔗 https://docs.ropensci.org/pkgmatch/
+
+✍️ El equipo de rOpenSci 
+ 
+🌐 https://docs.ropensci.org/pkgmatch/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

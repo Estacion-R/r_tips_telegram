@@ -3464,3 +3464,24 @@ Usá pkgmatch cuando estés explorando un nuevo dominio en R o buscando maneras 
 🌐 https://docs.ropensci.org/pkgmatch/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-29 11:39:40.632588 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · ¿Te sentís mareado con tantos paquetes de IA que Posit está lanzando para R y Python?
+
+Posit viene sacando un montón de herramientas para Inteligencia Artificial, y es re fácil perderse entre tanto nombre nuevo. Este artículo de Appsilon te trae un mapa de decisión clarito para que entiendas de una vez por todas qué paquete usar y para qué.
+
+La nota te ayuda a diferenciar paquetes como ellmer, chatlas, ragnar, querychat, shinychat y un montón más. Explica sus funcionalidades principales y te guía para que elijas la herramienta justa para tu proyecto, ya sea que trabajes con R o Python.
+
+✔️ Beneficios:
+✔️ Claridad inmediata: Entendé el propósito de cada paquete de IA de Posit sin volverte loco leyendo mil docs.
+✔️ Ahorrá tiempo: Dejá de investigar sin rumbo y andá directo al grano con la herramienta que necesitás.
+✔️ Elegí bien: Tomá decisiones informadas sobre qué paquete de IA integrar en tus proyectos de R o Python.
+✔️ Desarrollá mejor: Armá tus aplicaciones de IA con confianza, sabiendo que estás usando la base correcta.
+
+🔥 Tip: Cuando explores estos paquetes, empezá por identificar si tu necesidad es más de integración de modelos pre-entrenados, construcción de interfaces de chat o manipulación de datos para IA. Eso te va a ayudar a filtrar un montón.
+
+↪ https://www.appsilon.com/post/posits-ai-packages-explained-a-decision-map-for-r-and-python-developers
+
+¿Ya usaste alguno de estos paquetes de IA de 
+ 
+🌐 https://www.appsilon.com/post/posits-ai-packages-explained-a-decision-map-for-r-and-python-developers?utm_source=Estaci%C3%B3n+R&utm_campaign=172d5137e0-EMAIL_CAMPAIGN_2026_04_27_04_39&utm_medium=email&utm_term=0_2378342e19-172d5137e0-570539846 
+ 
+#RStats #RStatsES #Rtips #DataScience

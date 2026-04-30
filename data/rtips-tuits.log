@@ -3485,3 +3485,21 @@ La nota te ayuda a diferenciar paquetes como ellmer, chatlas, ragnar, querychat,
 🌐 https://www.appsilon.com/post/posits-ai-packages-explained-a-decision-map-for-r-and-python-developers?utm_source=Estaci%C3%B3n+R&utm_campaign=172d5137e0-EMAIL_CAMPAIGN_2026_04_27_04_39&utm_medium=email&utm_term=0_2378342e19-172d5137e0-570539846 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-30 11:38:57.177285 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · tidyplots: Simplificá tus gráficos con un enfoque accesible.
+
+¿Te agobia la idea de escribir un montón de código para hacer gráficos en R? ¡No te preocupes más! El paquete tidyplots te va a volar la cabeza si buscás simplificar la creación de visualizaciones de datos, sobre todo si recién arrancás con R. Su flujo de trabajo está diseñado para ser intuitivo, ¡como armar un rompecabezas!
+
+✔️ Componentes intuitivos: Agregá, remové y ajustá elementos del gráfico de forma sencilla, sin enredos de sintaxis. Ideal para quienes recién empiezan.
+✔️ Personalización simple: Aplicá temas y creá layouts de múltiples gráficos en un toque, dándole un estilo pro a tus visualizaciones.
+✔️ Flujo de trabajo guiado: Seguí un workflow paso a paso que te guía desde la preparación de datos hasta el diseño final, ¡casi sin darte cuenta!
+
+💡 Tip
+Empezá preparando tus datos con herramientas como dplyr antes de pasarlos a tidyplots. Vas a ver cómo todo fluye mejor y tus gráficos quedan impecables y listos para publicar.
+
+🔗 https://jbengler.github.io/tidyplots/articles/tidyplots.html
+
+✍️ Johannes Bengler 
+ 
+🌐 https://jbengler.github.io/tidyplots/articles/tidyplots.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

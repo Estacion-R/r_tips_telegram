@@ -3503,3 +3503,22 @@ Empezá preparando tus datos con herramientas como dplyr antes de pasarlos a tid
 🌐 https://jbengler.github.io/tidyplots/articles/tidyplots.html 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-30 12:21:07.10765 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · gtrendsR: Funciones de R para realizar y mostrar consultas de Google Trends
+
+¿Querés saber qué busca la gente en Google sobre un tema, producto o servicio? Dejá de bajar CSVs a mano, ¡podés hacerlo directo en R! El paquete gtrendsR te permite acceder y analizar datos de Google Trends directamente desde tu script. Es súper útil para estudios de mercado, análisis de popularidad de términos o para ver qué temas son tendencia.
+
+✔️ gtrends(): Hacé tus consultas a Google Trends con las palabras clave y regiones que te interesen. Obtené los datos que querés sin salir de R.
+✔️ plot() (con el resultado): Visualizá las tendencias de búsqueda a lo largo del tiempo o por región con gráficos rápidos y claros. Creá reportes en segundos.
+✔️ Filtros avanzados: Podés especificar países, períodos de tiempo y categorías. Analizá patrones geográficos y temporales con facilidad para entender el interés global o local.
+
+💡 Tip
+Usá gtrendsR para monitorear el interés en tu marca, competencia o temas de investigación. Podés automatizar informes semanales o mensuales y tomar decisiones basadas en el interés de tu audiencia.
+
+🔗 https://github.com/PMassicotte/gtrendsR
+
+✍️ PMassicotte 
+ 
+🌐 https://github.com/PMassicotte/gtrendsR
+✍🏼 PMassicotte 
+ 
+#RStats #RStatsES #Rtips #DataScience

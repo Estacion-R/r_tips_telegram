@@ -3522,3 +3522,25 @@ Usá gtrendsR para monitorear el interés en tu marca, competencia o temas de in
 ✍🏼 PMassicotte 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-04-30 12:26:56.640871 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · logrittr: Un operador de pipe verboso para registrar tus pipelines de dplyr.
+
+¿Alguna vez sentiste que tus pipelines de dplyr son una "caja negra"? Hacés un montón de transformaciones y solo ves el resultado final, pero te preguntás: ¿qué pasó en cada paso? ¿Se perdieron filas? ¿Se agregaron columnas inesperadas?
+
+El paquete logrittr te trae una solución genial. Inspirado en los logs de SAS DATA step, introduce un nuevo operador de pipe, %>=%, que te da un feedback detallado de cada etapa de tu pipeline. Es como tener un supervisor en cada transformación que hacés.
+
+✔️ Registra recuentos de filas: Sabés exactamente cuántas filas tenés después de cada mutate, filter o join. ¡Adiós a las pérdidas misteriosas!
+✔️ Monitorea columnas: Registra cuántas columnas tenés y si se agregaron o eliminaron en cada paso. Ideal para depurar y entender la estructura de tus datos.
+✔️ Mide tiempos: Ves cuánto tarda cada operación, ayudándote a identificar cuellos de botella y optimizar tu código.
+✔️ Soporte para pipelines anidados: No importa lo compleja que sea tu lógica, logrittr te sigue el ritmo.
+✔️ Opciones configurables: Podés ajustar el ancho de visualización, el formato de los números y hasta el idioma del log.
+
+💡 Tip
+Para empezar a usarlo, simplemente reemplazá tus pipes %>% (o |>) por %>% en tus pipelines de dplyr. Es un cambio mínimo con un impacto enorme en la claridad y depuración de tu código. ¡Tu yo del futuro te lo va a agradecer!
+
+🔗 https://guillaumepressiat.github.io/logrittr/
+
+✍️ Guillaume Pressiat 
+ 
+🌐 https://guillaumepressiat.github.io/logrittr/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

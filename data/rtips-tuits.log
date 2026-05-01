@@ -3544,3 +3544,22 @@ Para empezar a usarlo, simplemente reemplazá tus pipes %>% (o |>) por %>% en tu
 🌐 https://guillaumepressiat.github.io/logrittr/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-01 11:08:29.656089 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · perspectiveR: Crea tablas dinámicas y gráficos interactivos desde R.
+
+¿Cansado/a de armar tablas resúmenes y gráficos estáticos para explorar tus datos? ¿Querés un "Excel-like" pivot table, pero con la potencia de R y totalmente interactivo? El paquete perspectiveR te trae esa funcionalidad directamente a tu sesión de R. Es ideal para un Análisis Exploratorio de Datos (EDA) rápido y muy visual.
+
+✔️ Diseñá tablas dinámicas arrastrando y soltando variables para visualizar tus datos al instante.
+✔️ Generá gráficos que se actualizan automáticamente al cambiar la configuración de tu tabla.
+✔️ Explorá rápidamente patrones y anomalías en tus datasets sin necesidad de escribir mucho código.
+✔️ Compartí tus resultados interactivos en formato HTML, accesibles desde cualquier navegador.
+
+💡 Tip
+Integrá perspectiveR en tus scripts de R, R Markdown o incluso en una app de Shiny para darle a tus reportes un nivel de interactividad super útil y profesional. ¡Tus usuarios van a amar poder jugar con los datos!
+
+🔗 https://eydlinilya.github.io/perspectiveR/articles/perspectiveR.html
+
+✍️ Eydlin Ilya 
+ 
+🌐 https://eydlinilya.github.io/perspectiveR/articles/perspectiveR.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

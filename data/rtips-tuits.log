@@ -3563,3 +3563,22 @@ Integrá perspectiveR en tus scripts de R, R Markdown o incluso en una app de Sh
 🌐 https://eydlinilya.github.io/perspectiveR/articles/perspectiveR.html 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-04 11:51:25.83464 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · datadrivencv: Creá CVs personalizados desde hojas de cálculo con R.
+
+¿Estás cansado de que tu CV se desarme cada vez que agregás una nueva experiencia o querés cambiar el formato? ¡Uf! Es un garrón. El paquete datadrivencv te permite mantener el contenido de tu CV en un formato estructurado (como una planilla de cálculo) y luego generar distintas versiones con diseños personalizados, sin dolores de cabeza.
+
+✔️ **Separación de contenido y formato:** Mantené tus datos (experiencia, educación, habilidades) en un archivo simple (CSV, Google Sheet) y el diseño en otro. ¡Así, los cambios de formato no arruinan nada!
+✔️ **Generación flexible:** Desde los mismos datos, podés generar diferentes versiones de tu CV (ej. una más corta para una postulación, otra completa para tu web) ajustando solo el template.
+✔️ **Automatización:** Olvidate de copiar y pegar. Una vez configurado, solo actualizás tu planilla y generás el CV actualizado con un solo comando.
+
+💡 Tip
+Pensá en tu CV como una base de datos. Usá Google Sheets o un CSV para guardar toda tu información. Cuando necesites actualizar, solo editás esa planilla y listo. datadrivencv hará el resto. Explorá las plantillas que trae el paquete o creá las tuyas propias usando R Markdown para una personalización total.
+
+🔗 https://github.com/nstrayer/datadrivencv
+
+✍️ nstrayer 
+ 
+🌐 https://github.com/nstrayer/datadrivencv
+✍🏼 nstrayer 
+ 
+#RStats #RStatsES #Rtips #DataScience

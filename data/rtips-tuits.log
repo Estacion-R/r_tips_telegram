@@ -3582,3 +3582,21 @@ Pensá en tu CV como una base de datos. Usá Google Sheets o un CSV para guardar
 ✍🏼 nstrayer 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-05 11:17:14.444928 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · shinylive: Ejecutá tus apps Shiny directamente en el navegador, sin necesidad de un servidor R.
+
+¿Querés compartir tu app Shiny pero la idea de montar un servidor te da pereza o no tenés presupuesto? ¡El paquete shinylive es tu solución! Te permite llevar tus aplicaciones de Shiny a cualquier navegador, haciendo que funcionen sin un servidor R dedicado.
+
+✔️ Exportá tus apps Shiny para que corran 100% en el navegador. ¡Olvidate del servidor backend!
+✔️ Usa webR y WebAssembly para que R y Shiny operen directamente en el browser del usuario.
+✔️ Podés hostear tus aplicaciones en cualquier servidor web estático (GitHub Pages, Netlify, Vercel, etc.). ¡Super fácil y económico!
+
+💡 Tip
+Usalo para crear demos interactivas, incluir proyectos de datos en tu CV online o armar tutoriales autocontenidos. Es ideal para apps pequeñas o medianas que no necesitan una gran infraestructura de servidor.
+
+🔗 https://posit-dev.github.io/r-shinylive/
+
+✍️ Posit (a través del proyecto webR) 
+ 
+🌐 https://posit-dev.github.io/r-shinylive/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

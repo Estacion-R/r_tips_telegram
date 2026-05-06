@@ -3600,3 +3600,21 @@ Usalo para crear demos interactivas, incluir proyectos de datos en tu CV online 
 🌐 https://posit-dev.github.io/r-shinylive/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-06 11:50:25.603806 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · overlay: Creá imágenes atractivas y con estilo de tus gráficos y tablas de R.
+
+¿Cansado/a de copiar y pegar tus gráficos de R en PowerPoint o editarlos manualmente para un look más "pro"? El paquete overlay te permite transformar tus objetos de ggplot2, tablas de gt y hasta fragmentos de código en imágenes dinámicas, con efectos de perspectiva y transparencia, ¡todo desde R! Es ideal para presentaciones, publicaciones y redes sociales que buscan impactar visualmente.
+
+✔️ overlay_plot() y overlay_gt(): Convertí tus gráficos de ggplot2 y tablas de gt en imágenes magick listas para editar.
+✔️ overlay_code(): Mostrá tu código de forma estética, como si fuera una imagen de Carbon.sh, pero integrada en tu flujo de trabajo.
+✔️ overlay_composite(): Combiná tus elementos con imágenes de fondo, aplicá distorsiones de perspectiva y ajustá la transparencia para un efecto visual único y profesional.
+
+💡 Tip
+Integrá overlay en tus scripts de R Markdown o Quarto para generar automáticamente materiales visuales de alta calidad y reproducibles para tus informes o posts. Olvidate del trabajo manual y repetitivo y concentrate en la creación de contenido.
+
+🔗 https://luisdva.github.io/overlay/
+
+✍️ Luis D. Verde Arregoitia 
+ 
+🌐 https://luisdva.github.io/overlay/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -3618,3 +3618,23 @@ Integrá overlay en tus scripts de R Markdown o Quarto para generar automáticam
 🌐 https://luisdva.github.io/overlay/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-07 11:49:56.985779 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · TheseusPlot: Visualizando la descomposición de diferencias en métricas de tasas
+
+¿Querés entender por qué una métrica clave subió o bajó entre dos grupos? ¿Necesitás desglosar la contribución de cada subgrupo a esa diferencia total pero te cuesta con tasas? El paquete TheseusPlot te da las herramientas para descomponer esas diferencias en métricas de tasas entre dos grupos y visualizarlas de una manera súper intuitiva.
+
+Inspirado en la historia del Barco de Teseo, este método reemplaza los datos de un subgrupo de un grupo con los de otro, paso a paso, para cuantificar las contribuciones individuales.
+
+✔️ theseus_plot(): Creá gráficos que combinan la progresión de un waterfall plot con las barras comparativas de un bar chart. Te permite ver cómo cada subgrupo impacta en la diferencia total de la métrica de forma clara.
+✔️ Descomposición detallada: Cuantificá la contribución individual de cada segmento (por ejemplo, hombres vs. mujeres, o diferentes rangos etarios) a la diferencia total en una tasa (como la tasa de conversión o de abandono). Así identificás rápido qué segmentos son los principales impulsores del cambio.
+✔️ Visualizaciones intuitivas: Facilita la comunicación de análisis complejos a cualquier audiencia, combinando lo mejor de dos tipos de gráficos para una comprensión profunda.
+
+💡 Tip
+Integrá TheseusPlot en tus análisis e informes para explicar de forma visual y contundente por qué tus métricas cambiaron. Es ideal cuando analizás tasas de conversión, tasas de abandono, o cualquier métrica donde la composición de subgrupos es clave para entender la variación.
+
+🔗 https://hoxo-m.github.io/TheseusPlot/
+
+✍️ hoxo-m 
+ 
+🌐 https://hoxo-m.github.io/TheseusPlot/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

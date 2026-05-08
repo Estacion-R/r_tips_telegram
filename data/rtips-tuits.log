@@ -3638,3 +3638,23 @@ Integrá TheseusPlot en tus análisis e informes para explicar de forma visual y
 🌐 https://hoxo-m.github.io/TheseusPlot/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-08 11:20:38.22033 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · ¿Cansado de dashboards Shiny que siempre se ven igual y sin funcionalidades extra? Descubrí shidashi, un sistema de plantillas modular que va a llevar tus apps al siguiente nivel.
+
+shidashi es un paquete revolucionario que te permite crear dashboards Shiny con una estética moderna y funcionalidades avanzadas sin que tengas que ser un experto en CSS o JavaScript. Olvidate de arrancar de cero con el diseño, shidashi te da una base sólida y flexible para que tus aplicaciones no solo sean potentes, sino también visualmente impactantes.
+
+Este sistema viene con plantillas por defecto (basadas en AdminLTE) que incluyen temas claro y oscuro, y un montón de widgets HTML listos para usar. Lo más genial es que también integra soporte para agentes de IA tipo chatbot, notificaciones, barras de progreso súper cancheras y paneles que se "dan vuelta" para mostrar información adicional. Además, facilita la sincronización de inputs entre sesiones y el redimensionamiento de gráficos, todo pensado para una mejor experiencia de usuario.
+
+✔️ Beneficios:
+✔️ **Diseño profesional instantáneo**: Dale a tus dashboards Shiny una apariencia moderna y pulida con muy poco esfuerzo, sin necesidad de escribir código CSS complejo.
+✔️ **Funcionalidades avanzadas listas para usar**: Ahorrá tiempo implementando características como temas claro/oscuro, redimensionamiento de gráficos o sistemas de notificación, ya que shidashi las incluye por defecto.
+✔️ **Desarrollo ágil y enfocado**: Usá las plantillas modulares para armar tu aplicación más rápido, permitiéndote concentrarte en la lógica y los datos de tu proyecto.
+
+🔥 Tip: Podés instalar shidashi desde CRAN con install.packages("shidashi"). ¡Después explorá sus demos para ver todas las posibilidades y usá el asistente de proyectos de RStudio para empezar un nuevo dashboard con sus plantillas!
+
+↪ https://dipterix.org/shidashi/
+
+¿Cuál es la característica que más te cuesta implementar en tus dashboards Shiny y te gustaría que viniera "de fábrica"? ¡Contanos! 
+ 
+🌐 https://dipterix.org/shidashi/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

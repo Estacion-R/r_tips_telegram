@@ -3713,3 +3713,22 @@ print(terremotos_recientes)
 🌐 https://eqr-98e563.gitlab.io/index.html 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-13 12:20:11.19459 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · html2R: Convierte código HTML a código R usando una app Shiny.
+
+¿Querés armar una interfaz en Shiny y tenés la estructura HTML, o necesitás procesar HTML desde una web pero escribir todo el UI en R te da pereza? ¡Este paquete es para vos! El paquete html2R te permite transformar código HTML directamente a código R, simplificando un montón la creación de interfaces de usuario para Shiny o el procesamiento de estructuras web.
+
+✔️ Transformá código HTML a R de forma interactiva y visual con su app Shiny.
+✔️ Agilizá el desarrollo de tus apps Shiny usando templates HTML existentes o prototipos rápidos.
+✔️ Generá código R limpio y estructurado a partir de cualquier fragmento HTML que necesites.
+
+💡 Tip
+Para usar esta herramienta mágica, solo tenés que instalar el paquete y correr `html2R::html2R_app()`. Se va a abrir una app Shiny en tu navegador donde podés pegar el código HTML y ver cómo se transforma instantáneamente en su equivalente en código R, listo para copiar y usar en tu proyecto.
+
+🔗 https://github.com/stla/html2R
+
+✍️ stla 
+ 
+🌐 https://github.com/cran/html2R
+✍🏼 cran 
+ 
+#RStats #RStatsES #Rtips #DataScience

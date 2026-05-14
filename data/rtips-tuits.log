@@ -3732,3 +3732,24 @@ Para usar esta herramienta mágica, solo tenés que instalar el paquete y correr
 ✍🏼 cran 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-14 11:54:48.023791 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · reviser: Analiza las revisiones en vintages de series de tiempo en tiempo real.
+
+¿Te frustra que los datos económicos clave cambien después de su publicación inicial? Esos "ajustes" o revisiones pueden alterar completamente tu análisis o decisiones. El paquete reviser está diseñado para que analices y entiendas el impacto de estas revisiones en series de tiempo, especialmente en datos económicos. Te ayuda a limpiar, visualizar y evaluar cómo y por qué cambian los datos con el tiempo, lo cual es fundamental para analistas y responsables de políticas.
+
+✔️ Te permite convertir entre diferentes formatos de datos de vintages (triángulos de revisión wide y vintages long) para que trabajes cómodo y sin fricciones.
+✔️ Extrae versiones específicas de las series (releases) para que compares y entiendas los cambios puntuales sin esfuerzo.
+✔️ Calcula series de revisiones para que cuantifiques la magnitud y dirección de los ajustes de forma precisa.
+✔️ Visualiza rutas de vintages para que veas la evolución de los datos a lo largo del tiempo de forma clara e intuitiva.
+✔️ Resume propiedades clave de las revisiones como el sesgo, la dispersión o la autocorrelación, dándote un diagnóstico completo de la calidad de los datos.
+✔️ Identifica releases eficientes y estima modelos de espacio de estados para hacer nowcasting de revisiones, mejorando tus pronósticos.
+
+💡 Tip
+Cuando trabajes con datos sujetos a revisiones, usá reviser no solo para detectarlas, sino para incorporarlas en tu análisis de forma estructurada. Entender el sesgo o la volatilidad de las revisiones puede mejorar significativamente la robustez de tus modelos predictivos y la solidez de tus decisiones.
+
+🔗 https://docs.ropensci.org/reviser/
+
+✍️ Christoph Sax (a través de rOpenSci) 
+ 
+🌐 https://docs.ropensci.org/reviser/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -3778,3 +3778,23 @@ Usá FakeDataR para crear entornos de desarrollo y pruebas seguros. Podés compa
 🌐 https://zobaer09.github.io/FakeDataR/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-19 12:41:21.858728 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · wf te ayuda a organizar y gestionar las "habilidades" de tus agentes de IA para programar.
+
+Si trabajás con modelos de lenguaje grandes para generar código o automatizar tareas, sabés lo importante que es tener bien organizados sus "skills". wf es una herramienta pensada para eso, para que puedas gestionar los bloques de construcción de tus agentes de IA (habilidades, agentes, reglas y hooks) de una forma estructurada y eficiente.
+
+Lo piola de wf es que te permite instalar estos componentes directamente desde GitHub o desde directorios locales, rastreando sus versiones con un archivo de bloqueo. Esto significa que siempre sabés qué estás usando y podés mantener tus instalaciones actualizadas fácilmente. Podés definir componentes específicos para un proyecto o compartirlos globalmente.
+
+✔️ Beneficios:
+✔️ Reutilización fácil: Compartís y usás las mismas habilidades de IA en distintos proyectos sin copiar y pegar.
+✔️ Control de versiones: Mantenés un registro de las versiones de tus "skills" de IA y las actualizás fácilmente.
+✔️ Organización clara: Tenés una estructura consistente para tus agentes, reglas y hooks, lo que facilita el trabajo en equipo y evita el caos.
+
+🔥 Tip: Si estás armando flujos de trabajo con IA para programar, usá wf para estandarizar cómo instalás y compartís las capacidades de tus agentes. ¡Te ahorrás un montón de tiempo en gestión manual!
+
+↪ https://christophertkenny.com/wf/
+
+¿Ya estás usando agentes de IA para programar? ¿Qué otras herramientas conocés para gestionar sus componentes? 
+ 
+🌐 https://christophertkenny.com/wf/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -3818,3 +3818,22 @@ devtools::install_github("JaseZiv/worldfootballR")
 🌐 https://jaseziv.github.io/worldfootballR/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-21 12:46:45.41219 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · maplegend: Creá leyendas claras y atractivas para tus mapas y gráficos.
+
+Hacés unos mapas espectaculares con R, ¿pero sentís que a tus leyendas les falta un toque para que se entiendan al 100%? El paquete maplegend viene a resolver eso, dándote un montón de opciones para crear leyendas legibles y estéticas, esenciales para cualquier mapa temático o gráfico.
+
+✔️ leg(): La función principal para construir leyendas de distintos tipos (cuantitativas, cualitativas, etc.). ¡Totalmente personalizable para que hable con tu mapa!
+✔️ Claridad en tus datos: Asegurate de que tu audiencia entienda cada símbolo y color, mejorando la interpretación de tus visualizaciones geográficas.
+✔️ Versatilidad: Si bien es ideal para cartografía, muchas de sus funcionalidades te van a servir para enriquecer las leyendas de otros tipos de gráficos también.
+
+💡 Tip
+Recordá que una leyenda clara no solo muestra qué significan los símbolos, sino que guía la mirada. Explorá los parámetros de leg() para ajustar la posición, el tamaño y el estilo, integrándola armoniosamente en tu diseño general de mapa.
+
+🔗 https://github.com/riatelab/maplegend/
+
+✍️ riatelab 
+ 
+🌐 https://github.com/riatelab/maplegend/
+✍🏼 riatelab 
+ 
+#RStats #RStatsES #Rtips #DataScience

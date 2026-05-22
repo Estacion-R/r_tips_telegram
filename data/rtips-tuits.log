@@ -3837,3 +3837,21 @@ Recordá que una leyenda clara no solo muestra qué significan los símbolos, si
 ✍🏼 riatelab 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-22 12:21:21.982725 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · gghighlight: Resaltá líneas y puntos en tus gráficos de ggplot2 para explorar mejor tus datos.
+
+¿Se te mezclan las líneas o puntos en tus gráficos de ggplot2 cuando tenés muchas categorías? ¿Querés destacar solo una parte de tus datos sin crear un gráfico nuevo? El paquete gghighlight te permite resaltar geoms (líneas, puntos, etc.) directamente en tus gráficos de ggplot2 de forma condicional, haciendo que la exploración visual sea mucho más eficiente.
+
+✔️ gghighlight(): Te permite definir una condición lógica (ej. variable > valor, nombre == "categoria") para resaltar automáticamente los elementos que la cumplen, haciendo que lo importante salte a la vista.
+✔️ Funcionalidad de 'unhighlight': Los elementos no resaltados se atenúan (bajan la opacidad, cambian a gris), sin borrarlos, manteniendo el contexto general del gráfico.
+✔️ Integración perfecta con ggplot2: Agregalo como una capa más (+ gghighlight(condicion)) y listo, sin complicaciones ni reescritura de tu código base.
+
+💡 Tip
+Usá gghighlight() después de tus capas de geom para aplicarlo fácilmente. Experimentá con los argumentos unhighlight_params para controlar cómo se ven los elementos no resaltados (color, alpha, size) y ajustá la estética a tus necesidades. Podés usarlo de forma interactiva en RStudio para explorar diferentes condiciones rápidamente.
+
+🔗 https://yutannihilation.github.io/gghighlight/
+
+✍️ Yutani Hiroaki 
+ 
+🌐 https://yutannihilation.github.io/gghighlight/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

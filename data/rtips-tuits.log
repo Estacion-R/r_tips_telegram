@@ -3855,3 +3855,23 @@ Usá gghighlight() después de tus capas de geom para aplicarlo fácilmente. Exp
 🌐 https://yutannihilation.github.io/gghighlight/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-25 13:31:17.097071 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · ¿Querés prever cómo se verá tu dataset antes de recolectar los datos?
+
+Muchas veces, decidir sobre el diseño de investigación o las estrategias de análisis se complica porque es difícil imaginarse la estructura exacta de los datos. Ahí es donde fabricatr te salva: te ayuda a simular datos hipotéticos para que no arranques a ciegas.
+
+Con fabricatr podés generar estructuras de datos jerárquicas y con correlaciones, ya sea a partir de números aleatorios o re-muestreando de fuentes existentes. Es una herramienta clave para validar tus supuestos y anticiparte a los desafíos del análisis. ¡Y si tenés data.table y mvnfast instalados, anda más rápido!
+
+✔️ Beneficios:
+✔️ Validación de diseño: Te permite evaluar y ajustar tu diseño experimental o de muestreo antes de invertir tiempo y recursos.
+✔️ Optimización de análisis: Podés probar distintas estrategias de análisis con datos simulados para encontrar la más robusta y adecuada.
+✔️ Transparencia y pre-registro: Facilita el pre-registro de tu plan de análisis, mejorando la transparencia y replicabilidad de tu investigación.
+
+🔥 Tip: Usá fabricatr para crear sets de datos sintéticos que reflejen las características que esperás (o temés) en tus datos reales. Así, podés simular escenarios adversos y asegurarte de que tu método de análisis sea resistente.
+
+↪ https://declaredesign.org/r/fabricatr/
+
+¿Alguna vez te arrepentiste de un análisis después de ver tus datos reales? Contanos tu experiencia y cómo crees que fabricatr podría haberte ayudado. 
+ 
+🌐 https://declaredesign.org/r/fabricatr/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

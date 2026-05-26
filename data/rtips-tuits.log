@@ -3875,3 +3875,23 @@ Con fabricatr podés generar estructuras de datos jerárquicas y con correlacion
 🌐 https://declaredesign.org/r/fabricatr/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-26 12:54:52.637327 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · tynding: Un paquete de R que te permite compilar documentos Typst directamente desde R.
+
+¿Cansado de los límites de siempre al generar documentos? ¿Buscás una alternativa moderna y poderosa para crear tus informes desde R? El paquete tynding integra Typst, un nuevo sistema de maquetación, directamente en tu flujo de trabajo de R. Olvidate de las dependencias complejas o los dolores de cabeza al compilar tus informes, presentaciones o artículos.
+
+✔️ tynding_write() / tynding_eval(): Escribí y evaluá código Typst dentro de tus scripts de R, lo que te da un control directo sobre la generación del contenido.
+✔️ tynding_compile(): Compilá a múltiples formatos como PDF, PNG, SVG y HTML, dándote flexibilidad total para tus entregables y presentaciones.
+✔️ Control avanzado: Podés especificar rutas de fuentes, estándares de PDF (para accesibilidad) y rutas raíz para proyectos más complejos, personalizando cada detalle de tus documentos.
+✔️ Rendimiento: Prácticamente sin sobrecarga comparado con la línea de comandos de Typst. ¡Generación de documentos rapidísima y eficiente!
+
+💡 Tip
+Si ya usás Quarto o R Markdown, tynding puede ser un complemento genial para esos proyectos donde necesitás un control de diseño y tipografía super preciso, o simplemente querés explorar una alternativa moderna y potente a LaTeX. ¡Animate a probarlo para tus próximos informes!
+
+🔗 https://github.com/y-sunflower/tynding
+
+✍️ y-sunflower 
+ 
+🌐 https://github.com/y-sunflower/tynding
+✍🏼 y-sunflower 
+ 
+#RStats #RStatsES #Rtips #DataScience

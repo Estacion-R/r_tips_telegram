@@ -3919,3 +3919,9 @@ Usá labelled en conjunto con paquetes como haven, readr o tidyverse para import
 🌐 https://larmarange.github.io/labelled/articles/labelled.html 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-05-29 12:48:49.709238 [PAQUETE 📦] - ¿Necesitas datos del Censo de EEUU? Probá con {tidycensus}, allí vas a encontrar bases de datos en formato "tidy" para procesar y con data geo incluída! 
+ 
+🌐 https://walker-data.com/tidycensus/
+✍🏼 @kyle_e_walker @buddyherms 
+ 
+#RStats #RStatsES #Rtips #DataScience

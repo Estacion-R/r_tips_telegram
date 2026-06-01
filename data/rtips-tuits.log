@@ -3925,3 +3925,14 @@ Usá labelled en conjunto con paquetes como haven, readr o tidyverse para import
 ✍🏼 @kyle_e_walker @buddyherms 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-01 15:58:23.865489 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · ggcube: ¡Dale una nueva dimensión a tus gráficos de ggplot2 con visualizaciones 3D!
+
+¿Cansado de que tus datos tengan potencial para el 3D, pero tus gráficos se queden en 2D? El paquete ggcube te permite construir figuras 3D usando ggplot2, manteniendo esa sintaxis que tanto conocés y extendiendo sus capacidades para explorar tus datos en tres dimensiones.
+
+✔️ geom_surface() y geom_point() en 3D: Creá superficies, dispersiones, volúmenes y más, usando x, y y z para mapear tus datos.
+✔️ coord_3d(): Una joyita que te da control total sobre la rotación, perspectiva y hasta la iluminación de tus gráficos 3D.
+✔️ Flexibilidad total: Combiná capas 3D con 2D en las caras del cubo, 
+ 
+🌐 https://matthewkling.github.io/ggcube/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

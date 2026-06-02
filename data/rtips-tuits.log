@@ -3936,3 +3936,21 @@ Usá labelled en conjunto con paquetes como haven, readr o tidyverse para import
 🌐 https://matthewkling.github.io/ggcube/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-02 14:04:59.017779 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · tidywikidatar: Explora y consulta Wikidata directamente desde R, obteniendo datos limpios y organizados.
+
+¿Querés usar la riqueza de datos de Wikidata, pero le esquivás a las consultas SPARQL o a las listas anidadas que te devuelve la API? El paquete tidywikidatar te permite interactuar con esta enciclopedia de datos de una manera súper amigable, sin que necesites ser un experto en SPARQL, y te entrega los resultados en data frames prolijos y fáciles de usar.
+
+✔️ Transformación automática: Obtiene directamente data frames ordenados y fáciles de usar, sin procesamientos extra.
+✔️ Caching inteligente: Guarda las consultas en una base de datos local (SQLite y otros) para cargar datos rapidísimo la próxima vez que los necesites.
+✔️ Interfaz amigable: Accedé a la información de Wikidata sin lidiar con SPARQL ni con estructuras de datos complejas.
+
+💡 Tip
+Integralo con el tidyverse para limpiar, transformar y visualizar la información de Wikidata como cualquier otro dataset. Pensalo como tu puente directo a un universo de conocimiento estructurado.
+
+🔗 https://edjnet.github.io/tidywikidatar/
+
+✍️ Edward J. K. Net 
+ 
+🌐 https://edjnet.github.io/tidywikidatar/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

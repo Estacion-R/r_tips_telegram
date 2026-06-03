@@ -3954,3 +3954,26 @@ Integralo con el tidyverse para limpiar, transformar y visualizar la informació
 🌐 https://edjnet.github.io/tidywikidatar/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-03 14:43:19.374371 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · astronomR: Un puente entre la ciencia de datos y el cosmos en R.
+
+¿Trabajás con datos astronómicos y sentís que R no tiene las herramientas específicas que necesitás? ¡No te preocupes más! El paquete astronomR llega para llenar ese vacío, ofreciendo un marco estadístico robusto para analizar y visualizar datos de astronomía y cosmología.
+
+astronomR te permite:
+
+✔️ Análisis estadístico: Realizá análisis profundos de tus datos cósmicos con funciones diseñadas para este tipo de información.
+✔️ Visualización intuitiva: Creá gráficos y exploraciones visuales para entender mejor los fenómenos espaciales.
+✔️ Herramientas de cosmología: Aplicá modelos y herramientas específicas para estudios cosmológicos directamente en R.
+
+Lo más valioso de astronomR es que democratiza el acceso a análisis astronómicos complejos, permitiendo que tanto expertos como entusiastas exploren el universo con R.
+
+💡 Tip
+Si te dedicás a la astrofísica, la cosmología o simplemente sos un entusiasta de los datos espaciales, probá astronomR. ¡Te va a ahorrar mucho tiempo y simplificar tareas complejas!
+
+🔗 https://github.com/samrit2442/astronomR
+
+✍️ samrit2442 
+ 
+🌐 https://github.com/samrit2442/astronomR
+✍🏼 samrit2442 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -3977,3 +3977,23 @@ Si te dedicás a la astrofísica, la cosmología o simplemente sos un entusiasta
 ✍🏼 samrit2442 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-04 12:46:18.380732 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · ¿Querés organizar tu código R de forma más modular y reutilizable? Conocé el paquete 'box'.
+
+El paquete 'box' te trae un sistema de módulos moderno para R, diseñado para que puedas escribir código que sea fácil de componer y reusar en diferentes proyectos. Olvidate de los scripts gigantes y difíciles de mantener, 'box' te ayuda a mantener todo en orden.
+
+Con 'box', podés estructurar tu código en módulos jerárquicos, tratando archivos y carpetas como unidades independientes. Esto te permite cargar dependencias de forma declarativa, haciendo que tu flujo de trabajo sea mucho más limpio y ordenado, ideal para proyectos grandes o para compartir funciones entre equipos.
+
+✔️ Beneficios:
+✔️ Código reutilizable: Creá funciones y componentes una vez y usalos sin esfuerzo en cualquier proyecto, sin copiar y pegar.
+✔️ Mayor modularidad: Organizá tu código en piezas lógicas y manejables, mejorando la legibilidad y facilitando el mantenimiento.
+✔️ Desarrollo colaborativo: Facilitá el trabajo en equipo al encapsular funcionalidades en módulos claros y sin conflictos de nombres.
+
+🔥 Tip: Si ya usás R para desarrollar paquetes o proyectos complejos, 'box' puede ser el siguiente paso para llevar la arquitectura de tu código a otro nivel y mejorar tu productividad.
+
+↪ https://klmr.me/box/
+
+¿Ya probaste 'box' o tenés alguna estrategia para modularizar tu código en R? ¡Compartí tu experiencia! 
+ 
+🌐 https://klmr.me/box/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

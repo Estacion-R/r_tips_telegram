@@ -3997,3 +3997,23 @@ Con 'box', podés estructurar tu código en módulos jerárquicos, tratando arch
 🌐 https://klmr.me/box/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-05 12:40:19.214188 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · Te cansaste de no acordarte para qué usabas cada paquete en tus scripts de R? Descubrí annotater, el paquete que te ayuda a mantener tu código clarísimo.
+
+annotater es una herramienta genial que añade comentarios informativos a tus llamadas a library(), require() o p_load(). Así, de un vistazo, tenés una idea del propósito principal de cada librería que estás cargando en tus proyectos. Es como tener un asistente que te recuerda la función de cada herramienta en tu caja.
+
+Lo que lo hace especial es que es "no invasivo" y súper flexible. Podés usarlo a través de funciones o, si sos fan de la interacción visual, aprovechando su RStudio addin, que te simplifica la vida un montón. Funciona en tus archivos de R, RMarkdown y Quarto, integrándose perfecto en tu flujo de trabajo.
+
+✔️ Beneficios:
+✔️ Claridad instantánea: Sabés al toque para qué usás cada paquete, sin adivinar ni ir a la documentación.
+✔️ Mantenimiento fácil: Tus scripts son más claros y fáciles de mantener, para vos y para tu equipo.
+✔️ Colaboración fluida: Otros entienden tu código más rápido, mejorando el trabajo en conjunto sin esfuerzo.
+
+🔥 Tip: Después de instalarlo, reiniciá RStudio para que el addin se cargue correctamente. Usá el addin para una experiencia interactiva y rápida, vas a ver cómo te ahorra tiempo!
+
+↪ https://annotater.liomys.mx/
+
+Contanos, ¿cuál es el paquete que siempre te cuesta recordar para qué lo cargaste? 
+ 
+🌐 https://annotater.liomys.mx/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -4017,3 +4017,22 @@ Contanos, ¿cuál es el paquete que siempre te cuesta recordar para qué lo carg
 🌐 https://annotater.liomys.mx/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-08 14:09:53.882449 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · twscrapeR: Un paquete para scrapear datos de Twitter/X usando la librería Python twscrape.
+
+¿Necesitás extraer datos de Twitter/X (antes Twitter) para tus análisis o investigaciones y no sabés por dónde empezar? El paquete twscrapeR te permite acceder fácilmente a información de esta red social directamente desde R, aprovechando la potencia de la librería twscrape de Python. Olvidate de las complicaciones para configurar el entorno.
+
+✔️ Configuración Guiada: No te preocupes por Python, el paquete te guía y verifica lo necesario para que todo funcione sin instalar software automáticamente.
+✔️ Basado en twscrape: Accedé a la robustez de una de las mejores librerías de scraping de Twitter/X (Python) desde la comodidad de R.
+✔️ Integración reticulate: Mantené todo tu flujo de trabajo en R sin salir de tu entorno, aprovechando lo mejor de ambos mundos.
+
+💡 Tip
+Para empezar a scrapear, después de instalar twscrapeR desde CRAN, usá la función tw_setup() para asegurarte de que tu entorno Python esté listo y configurado correctamente para la librería twscrape. ¡Así de fácil!
+
+🔗 https://CRAN.R-project.org/package=twscrapeR
+
+✍️ agusnieto77 
+ 
+🌐 https://github.com/agusnieto77/twscrapeR
+✍🏼 agusnieto77 
+ 
+#RStats #RStatsES #Rtips #DataScience

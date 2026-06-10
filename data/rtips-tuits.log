@@ -4042,3 +4042,21 @@ Para empezar a scrapear, después de instalar twscrapeR desde CRAN, usá la func
 ✍🏼 - 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-10 12:58:49.342734 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · ¿Te imaginaste alguna vez crear tu propio lenguaje de programación para ciencia de datos?
+
+Todos los días usamos R para análisis de datos, pero... ¿y si pudieras diseñar el lenguaje *perfecto* para tus necesidades? Este post de brodrigues.co te lleva a un viaje mental donde se explora la idea de construir un lenguaje de programación propio, pensado 100% para las particularidades de la ciencia de datos moderna.
+
+El autor, con su experiencia, detalla las características clave que un lenguaje de data science *ideal* debería tener, cuestionando las convenciones actuales. Incluso te hace pensar sobre el potencial de usar Modelos de Lenguaje Grandes (LLMs) como herramienta para materializar esa visión.
+
+✔️ Beneficios:
+✔️ Perspectiva fresca: Te ayuda a ver las herramientas que ya usás (como R) desde un ángulo crítico y constructivo.
+✔️ Inspiración: Fomenta la reflexión sobre qué mejorar en el día a día de tu flujo de trabajo de data science.
+✔️ Visión de futuro: Te invita a pensar en las características ideales de un lenguaje de programación para tus propias necesidades, quizás incluso más allá de R.
+
+🔥 Tip: Leelo con la mente abierta. No es un tutorial, sino una invitación a cuestionar y soñar. Pensá en tus propias frustraciones o deseos con R y cómo este artículo te hace reimaginar soluciones.
+
+↪ https://brodrigues.co/posts/ 
+ 
+🌐 https://brodrigues.co/posts/2026-04-03-tproject.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -4086,3 +4086,22 @@ Usá shinyphaser para gamificar encuestas, crear tutoriales interactivos, o incl
 ✍🏼 ☓: @opencpu | 🐘: @jeroenooms@fosstodon.org 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-15 15:48:14.356655 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · worldcup26: Accedé a toda la info del Mundial FIFA 2026 directamente en R.
+
+¿Sos fan del fútbol y querés tener a mano toda la data del Mundial 2026? ¿Te imaginás preguntarle a tus datos de la Copa del Mundo con lenguaje natural? El paquete worldcup26 es tu mejor amigo para seguir la Copa del Mundo. Te permite acceder a info sobre los equipos participantes, el fixture, resultados pasados y mucho más, todo desde R.
+
+✔️ Fácil acceso a datos: Explorá información detallada de equipos y partidos directamente en tu entorno R.
+✔️ Dashboard interactivo: Usá un panel Shiny con procesamiento de lenguaje natural para hacer preguntas complejas sobre los datos sin escribir código.
+✔️ Generación de reportes: Visualizá toda la información en una página HTML lista para compartir, generada con Quarto.
+
+💡 Tip
+Instalá el paquete desde GitHub y lanzá el dashboard Shiny para empezar a explorar. Es ideal para análisis rápidos, preparar tus apuestas o simplemente mantenerte al día con tu equipo favorito.
+
+🔗 https://github.com/smach/worldcup26
+
+✍️ smach 
+ 
+🌐 https://github.com/smach/worldcup26
+✍🏼 smach 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -4134,3 +4134,35 @@ Lo copado es que ggauto no solo elige el tipo de gráfico, sino que también apl
 ✍🏼 Nicola Rennie 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-18 13:00:13.910947 [RECURSO 📚] - 🎯 [TIP de R] ¿Necesitás analizar datos de terremotos en R y querés integrarlos en tus mapas espaciales sin dolores de cabeza?
+
+Te presento `eqr`, el paquete que te conecta directamente con los datos de terremotos del USGS (U.S. Geological Survey) desde R.
+
+`eqr` es un envoltorio (wrapper) de R super ligero que se conecta con el servicio web FDSN de USGS. Lo más copado es que te devuelve los resultados como objetos `sf` (simple features), ¡lo que significa que los podés usar directamente en tus flujos de trabajo espaciales para hacer mapas espectaculares o análisis geográficos sin una línea extra de conversión!
+
+¿Te preocupan los límites de datos? `eqr` se encarga automáticamente del límite de 20.000 eventos de USGS. Usa una paginación inteligente por bloques, así que vos solo pedís los datos y el paquete se encarga de traer todo lo que necesitás, incluso si son muchísimos eventos.
+
+✔️ Beneficios:
+✔️ Integración espacial perfecta: Los datos ya vienen como `sf`, listos para tus mapas y análisis geoespaciales con paquetes como `ggplot2`, `leaflet`, o `tmap`, sin necesidad de transformar nada.
+✔️ Acceso directo a datos USGS: Olvidate de descargar archivos manualmente; obtené la información sísmica más reciente y oficial directamente en tu sesión de R con una sola función.
+✔️ Manejo automático de grandes volúmenes: No te estreses por los límites de eventos o la paginación de APIs; `eqr` los gestiona por vos, trayéndote todos los datos que pedís de forma eficiente.
+
+🔥 Tip: Si querés traer solo terremotos recientes y con una magnitud mínima, combiná los argumentos `start_time`, `end_time` y `min_magnitude`. Por ejemplo:
+```R
+library(eqr)
+# Terremotos M4+ del último mes
+terremotos_recientes <- get_quakes(
+  start_time = Sys.time() - 30 * 86400,
+  end_time = Sys.time(),
+  min_magnitude = 4.0
+)
+print(terremotos_recientes)
+```
+
+↪ https://eqr-98e563.gitlab.io/index.html
+
+¿Qué tipo de análisis espacial harías vos con datos de terremotos? ¡Contanos en los comentarios! 
+ 
+🌐 https://eqr-98e563.gitlab.io/index.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

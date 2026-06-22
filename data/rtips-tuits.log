@@ -4172,3 +4172,23 @@ print(terremotos_recientes)
 ✍🏼 ☓: @Cghlewis  | 🐘: @cghlewis@fosstodon.org 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-22 15:25:07.610967 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · srvyr es un paquete que te permite usar la sintaxis de dplyr para calcular estadísticas de resumen en datos de encuestas.
+
+Trae verbos como group_by y summarize al análisis de encuestas, combinando el poder del paquete survey con la comodidad del operador pipe y la evaluación no estándar de rlang.
+
+Esto significa que podés manipular y resumir datos ponderados sin tener que aprender una sintaxis completamente nueva, obteniendo tipos de retorno más consistentes que en el paquete survey original.
+
+✔️ Beneficios:
+✔️ Sintaxis familiar: si ya sabés dplyr, analizar encuestas con srvyr se siente como usar dplyr nativo.
+✔️ Código más limpio: podés encadenar operaciones con pipes sin escribir pasos intermedios engorrosos.
+✔️ Integración perfecta: funciona sobre el paquete survey, heredando toda su robustez estadística y de pesos.
+
+🔥 Tip: Usá la función as_survey() al principio de tu pipeline para definir tus pesos y diseño, y después simplemente seguí encadenando verbos de dplyr como si fueran datos comunes y corrientes.
+
+↪ http://gdfe.co/srvyr/
+
+¿Usás el paquete survey o preferís otra alternativa para analizar datos de encuestas en R? 
+ 
+🌐 http://gdfe.co/srvyr/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

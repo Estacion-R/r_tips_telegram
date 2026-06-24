@@ -4198,3 +4198,9 @@ Esto significa que podés manipular y resumir datos ponderados sin tener que apr
 ✍🏼 gh/auenoekologie 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-24 12:20:51.288671 [PAQUETE 📦] - Estas buscando información geográfica? Probá con el paquete {geodata}, con el cual vas a poder acceder a un compendio de datasets sobre población, elevación, límites geográficos, datos de OSM, propiedades del suelo, tiempo de viaje y más 
+ 
+🌐 https://github.com/rspatial/geodata
+✍🏼 gh: rhijmans 
+ 
+#RStats #RStatsES #Rtips #DataScience

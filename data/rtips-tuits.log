@@ -4204,3 +4204,22 @@ Esto significa que podés manipular y resumir datos ponderados sin tener que apr
 ✍🏼 gh: rhijmans 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-25 12:24:10.035191 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · readMDTable: convertí tablas de markdown a tibbles directo desde R, sin esfuerzos manuales.
+
+¿Te cansás de copiar y pegar tablas que encontrás en GitHub o READMEs para llevarlas a R? El paquete readMDTable hace justo eso: lee tablas escritas en markdown desde un string, un archivo o una URL y te devuelve un tibble listo para analizar.
+
+✔️ read_md_table() detecta y extrae todas las tablas markdown de una fuente, sin que tengas que parsear nada a mano.
+✔️ Acepta strings, archivos locales y URLs, así que podés apuntar directamente a un README en GitHub y traer la tabla en una línea.
+✔️ Devuelve tibbles, por lo que el resultado se integra perfecto con dplyr, ggplot2 y todo el tidyverse.
+
+💡 Tip
+Si la tabla está publicada en una página que también renderiza HTML (como GitHub), vale la pena leer la vignette "Benchmarking Against rvest" del paquete. Ahí vas a encontrar cuándo conviene usar readMDTable y cuándo rvest para extraer la misma tabla de forma más eficiente según el caso.
+
+🔗 https://github.com/jrdnbradford/readMDTable
+
+✍️ Jordan Bradford 
+ 
+🌐 https://github.com/jrdnbradford/readMDTable
+✍🏼 jrdnbradford 
+ 
+#RStats #RStatsES #Rtips #DataScience

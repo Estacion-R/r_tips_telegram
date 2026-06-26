@@ -4223,3 +4223,20 @@ Si la tabla está publicada en una página que también renderiza HTML (como Git
 ✍🏼 jrdnbradford 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-26 12:13:09.826132 [PAQUETE 📦] - 🧩 [RTIP] - fairenough: Convertí tus datos tidy en paquetes de R con documentación web y descripciones de IA
+
+¿Tenés un dataset genial pero no sabés cómo publicarlo como un paquete de R completo? fairenough es lo que necesitás. Este paquete convierte tus datos tidy en un paquete de R listo para compartir, con documentación web profesional y descripciones de variables generadas por IA.
+
+✔️ `fairenough_init()` crea una estructura de paquete de R lista para llenar con tus datos.
+✔️ `fairenough_build()` genera automáticamente la documentación del paquete, incluyendo páginas web con descripciones de variables de IA.
+✔️ fairenough te ahorra horas de trabajo manual para publicar tu paquete de datos de manera profesional.
+
+💡 Tip: Usá fairenough para publicar tus datasets de investigación o proyectos de análisis de datos de manera rápida y sencilla. ¡Compartí tu paquete con la comunidad R!
+
+🔗 https://openwashdata.github.io/fairenough/
+
+✍️ Autores: Hadley Wickham, Jenny Bryan, Márcio Ribeiro y colaboradores 
+ 
+🌐 https://openwashdata.github.io/fairenough/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

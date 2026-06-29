@@ -4240,3 +4240,9 @@ Si la tabla está publicada en una página que también renderiza HTML (como Git
 🌐 https://openwashdata.github.io/fairenough/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-29 14:06:11.697042 [RECURSO 📚] - Hace más eficiente la carga y el procesamiento de datos suele ser un problema en nuestro flujo de trabajo. En este artículo, Yanina cuenta cómo usar el 📦 {arrow} para ahorrar tiempo al importar datos 
+ 
+🌐 https://yabellini.netlify.app/blog/2024-01-02-arrow-es/
+✍🏼 🐘: @yabellini@fosstodon.org 
+ 
+#RStats #RStatsES #Rtips #DataScience

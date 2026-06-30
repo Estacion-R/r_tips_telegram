@@ -4246,3 +4246,23 @@ Si la tabla está publicada en una página que también renderiza HTML (como Git
 ✍🏼 🐘: @yabellini@fosstodon.org 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-06-30 12:10:47.60876 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · Descubrí watcher, el paquete que permite a R detectar cambios en tus archivos y directorios en tiempo real.
+
+watcher es un paquete liviano de R que se encarga de monitorear archivos y carpetas, y reaccionar automáticamente cuando hay cambios. Si alguna vez guardaste un script de tu app Shiny y el navegador se recargó solo, ¡ya lo usaste sin saberlo! Es el motor silencioso que hace posible esa magia detrás de Shiny auto-reload.
+
+Este paquete te permite construir aplicaciones interactivas más dinámicas o automatizar tareas que dependen de la modificación de archivos. Imaginate poder ejecutar una función automáticamente cada vez que se actualiza un CSV con nuevos datos, ¡las posibilidades son enormes!
+
+✔️ Beneficios:
+✔️ Automatización de tareas: Ejecutá acciones específicas cada vez que un archivo se modifica (ej: re-cargar datos, re-generar reportes).
+✔️ Desarrollo Shiny más fluido: Experimentá la recarga automática en tus apps sin esfuerzo, mejorando tu flujo de trabajo de desarrollo.
+✔️ Monitoreo en tiempo real: Mantenete al tanto de los cambios en tus directorios, útil para proyectos colaborativos o pipelines de datos.
+
+🔥 Tip: Si estás desarrollando una app Shiny compleja o necesitás que tu código reaccione a cambios externos, probá integrar watcher directamente. Te va a ahorrar un montón de tiempo y clics.
+
+↪ https://opensource.posit.co/blog/2026-06-29_watcher-0-2-0/
+
+¿Qué otro uso le encontrarías a un paquete que monitorea tus archivos? ¡Contanos en los comentarios! 
+ 
+🌐 https://opensource.posit.co/blog/2026-06-29_watcher-0-2-0/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

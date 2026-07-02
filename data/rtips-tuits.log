@@ -4272,3 +4272,21 @@ Este paquete te permite construir aplicaciones interactivas más dinámicas o au
 ✍🏼 X: @wenjie1991 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-02 12:10:18.059221 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · territorial: herramientas para trabajar con datos territoriales de Chile de forma simple
+
+¿Te cansás de andar buscando nombres y códigos de comunas, provincias y regiones cada vez que tenés que cruzar datos territoriales de Chile? El paquete territorial te trae todo eso en formato tidy, listo para unir con tus datos sin sufrir.
+
+✔️ comunas_glosa() te devuelve una tabla con todas las comunas, sus códigos únicos territoriales y la provincia y región a la que pertenecen.
+✔️ Puedés usar join_simple() para cruzar tus dataframes con la tabla oficial sin escribir joins interminables a mano.
+✔️ Incluye nombres oficiales estandarizados, ideal para limpiar bases que vienen con inconsistencias en mayúsculas o tildes.
+
+💡 Tip
+Si trabajás con encuestas o datos administrativos donde el nombre de la comuna viene "sucio", usá comunas_glosa() junto a janitor::clean_names() y un left_join() para estandarizar todo antes de cualquier análisis. Te ahorra un montón de tiempo y errores.
+
+🔗 https://bastianolea.github.io/territorial/articles/territorial.html
+
+✍️ Bastian Olea 
+ 
+🌐 https://bastianolea.github.io/territorial/articles/territorial.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -4290,3 +4290,23 @@ Si trabajás con encuestas o datos administrativos donde el nombre de la comuna 
 🌐 https://bastianolea.github.io/territorial/articles/territorial.html 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-03 12:10:54.267987 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · Convertí tus apps de Shiny en aplicaciones de escritorio nativas sin necesidad de servidor web ni navegador.
+
+shinyelectron te permite exportar cualquier app de Shiny (hecha en R o Python) como una aplicación de escritorio independiente usando Electron. El resultado es un archivo .app, .exe o AppImage que tus usuarios pueden abrir con un doble click, sin instalaciones complicadas.
+
+El paquete soporta Windows, macOS y Linux. Dependiendo de la estrategia de runtime que elijas, los usuarios finales no necesitan tener R ni Python instalados en su máquina para correr la app. Actualmente está en etapa experimental, así que no es para producción todavía, pero vale la pena probarlo.
+
+✔️ Beneficios:
+✔️ Distribución simple: generás un ejecutable que tus usuarios abren sin saber qué es R.
+✔️ Sin infraestructura de deploy: no necesitás servidores ni configurar un navegador.
+✔️ Cross-platform: una sola app para Windows, macOS y Linux.
+
+🔥 Tip: Antes de arrancar, corré sitrep_shinyelectron() para verificar que tu sistema tenga todo lo necesario. Usá pak::pak("coatless-rpkg/shinyelectron") para instalarlo desde GitHub.
+
+↪ https://r-pkg.thecoatlessprofessor.com/shinyelectron/
+
+¿Alguna vez intentaste distribuir una app de Shiny a usuarios que no tienen R instalado? ¿Cómo lo resolviste? 
+ 
+🌐 https://r-pkg.thecoatlessprofessor.com/shinyelectron/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

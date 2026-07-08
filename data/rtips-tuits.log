@@ -4322,3 +4322,22 @@ El paquete soporta Windows, macOS y Linux. Dependiendo de la estrategia de runti
 ✍🏼 ☓: @PatrioScraper 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-08 11:48:07.363817 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · complexr: aplicación web en R Shiny para el análisis estadístico de encuestas de muestreo complejo sin escribir código.
+
+¿Te cuesta estimar indicadores respetando el diseño muestral de encuestas nacionales o estudios epidemiológicos? El paquete complexr es una app Shiny que te permite definir diseños muestrales, derivar variables y estimar indicadores con corrección por diseño de forma visual.
+
+✔️ Definición de diseños muestrales para que tus estimaciones respeten la estructura de la encuesta.
+✔️ Derivación de variables para que puedas crear nuevos indicadores directo en la interfaz.
+✔️ Visualización de resultados con medidas de incertidumbre para que reportes con rigurosidad estadística.
+
+💡 Tip
+Si trabajás con datos de encuestas probabilísticas y no querés pelearte con la sintaxis de survey, podés usar complexr como entorno interactivo para explorar tus datos y obtener estimaciones rigurosas. Ideal para investigadores y analistas que necesitan resultados rápidos pero confiables.
+
+🔗 https://github.com/stalynGuerrero/complexr
+
+✍️ stalynGuerrero 
+ 
+🌐 https://github.com/stalynGuerrero/complexr
+✍🏼 stalynGuerrero 
+ 
+#RStats #RStatsES #Rtips #DataScience

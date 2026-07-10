@@ -4341,3 +4341,24 @@ Si trabajás con datos de encuestas probabilísticas y no querés pelearte con l
 ✍🏼 stalynGuerrero 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-10 12:27:00.942813 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · The Warehouse es un buscador asistido por IA que te ayuda a encontrar paquetes de R describiendo la tarea que querés hacer, en vez de saber el nombre exacto del paquete.
+
+Con más de 20.000 paquetes en CRAN y miles más en GitHub y R-Universe, encontrar el paquete ideal puede ser un dolor de cabeza si no sabés cómo se llama o qué palabras clave usar. Kylie Ainslie creó The Warehouse para resolver justo este problema.
+
+En vez de buscar por nombre de paquete, la plataforma te permite describir qué querés lograr con tus datos y te sugiere las mejores opciones disponibles en el ecosistema de R.
+
+✔️ Beneficios:
+✔️ Ahorrás tiempo: no hace falta googlear a ciegas hasta dar con el paquete correcto.
+✔️ Descubrís nuevas herramientas: ideal para salir de la zona de confort y probar paquetes que quizás no tenías en radar.
+✔️ Accesible para principiantes: baja la barrera de entrada para usuarios nuevos que todavía no conocen el panorama completo de paquetes de R.
+
+🔥 Tip: Probá describir tu problema con la mayor cantidad de detalles posibles en la barra de búsqueda, como si le estuvieras contando a un colega. ¡La IA hace el resto!
+
+↪ https://r-consortium.org/posts/the-warehouse-searching-r-packages-by-function/
+
+¿Ya lo probaste o seguís usando el mismo paquete de siempre? Contame qué buscás y te ayudo a encontrarlo. 
+ 
+🌐 https://r-consortium.org/posts/the-warehouse-searching-r-packages-by-function/
+✍🏼 R Consortium 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -4386,3 +4386,23 @@ Si trabajas con datos textuales, {text} es tu aliado para transformar texto en i
 ✍🏼 Göran Broström. 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-15 11:36:58.845626 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · worldfootballR: Extraé y limpiá datos de fútbol mundial de fuentes como FBref, Transfermarkt y Understat.
+
+¿Sos fanático del fútbol y soñás con analizar los datos de tus equipos y jugadores favoritos sin perder horas en la web? El paquete worldfootballR es tu aliado perfecto. Te permite obtener estadísticas detalladas de partidos, equipos y jugadores de las principales ligas y competiciones, directamente en R. Decile chau a copiar y pegar tablas, y empezá a analizar de verdad.
+
+✔️ Accedé a resultados de partidos, stats de jugadores y equipos de FBref de forma eficiente.
+✔️ Consultá valores de mercado y transferencias de jugadores directamente desde Transfermarkt.
+✔️ Recopilá datos avanzados de Understat, como ubicación de tiros y métricas de Expected Goals (xG).
+✔️ Unificá fuentes de datos populares para un análisis futbolístico completo y eficiente, optimizando tu flujo de trabajo.
+
+💡 Tip
+Para asegurar que tenés la última versión con todas las actualizaciones, instalá worldfootballR directamente desde GitHub (la versión de CRAN está desactualizada):
+devtools::install_github("JaseZiv/worldfootballR")
+
+🔗 https://jaseziv.github.io/worldfootballR/
+
+✍️ Jase Ziv 
+ 
+🌐 https://jaseziv.github.io/worldfootballR/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

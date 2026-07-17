@@ -4412,3 +4412,11 @@ devtools::install_github("JaseZiv/worldfootballR")
 ✍🏼 @thomasp85 @drob 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-17 11:23:44.913923 [PAQUETE 📦] - ¿Gráficos de mapa de calor en formato tidy? ¡Claro que sí! 🌡️🗺️
+
+Probá con el 📦 {tidyheatmaps}, con quien vas a poder armár heatmaps listoss para publicar a partir de datos organizados. 
+ 
+🌐 https://jbengler.github.io/tidyheatmaps/
+✍🏼 ☓: @JanBroderEngler 
+ 
+#RStats #RStatsES #Rtips #DataScience

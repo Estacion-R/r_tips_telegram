@@ -4420,3 +4420,23 @@ Probá con el 📦 {tidyheatmaps}, con quien vas a poder armár heatmaps listoss
 ✍🏼 ☓: @JanBroderEngler 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-20 12:18:19.627023 [PAQUETE 📦] - 🚀 ¡Dale un toque profesional a tus aplicaciones 'shiny' con {card.pro}! 🎨✨
+
+El paquete {card.pro} te permite crear aplicaciones y dashboards en R más modernos y funcionales, utilizando tarjetas HTML basadas en 'Bootstrap'. 🖥️🔧 Estas tarjetas son personalizables, adaptables y ofrecen opciones como:
+
+✅ Reorganizar tarjetas directamente en la página.
+✅ Modificar títulos y colores del encabezado.
+✅ Expandir tarjetas para aprovechar al máximo el espacio.
+✅ ¡Y todo esto con configuración persistente, incluso tras recargar la página!
+
+💡 Ideal para dashboards interactivos, visualización de datos, proyectos de machine learning, y más.
+
+👨‍💻 Desarrollado por Obinna Obianom
+¡Transforma tus aplicaciones 'shiny' en herramientas profesionales y dinámicas! Descubre más 👉 Documentación oficial
+
+✨ ¡Sigue explorando todo lo que R tiene para ofrecer! 
+ 
+🌐 https://cardpro.rpkg.net/
+✍🏼 Simon Hawe. Explora más sobre su trabajo en GitHub. 
+ 
+#RStats #RStatsES #Rtips #DataScience

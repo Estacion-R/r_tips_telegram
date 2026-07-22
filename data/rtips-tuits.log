@@ -4450,3 +4450,19 @@ Una guía práctica creada por Jasmine Daly y Beni Altmann para resolver errores
 ✍🏼 @jasdumas | gh/Baltmann01 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-22 11:49:16.167071 [PAQUETE 📦] - 🎨 {ggh4x}: ¡Eleva tus gráficos con facetas personalizadas en ggplot2! 📊
+
+¿Quieres llevar tus gráficos en R al siguiente nivel? {ggh4x} amplía las capacidades de ggplot2, ofreciéndote herramientas avanzadas para facetas. Desde facetas múltiples hasta la personalización completa, este paquete es un must para visualizadores de datos.
+
+✨ Características clave:
+
+    🧩 Facetas personalizables con opciones avanzadas.
+    🎯 Control detallado sobre etiquetas, escalas y disposiciones.
+    🔍 Perfecto para crear gráficos impactantes y claros.
+
+Dale a tus visualizaciones un toque profesional con {ggh4x}. 📈✨ 
+ 
+🌐 https://teunbrand.github.io/ggh4x/articles/Facets.html
+✍🏼 Teun Brand. Conecta en GitHub para más recursos. 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -4466,3 +4466,21 @@ Dale a tus visualizaciones un toque profesional con {ggh4x}. 📈✨
 ✍🏼 Teun Brand. Conecta en GitHub para más recursos. 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-23 11:51:30.01257 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · jsplyr: Un backend de dplyr que manipula datos JSON en el navegador del usuario en vez del servidor
+
+¿Cansado de que tus apps de Shiny se vuelvan lentas con data frames grandes? El paquete jsplyr lleva la manipulación de datos al navegador del cliente, manteniendo todo rápido y responsive.
+
+✔️ filter(), select(), mutate() y más funcionan igual que en dplyr, pero se evalúan de forma perezosa y se traducen a JavaScript que corre en el navegador.
+✔️ Los resultados vuelven a R asincrónicamente como promises, sin bloquear la sesión reactiva de Shiny.
+✔️ Seguís usando los verbos de dplyr que ya conocés, pero el trabajo pesado lo hace el cliente, liberando al servidor.
+
+💡 Tip
+Pensá en jsplyr como dbplyr pero para el navegador: la evaluación perezosa acumula las operaciones y las traduce a JavaScript solo cuando necesitás el resultado. Perfecto para apps donde el servidor se vuelve un cuello de botella. Todavía está en etapas tempranas, así que revisá qué verbos están soportados antes de integrarlo en producción.
+
+🔗 https://r-world-devs.github.io/jsplyr/
+
+✍️ r-world-devs 
+ 
+🌐 https://r-world-devs.github.io/jsplyr/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

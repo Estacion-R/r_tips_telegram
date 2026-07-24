@@ -4484,3 +4484,23 @@ Pensá en jsplyr como dbplyr pero para el navegador: la evaluación perezosa acu
 🌐 https://r-world-devs.github.io/jsplyr/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-24 11:44:00.79929 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · shinyphaser: Dale vida a tus apps Shiny con interacciones tipo juego en 2D.
+
+¿Cansado/a de las apps Shiny estáticas? ¿Querés que tus usuarios interactúen de una forma totalmente nueva? El paquete shinyphaser te permite integrar el poderoso framework de juegos Phaser 3 directamente en tus aplicaciones Shiny. Transformá tus dashboards en experiencias interactivas tipo juego, ideales para educativos, simulaciones o simplemente para sorprender a tu audiencia.
+
+✔️ **Canvas de juego:** Creá un área de juego en 2D directamente en tu interfaz de usuario de Shiny.
+✔️ **Sprites y animaciones:** Agregá imágenes, sprites animados y personajes que se muevan y reaccionen.
+✔️ **Controles por teclado:** Permití que los usuarios controlen elementos del juego con el teclado, mejorando la inmersión.
+✔️ **Eventos y colisiones:** Definí reglas de interacción entre objetos y respondé a eventos en tiempo real desde tu lógica de servidor en R.
+
+💡 Tip
+Usá shinyphaser para gamificar encuestas, crear tutoriales interactivos, o incluso pequeñas simulaciones educativas donde la interacción sea clave. Es una forma genial de hacer tus Shiny apps más memorables y atractivas.
+
+🔗 https://github.com/maciekbanas/shinyphaser
+
+✍️ maciekbanas 
+ 
+🌐 https://github.com/maciekbanas/shinyphaser
+✍🏼 maciekbanas 
+ 
+#RStats #RStatsES #Rtips #DataScience

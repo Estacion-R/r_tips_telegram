@@ -4548,3 +4548,22 @@ Pensá en tu CV como una base de datos. Usá Google Sheets o un CSV para guardar
 ✍🏼 nstrayer 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-07-30 11:53:30.288764 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · livelink: Generá enlaces compartibles para ejecutar código de R en el navegador usando WebAssembly.
+
+¿Querés compartir un script de R o una app de Shiny sin pedirle a la otra persona que instale nada? El paquete livelink comprime tu código y lo codifica dentro de la misma URL, creando un enlace que abre una sesión de R corriendo en el navegador.
+
+✔️ create_webr_link() genera un enlace a un REPL de R completo (webR) con tu código cargado y listo para ejecutar.
+✔️ create_shinylive_link() crea un enlace para correr apps de Shiny en el navegador, sin necesidad de un servidor.
+✔️ Al usar el fragmento de URL (lo que va después del #), tu código no se sube a ningún servidor, manteniendo la privacidad y evitando configuraciones complejas.
+
+💡 Tip
+Usá este paquete para compartir ejemplos reproducibles en redes sociales o para pedir ayuda con tu código. La persona que recibe el enlace hace clic y cae directamente en una sesión de R andando en su navegador, ideal para que prueben tu script al instante.
+
+🔗 https://github.com/coatless-rpkg/livelink
+
+✍️ coatless-rpkg 
+ 
+🌐 https://github.com/coatless-rpkg/livelink
+✍🏼 coatless-rpkg 
+ 
+#RStats #RStatsES #Rtips #DataScience

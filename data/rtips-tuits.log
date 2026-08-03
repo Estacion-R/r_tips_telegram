@@ -4573,3 +4573,21 @@ Usá este paquete para compartir ejemplos reproducibles en redes sociales o para
 ✍🏼 ☓: @milos_agathon 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-03 12:56:08.868234 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · ggplot2qgis: Convertí tus mapas de ggplot2 o tmap en proyectos de QGIS.
+
+¿Hacés mapas en R y después tenés que reconstruirlos a mano en QGIS para entregarlos o seguir editándolos? El paquete ggplot2qgis te permite exportar tu visualización directamente a un archivo .qgs manteniendo capas y estilos.
+
+✔️ write_qgs() toma tu plot de ggplot2 o tmap y genera un proyecto de QGIS con un solo comando.
+✔️ Conserva los estilos: las escalas de color continuas o discretas se traducen a los renderizadores equivalentes de QGIS automáticamente.
+✔️ Exporta los datos vectoriales en formato GeoPackage y los raster en GeoTIFF junto al archivo del proyecto.
+
+💡 Tip
+Si usás geom_sf() para tus mapas, podés iterar rápido en R y, cuando estés conforme con el diseño, usar write_qgs() para que tu colega de SIG abra el mapa con todas las capas y colores intactos sin pasar por un proceso manual de recreación.
+
+🔗 https://yutannihilation.github.io/ggplot2qgis/
+
+✍️ Hiroaki Yutani 
+ 
+🌐 https://yutannihilation.github.io/ggplot2qgis/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

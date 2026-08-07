@@ -4621,3 +4621,22 @@ Usá este paquete en proyectos de análisis histórico, visualizaciones sobre me
 🌐 https://diegokoz.github.io/presentes/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-07 10:53:51.756193 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · sf: manipulación y proyección de datos espaciales en R
+
+¿Alguna vez viste un mapa donde Groenlandia parece del tamaño de África? Ese clásico error visual ocurre cuando elegís mal el sistema de referencia de coordenadas (CRS) y la proyección distorsiona áreas, distancias o formas sin que te des cuenta. El paquete sf, combinado con el paquete units, te da el control total para re-proyectar tus datos espaciales y evitar que un mapa engañe al lector.
+
+✔️ st_transform() te permite re-proyectar un objeto sf a cualquier CRS con una sola línea, corrigiendo distorsiones antes de publicar.
+✔️ st_crs() te deja consultar y asignar el sistema de referencia de un objeto, ideal para detectar mapas sin proyección definida.
+✔️ st_area() calcula áreas reales respetando la proyección geográfica, útil para validar que las magnitudes no estén deformadas.
+
+💡 Tip
+Para mapas temáticos regionales o de un solo país, evitá proyectar en WGS84 (EPSG:4326), que es geográfico y no métrico. Usá una proyección equivalente o equidistante según lo que quieras comunicar: preservar áreas (como Lambert Azimuthal Equal Area) o distancias. La guía de Dominic Royé repasa los errores más frecuentes en publicaciones científicas y cómo solucionarlos paso a paso en R con sf y ggplot2.
+
+🔗 https://dominicroye.github.io/blog/map-projections/
+
+✍️ Dominic Royé 
+ 
+🌐 https://dominicroye.github.io/blog/map-projections/
+✍🏼 Dominic Royé 
+ 
+#RStats #RStatsES #Rtips #DataScience

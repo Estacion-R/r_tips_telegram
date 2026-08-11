@@ -4646,3 +4646,24 @@ Para mapas temáticos regionales o de un solo país, evitá proyectar en WGS84 (
 ✍🏼 X: @statsdatasci | gh: saberry 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-11 10:52:54.955818 [RECURSO 📚] - [Tip de R] · [Recurso 🎯] · ¿Querés que tus proyectos en R sean un espejo de orden y eficiencia?
+
+¡Atenti! Si alguna vez te perdiste entre nombres de variables, archivos sin sentido o códigos difíciles de entender, este recurso es para vos. Un "Style Guide" o guía de estilo es tu mejor aliado para mantener la coherencia en todo tu trabajo. Este capítulo te muestra por qué es fundamental tener uno, especialmente si laburás con datos o código R en proyectos de investigación. Vas a ver cómo una guía puede transformar tu flujo de trabajo.
+
+Pensá en la cantidad de veces que tuviste que descifrar nombres de variables, archivos o incluso la lógica de tu propio código de hace meses. Un Style Guide te da las reglas del juego para nombrar variables, codificar valores, estructurar archivos y hasta tus prácticas de programación. Es una inversión de tiempo que te ahorra incontables dolores de cabeza a futuro y asegura que tu trabajo sea comprensible para cualquier persona (¡incluida/o tu yo del futuro!).
+
+✔️ Beneficios:
+✔️ Interoperabilidad: Combiná o compará datos y scripts de forma mucho más fácil entre distintos proyectos o a lo largo del tiempo.
+✔️ Claridad y Consistencia: Mejorá la interpretación de tu trabajo y el de tu equipo, haciendo que todo sea más legible y comprensible para cualquiera.
+✔️ Reducción de errores: Al tener reglas claras, disminuís las chances de equivocaciones por falta de estandarización.
+
+🔥 Tip: ¡No esperes a que tu proyecto sea un caos! Empezá a desarrollar tu guía de estilo desde el principio del ciclo de vida de tu proyecto. Incluso podés adaptar guías existentes (como el Tidyverse style guide) a tus necesidades.
+
+↪ https://datamgmtinedresearch.com/style#style-file
+
+¿Ya usás alguna guía de estilo en tus proyectos de R? ¡Contanos tu experiencia! 
+ 
+🌐 https://datamgmtinedresearch.com/style#style-file
+✍🏼 Crystal Lewis 
+ 
+#RStats #RStatsES #Rtips #DataScience

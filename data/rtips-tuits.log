@@ -4687,3 +4687,22 @@ Con este recurso podés agregar capas desde diversas fuentes como Cloud Optimize
 🌐 https://r.geolibre.app/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-13 11:01:52.938138 [PAQUETE 📦] - [Tip de R] · [Paquete 📦] · rig: El administrador de instalaciones de R que te permite gestionar múltiples versiones fácilmente.
+
+¿Te cansaste de pelear con tu sistema operativo para actualizar R o tener varias versiones instaladas para distintos proyectos? El paquete rig te permite instalar, actualizar y configurar diferentes versiones de R en macOS, Windows y Linux de forma súper sencilla y sin dependencias del sistema.
+
+✔️ rig install release te descarga e instala la última versión estable de R en un par de segundos, sin complicaciones.
+✔️ rig list te muestra todas las versiones que tenés instaladas en tu máquina para que mantengas todo organizado.
+✔️ rig default devel te permite setear la versión en desarrollo como predeterminada, ideal si querés testear nuevas features antes que nadie.
+
+💡 Tip
+Si trabajás en distintos proyectos que requieren diferentes versiones de R, podés usar rig desde la terminal para cambiar la versión por defecto de RStudio y la consola en un santiamén. ¡Decile chau a los dolores de cabeza al actualizar!
+
+🔗 https://github.com/r-lib/rig
+
+✍️ r-lib 
+ 
+🌐 https://github.com/r-lib/rig
+✍🏼 r-lib 
+ 
+#RStats #RStatsES #Rtips #DataScience

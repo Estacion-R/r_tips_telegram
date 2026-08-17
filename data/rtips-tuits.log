@@ -4712,3 +4712,21 @@ Si trabajás en distintos proyectos que requieren diferentes versiones de R, pod
 ✍🏼 ☓: @SachitMahajan4 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-17 10:33:47.952559 [PAQUETE 📦] - [Tip de R - Paquete 📦] · territorial: Herramientas para limpiar y estandarizar datos territoriales de Chile a nivel comunal y regional.
+
+¿Cansado/a de lidiar con nombres de comunas y regiones de Chile mal escritos, en mayúsculas o sin tildes en tus datos? ¡El paquete territorial te salva la vida! Te ayuda a limpiar y estandarizar datos comunales y regionales chilenos, ahorrándote horas de trabajo manual y frustración.
+
+✔️ limpiarcomunas(): Esta función te ayuda a estandarizar los nombres de las comunas (ej: "SANTIAGO", "Santiago", "santiago" se convierten en "Santiago"). ¡Perfecto para tus análisis!
+✔️ agregarcodigosterritoriales(): Podés añadir códigos comunales (COMUNA) o regionales (REGION) a tus datos, facilitando uniones con otras bases.
+✔️ ordenarregiones(): Te permite ordenar las regiones de Chile de forma coherente, ideal para tablas y gráficos.
+
+💡 Tip
+Integrá territorial al inicio de tu flujo de limpieza con el tidyverse. Después de importar tus datos, pasale tus columnas de comunas o regiones a las funciones de limpieza antes de cualquier análisis, y vas a ver cómo todo fluye mejor.
+
+🔗 https://bastianolea.github.io/territorial/
+
+✍️ Bastian Olea 
+ 
+🌐 https://bastianolea.github.io/territorial/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

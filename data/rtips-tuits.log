@@ -4754,3 +4754,23 @@ Integrá weightflow con los paquetes survey o srvyr para tus análisis de infere
 ✍🏼 gh/musajajorge 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-17 14:35:18.737437 [RECURSO 📚] - [Tip de R - Recurso 🎯] · {gtfsrealtime} es un paquete para leer archivos GTFS-realtime directamente en data frames de R.
+
+¿Trabajás con datos de transporte público y necesitás traer las posiciones de los vehículos en tiempo real o los tiempos de llegada estimados? Este paquete te permite acceder a esa información de manera sencilla y dejarla lista para analizar.
+
+Está construido con Rust (usando extendr), lo que lo hace súper rápido y eficiente para procesar tanto datos en vivo como archivos archivados de agencias de tránsito. Lo podés instalar fácil desde CRAN, aunque si tenés una versión muy vieja de R vas a necesitar compilarlo teniendo Rust instalado en tu sistema.
+
+✔️ Beneficios:
+✔️ Velocidad: Gracias a su backend en Rust, procesa grandes volúmenes de datos de tránsito sin afectar el rendimiento.
+✔️ Integración: Transforma datos de transporte complejos en data frames, listos para limpiar, analizar o visualizar.
+✔️ Versatilidad: Sirve tanto para consultar el estado actual de la flota como para procesar histórico de archivos guardados.
+
+🔥 Tip: Si al instalar te da un error de que no encuentra "rustc", revisá tu versión de R. Actualizar a la 4.5 o 4.6 te va a ahorrar dolores de cabeza y te permite instalar la versión precompilada directamente.
+
+↪ http://projects.indicatrix.org/gtfsrealtime-r/
+
+¿Qué paquete usás vos para analizar datos espaciales o de transporte en R? 
+ 
+🌐 http://projects.indicatrix.org/gtfsrealtime-r/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

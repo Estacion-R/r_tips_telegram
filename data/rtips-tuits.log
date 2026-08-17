@@ -4820,3 +4820,23 @@ Asegurate de leer la documentación para entender cómo integrar los archivos de
 ☓: @nanxstats | 🐘: @nanxstats@fosstodon.org 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-17 16:19:15.327595 [PAQUETE 📦] - [Tip de R - Paquete 📦] · arcenso: Accedé a datos históricos limpios y curados de los censos poblacionales de Argentina.
+
+¿Cansado de buscar datos de censos históricos de Argentina en PDFs, libros o Exceles sueltos? El paquete arcenso llega para democratizar el acceso a la información oficial de los Censos Nacionales de Población, centralizando y limpiando estos datos para que puedas usarlos fácilmente en R.
+
+✔️ data_censo(): Obtené datos censales de años como 1970, 1980, 1991, 2001, 2010 y 2022 directamente en un formato ordenado y listo para analizar.
+✔️ Herramientas de validación: Confiá en la calidad de los datos, sabiendo que pasaron por procesos de curación para garantizar su fiabilidad.
+✔️ Visualización interactiva: Explorá tendencias y patrones históricos de la población argentina con herramientas que facilitan el análisis visual.
+
+ARcenso es tu puente para trabajar con datos censales históricos de Argentina de forma estructurada y eficiente, sin perder tiempo en la limpieza manual.
+
+💡 Tip
+Explorá la documentación del paquete para descubrir cómo filtrar datos por jurisdicción, año o variables específicas, y empezá a generar tus propios análisis o visualizaciones de la demografía argentina.
+
+🔗 https://soyandrea.github.io/arcenso/
+
+✍️ Andrea Gomez Vargas 
+ 
+🌐 https://soyandrea.github.io/arcenso/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

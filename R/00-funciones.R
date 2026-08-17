@@ -121,7 +121,13 @@ armar_tuit <- function(base){
 
   hashtag_maxima <- "#RStats #RStatsES #Rtips #DataScience"
 
-  ### Estructura del tuit
+  # Tips generados por el bot de ingesta ya traen encabezado "[Tip de R - ...]"
+  # y tienen URL, autor y hashtags embebidos: publicar tal cual, sin wrapping.
+  if (grepl("^\\[Tip de R", trimws(tip))) {
+    return(trimws(tip))
+  }
+
+  ### Estructura legacy del tuit (tips anteriores al bot de ingesta)
   ## [TEMA] - tip
   ## web
   ## autor

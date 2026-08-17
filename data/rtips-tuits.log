@@ -4774,3 +4774,22 @@ Está construido con Rust (usando extendr), lo que lo hace súper rápido y efic
 🌐 http://projects.indicatrix.org/gtfsrealtime-r/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-17 14:52:36.674307 [PAQUETE 📦] - [Tip de R - Paquete 📦] · olympicAthletes: Un dataset ordenado y completo de cada participación de atletas en los Juegos Olímpicos modernos.
+
+¿Querés analizar la historia de los Juegos Olímpicos pero te volvés loco buscando datos limpios y consistentes? El paquete olympicAthletes te trae un dataset tidy de todas las participaciones de atletas, desde Atenas 1896 hasta Milano-Cortina 2026, listo para que lo uses en tus análisis y visualizaciones. ¡Olvidate de la limpieza y andá directo a la acción!
+
+✔️ data(olympicathletes) Te da acceso a un dataset gigante (más de 315.000 filas) con cada participación de atleta-evento, incluyendo detalles como nombre, país, evento, sexo, edad y medalla.
+✔️ data(medaltable) Incluye una tabla de medallas verificada por edición, ideal para comparar rendimientos entre países a lo largo del tiempo.
+✔️ data(editions) Proporciona metadatos detallados de cada edición de los Juegos, desde el año y la ciudad hasta el número de atletas y eventos.
+✔️ Formato Tidy: Todos los datasets están diseñados para ser intuitivos y fáciles de usar con el Tidyverse.
+
+💡 Tip
+Una vez que cargás el paquete con library(olympicAthletes), podés acceder a los datos directamente con data(olympicathletes) o data(medaltable). Probá usar dplyr para filtrar por país o evento y ggplot2 para visualizar tendencias históricas de participación o medallas. ¡Las posibilidades son infinitas!
+
+🔗 https://moderndive.github.io/olympicAthletes/
+
+✍️ moderndive 
+ 
+🌐 https://moderndive.github.io/olympicAthletes/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

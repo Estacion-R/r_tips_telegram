@@ -64,12 +64,9 @@ if (!ultimo_ya_publicado && nrow(ultimo_tip) > 0) {
 tip <- armar_tuit(base = tip_seleccion)
 
 
-### Creo nueva base historial con último tuit publicado
-base_hist_nueva <- base_hist |> 
+### Preparo nueva base historial (se persiste en script_bot.R tras el envío)
+base_hist_nueva <- base_hist |>
   dplyr::bind_rows(tip_seleccion)
-
-#file.remove("data/r_tips_historial.rds")
-readr::write_rds(base_hist_nueva, "data/r_tips_historial.rds")  
 
 
 ### Creo log de tuits

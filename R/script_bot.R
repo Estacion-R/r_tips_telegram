@@ -49,18 +49,15 @@ if (n_users == 0) {
 
 updates <- bot$clean_updates()
 
-hoy <- Sys.Date()
-
-
 
 # Función para enviar tip a todos los usuarios
 # Continúa aunque falle algún envío individual
-enviar_tip <- function(bot) {
+enviar_tip <- function(bot, tip) {
 
   enviados <- 0
   fallidos <- 0
 
-  for (o in 1:nrow(usuarios)) {
+  for (o in seq_len(nrow(usuarios))) {
 
     user_send <- usuarios[o,]
 
@@ -85,10 +82,18 @@ enviar_tip <- function(bot) {
   }
 }
 
-# Enviar tip
-cat("Enviando tip a", nrow(usuarios), "usuarios...\n")
-cat("Tip a enviar:\n", tip, "\n\n")
-enviar_tip(bot)
+cat("Tip generado:\n", tip, "\n\n")
+
+if (nrow(usuarios) == 0) {
+  cat("Sin suscriptores activos. Tip disponible en el log.\n")
+} else {
+  cat("Enviando tip a", nrow(usuarios), "usuarios...\n")
+  enviar_tip(bot, tip)
+}
+
+# Persistir historial solo después de que el tip fue procesado correctamente
+readr::write_rds(base_hist_nueva, "data/r_tips_historial.rds")
+
 cat("\n¡Proceso completado!\n")
 
 

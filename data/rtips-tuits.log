@@ -4730,3 +4730,21 @@ Integrá territorial al inicio de tu flujo de limpieza con el tidyverse. Despué
 🌐 https://bastianolea.github.io/territorial/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-17 13:26:13.941924 [PAQUETE 📦] - [Tip de R - Paquete 📦] · weightflow: Te ayuda a construir ponderadores de encuestas de forma estructurada y reproducible.
+
+¿Te rompés la cabeza armando ponderadores para tus encuestas? ¿Necesitás un flujo de trabajo replicable que capture toda la variabilidad? El paquete weightflow simplifica la creación de ponderadores, encadenando ajustes de forma declarativa y calculando sus varianzas robustamente.
+
+✔️ Encadená ajustes: Armá tu flujo de trabajo de ponderación (redistribución, no respuesta, calibración, recorte) de forma intuitiva, ¡como si fuera un pipeline de tidymodels!
+✔️ Varianzas robustas: Calculá las varianzas de tus ponderadores con bootstrap o jackknife, re-aplicando todo el proceso en cada réplica para una estimación precisa.
+✔️ Reportes automáticos: Generá un reporte HTML completo con diagnósticos de cada etapa, asegurando transparencia y trazabilidad de todo el proceso.
+
+💡 Tip
+Integrá weightflow con los paquetes survey o srvyr para tus análisis de inferencia, así tus resultados finales van a reflejar toda la complejidad del diseño muestral y los ajustes de ponderación.
+
+🔗 https://jpferreira33.github.io/weightflow/
+
+✍️ João Pedro Ferreira 
+ 
+🌐 https://jpferreira33.github.io/weightflow/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

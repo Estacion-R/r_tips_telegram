@@ -4793,3 +4793,23 @@ Una vez que cargás el paquete con library(olympicAthletes), podés acceder a lo
 🌐 https://moderndive.github.io/olympicAthletes/ 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-17 15:21:23.605712 [PAQUETE 📦] - [Tip de R - Paquete 📦] · Rrepest: Para análisis de encuestas complejas con pesos de réplica.
+
+¿Trabajás con datos de encuestas complejas, tipo PISA o PIAAC, y te volvés loco con los pesos de réplica y los valores plausibles? El paquete Rrepest te simplifica las estimaciones y el cálculo de varianzas para diseños de encuestas complejas, especialmente útil si manejás datasets de educación a gran escala de la OCDE.
+
+✔️ Maneja pesos de réplica (BRR, Jackknife) - asegura que tus resultados sean robustos y reflejen la estructura de la encuesta.
+✔️ Calcula varianzas considerando diseños complejos - obtené estimaciones más precisas de tus errores estándar.
+✔️ Diseñado para datasets educativos internacionales (como PISA, PIAAC, TALIS) - ¡directo al grano para tu proyecto en educación!
+
+💡 Tip
+Asegurate de leer la documentación para entender cómo integrar los archivos de pesos y valores plausibles de tus datasets de la OCDE con las funciones del paquete. Te va a ahorrar horas de trabajo manual.
+
+🔗 https://cran.r-project.org/web/packages/Rrepest/readme/README.html
+
+✍️ Fernando González, Juan Carlos Gil
+
+# 
+ 
+🌐 https://cran.r-project.org/web/packages/Rrepest/readme/README.html 
+ 
+#RStats #RStatsES #Rtips #DataScience

@@ -4,6 +4,17 @@
 # Usar Claude (Anthropic) en lugar de OpenAI
 token_anthropic <- Sys.getenv("ANTHROPIC_API_KEY")
 
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##              Elimina URLs duplicadas del contenido generado por LLM      ----
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+remove_duplicate_links <- function(texto, url) {
+  url_escaped <- gsub("([.?+*^${}()|\\[\\]\\\\])", "\\\\\\1", url)
+  lineas <- strsplit(texto, "\n")[[1]]
+  lineas_limpias <- lineas[!grepl(url_escaped, lineas)]
+  texto_limpio <- paste(lineas_limpias, collapse = "\n")
+  gsub("\\s+$", "", texto_limpio)
+}
+
 crear_base_historica <- function(){
   
   # Link a la hoja de cálculo
@@ -259,7 +270,8 @@ armar_contenido_simple <- function(base, model = "gpt-3.5-turbo") {
 
   # Generar contenido para redes
   contenido_redes <- chat$chat(prompt_redes)
-  redes_final <- if (!is.na(web) && nzchar(web)) glue("{contenido_redes}\n\n🌐 {web}") else contenido_redes
+  contenido_redes_limpio <- remove_duplicate_links(contenido_redes, web)
+  redes_final <- if (!is.na(web) && nzchar(web)) glue("{contenido_redes_limpio}\n\n🌐 {web}") else contenido_redes_limpio
 
   # Generar contenido para newsletter
   contenido_newsletter <- chat$chat(prompt_newsletter)

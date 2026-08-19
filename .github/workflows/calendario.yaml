@@ -43,4 +43,4 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add data/r_tips_historial.rds data/rtips-tuits.log data/r_tips_bot_usuarios.rds
-          git diff --staged --quiet && echo "Sin cambios" || (git commit -m "posteo r tip" && git push origin)
+          git diff --staged --quiet && echo "Sin cambios" || (git commit -m "posteo r tip" && git pull --rebase origin main && git push origin)

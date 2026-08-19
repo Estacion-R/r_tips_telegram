@@ -28,6 +28,7 @@ jobs:
             any::glue
             any::stringr
             any::readr
+            any::googlesheets4
 
       - name: Correr tests
         run: Rscript tests/run_tests.R

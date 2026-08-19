@@ -4,6 +4,17 @@
 # Versión simplificada - Sin OpenAI
 # Los tips se generan con /agregar-tip y se guardan en la hoja "Produccion"
 
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##              Elimina URLs duplicadas del contenido generado por LLM      ----
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+remove_duplicate_links <- function(texto, url) {
+  url_escaped <- gsub("([.?+*^${}()|\\[\\]\\\\])", "\\\\\\1", url)
+  lineas <- strsplit(texto, "\n")[[1]]
+  lineas_limpias <- lineas[!grepl(url_escaped, lineas)]
+  texto_limpio <- paste(lineas_limpias, collapse = "\n")
+  gsub("\\s+$", "", texto_limpio)
+}
+
 crear_base_historica <- function(){
 
   # Link a la hoja de cálculo

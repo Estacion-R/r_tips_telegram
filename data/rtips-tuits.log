@@ -4878,3 +4878,19 @@ webRoid es una app que te deja interactuar con R de forma local, sin necesidad d
 ✍🏼 @opencpu | @jeroenooms@fosstodon.org 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-21 10:32:00.829635 [Tip de R - Recurso 🎯] · geolibre es un paquete que te permite embeber un sistema de información geográfica (GIS) completo directamente en R Markdown, Quarto, Shiny y el Viewer de RStudio.
+
+Funciona como una interfaz htmlwidgets al formato de proyecto de GeoLibre, lo que te permite crear mapas interactivos a partir de objetos sf y GeoJSON, sin necesidad de salir de tu entorno de trabajo habitual en R.
+
+Con este recurso podés agregar capas desde diversas fuentes como Cloud Optimized GeoTIFF, XYZ, WMS, WMTS, WFS, PMTiles, e incluso 3D Tiles y video. Además, te da control sobre la cámara, permite exportar HTML standalone y leer/escribir archivos de proyecto .geolibre.json para que no pierdas tu configuración.
+
+✔️ Beneficios:
+✔️ Integración total: Usá el poder de un GIS completo sin salir de RStudio o tus documentos de Quarto y Shiny.
+✔️ Soporte multiformato: Cargá datos vectoriales y raster desde múltiples servicios modernos como PMTiles o 3D Tiles con facilidad.
+✔️ Visualización avanzada: Creá mapas coropléticos, heatmaps, leyendas, barras de color y comparaciones de mapas divididos de manera intuitiva.
+
+🔥 Tip: Para arrancar rápido, instalá la versión de desarrollo usando pak::pak("opengeos/geolibre-r") y explorá el ejemplo de mapa interactivo en vivo desde la web del proyecto para ver todo su potencial antes de escribir tu propio código.
+
+↪ https://r.geolibre.app/
+
+¿Trabajás con datos espaciales en tus proyectos? ¿Qué funcionalidad de GIS te gustaría tener integrada en R? Contame en los comentarios.

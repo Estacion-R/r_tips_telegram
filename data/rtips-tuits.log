@@ -4900,3 +4900,17 @@ Con este recurso podés agregar capas desde diversas fuentes como Cloud Optimize
 ✍🏼 X: @shikokuchuo 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-25 10:34:42.647344 [Tip de R - Paquete 📦] · argentum: Datos geoespaciales públicos argentinos, directo a R.
+
+¿Te gustaría acceder a datos geográficos públicos de Argentina sin tanto quilombo? El paquete argentum te permite descubrir, filtrar y leer capas geoespaciales de organismos argentinos, ¡directo en R!
+
+✔️ descubrirwfs() o descubrirwms(): Encontrá fácilmente las capas disponibles de organismos públicos argentinos, sin importar la versión del servidor.
+✔️ obtenerwfs() o obtenerwms(): Bajá información geográfica como parcelas, límites o hidrografía directamente a R, lista para analizar como un objeto sf o terra.
+✔️ Olvidate de las diferencias entre servidores: El paquete normaliza los datos para que puedas trabajar sin dolores de cabeza con información del IGN, Catastros Provinciales y más.
+
+💡 Tip
+Usalo para automatizar la descarga de datos geográficos de interés, actualizando tus análisis y mapas con la información más reciente de forma programática.
+
+🔗 https://thomasartopoulos.github.io/argentum/
+
+✍️ Thomas Artopoulos

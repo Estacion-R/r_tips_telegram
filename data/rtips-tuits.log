@@ -4932,3 +4932,17 @@ Usalo para automatizar la descarga de datos geográficos de interés, actualizan
 ✍🏼 - 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-08-31 17:26:37.705505 [Tip de R - Paquete 📦] · tarpolyglot: Extiende targets para ejecutar Python, Julia, Rust y C++ directamente en tu pipeline.
+
+¿Querés integrar código de otros lenguajes en tu pipeline de targets sin complicarte la vida con conversiones manuales? El paquete tarpolyglot te permite usar Python, Julia, Rust y C++ como pasos nativos, aprovechando reticulate, JuliaCall y rextendr.
+
+✔️ tartargetpy() crea targets que corren scripts de Python a través de un intérprete en vivo.
+✔️ tartargetrs() y tartargetcpp() compilan funciones de Rust y C++ y las llaman desde R de forma eficiente.
+✔️ Mantené todas las ventajas de targets: dynamic branching, control de versiones, paralelismo con crew y manejo de formatos de archivo.
+
+💡 Tip
+Podés usar los scripts pre y post en R para preparar los datos antes de pasarlos a Python o Julia, y procesar los resultados después. Esto te permite orquestar flujos de trabajo políglotas sin salir de la estructura reproducible de targets.
+
+🔗 https://pierre9344.github.io/tarpolyglot/
+
+✍️ Pierre9344

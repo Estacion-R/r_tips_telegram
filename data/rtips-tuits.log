@@ -4946,3 +4946,17 @@ Podés usar los scripts pre y post en R para preparar los datos antes de pasarlo
 🔗 https://pierre9344.github.io/tarpolyglot/
 
 ✍️ Pierre9344
+2026-09-01 14:37:07.597409 [Tip de R - Paquete 📦] · gtxlsx: llevá tus tablas de gt directamente a hojas de cálculo de Excel con openxlsx2
+
+¿Hiciste una tabla hermosa con gt y después te pidieron "pasamela a Excel"? El paquete gtxlsx es el puente que faltaba: toma tu tabla de gt ya construida y la escribe celda por celda en un workbook de openxlsx2, conservando encabezados, spanners de columnas, grupos de filas, el stub, las notas al pie y los estilos que configuraste con tabstyle() y taboptions().
+
+✔️ wbaddgt() te permite insertar una tabla de gt en un workbook de openxlsx2 indicando la posición con el argumento dims, manteniendo toda la estructura visual que diseñaste.
+✔️ Los números siguen siendo números: si gt muestra $1,234.50, la celda contiene 1234.5 con el formato numérico de moneda adjunto, así la hoja queda lista para seguir calculando.
+✔️ También funciona con tablas HTML planas: cualquier cosa que produzca un elemento <table> puede ir al workbook, leyendo reglas inline de <style> y atributos style=, colspan y rowspan.
+
+💡 Tip
+Podés combinar gtxlsx con tu flujo existente de openxlsx2: creás el workbook con wbworkbook(), agregás una hoja con addworksheet() y después insertás tu tabla de gt con wbaddgt() en la celda que quieras, todo en el mismo pipeline. Instalalo con install.packages("gtxlsx", repos = c("https://janmarvin.r-universe.dev", "https://cloud.r-project.org")).
+
+🔗 https://github.com/JanMarvin/gtxlsx
+
+✍️ JanMarvin

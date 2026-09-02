@@ -4960,3 +4960,17 @@ Podés combinar gtxlsx con tu flujo existente de openxlsx2: creás el workbook c
 🔗 https://github.com/JanMarvin/gtxlsx
 
 ✍️ JanMarvin
+2026-09-02 14:11:26.599445 [Tip de R - Paquete 📦] · ggdibbler: Una extensión de ggplot2 para visualizar la incertidumbre con el objetivo de suprimir la señal.
+
+¿Te cuesta visualizar datos con mucha incertidumbre, como estimaciones o predicciones de modelos, que no podés representar con un único valor? Generalmente, las herramientas se enfocan en distribuciones o probabilidades. El paquete ggdibbler te ayuda a incorporar la incertidumbre inherente directamente en tus gráficos de ggplot2, transformándolos para reflejar esa variabilidad.
+
+✔️ Te permite representar inputs inciertos (como estimaciones o valores con error) usando vectores de distribuciones en lugar de valores fijos.
+✔️ Es una extensión general de ggplot2, lo que significa que no estás limitado a tipos de gráficos específicos y podés integrarlo fácilmente en tus flujos de trabajo existentes.
+✔️ Ajusta tus visualizaciones para "suprimir la señal" y mostrar el rango de incertidumbre, dándote una imagen más honesta de tus datos.
+
+💡 Tip
+Usalo en conjunto con el paquete distributional para crear fácilmente los vectores de variables aleatorias que ggdibbler necesita para tus visualizaciones.
+
+🔗 https://harriet-mason.github.io/ggdibbler/
+
+✍️ Harriet Mason

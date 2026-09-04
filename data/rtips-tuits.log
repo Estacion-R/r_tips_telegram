@@ -4988,3 +4988,19 @@ Si no tenés preguntas de anclaje ni tasas de error para corregir, podés usar i
 🔗 https://cran.r-project.org/package=rankingQ
 
 ✍️ Seo-young Silvia Kim & Yuki Atsusaka
+2026-09-04 14:04:41.612093 [Tip de R - Recurso 🎯] · ¿Cansado de buscar en Google cada vez que tenés que extraer una parte de un string? Este post de Maëlle Salmon es para vos.
+
+Maëlle comparte una reflexión que a muchos nos toca de cerca: evitar aprender a extraer partes de un string y buscarlo cada vez nos hace menos eficientes. Inspirada por la lectura de "The Programmer's Brain" de Felienne Hermans, se propone dejar de lado las tácticas de evitación y enfrentar el problema de frente.
+
+El post parte de ejemplos simples y reales, como extraer nombres de oraciones con un patrón fijo ("My name is Moomin."), y muestra cómo pensar el problema en lugar de recurrir a trucos manuales como borrar signos de puntuación y separar por espacios. Es un enfoque que combina lo técnico con lo cognitivo: entender cómo tu cerebro procesa el código y por qué evitamos ciertas tareas.
+
+✔️ Beneficios:
+✔️ Te ayuda a superar la barrera mental de trabajar con strings: entender por qué lo evitás es el primer paso para resolverlo
+✔️ Aprender de ejemplos concretos y simples: la mejor forma de internalizar patrones de extracción sin abrumarte
+✔️ Conectar lo técnico con lo cognitivo: aplicás ideas de "The Programmer's Brain" directamente a tu día a día con R
+
+🔥 Tip: La próxima vez que tengas que extraer algo de un string, resistí la tentación de buscarlo en Google. Escribí el problema en papel, pensá qué patrón querés capturar y recién ahí buscá la función. Ese pequeño ejercicio de reflexión te va a hacer recordar la solución la próxima vez.
+
+↪ https://masalmon.eu/2026/08/21/extracting-string-patterns/
+
+¿Qué tarea de strings siempre evitás y terminás buscando cada vez? Contame ac abajo 👇

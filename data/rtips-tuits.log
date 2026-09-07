@@ -5004,3 +5004,17 @@ El post parte de ejemplos simples y reales, como extraer nombres de oraciones co
 ↪ https://masalmon.eu/2026/08/21/extracting-string-patterns/
 
 ¿Qué tarea de strings siempre evitás y terminás buscando cada vez? Contame ac abajo 👇
+2026-09-07 15:35:06.13295 [Tip de R - Paquete 📦] · AhoCorasickTrie: implementa búsqueda rápida de múltiples patrones en textos usando el algoritmo Aho-Corasick.
+
+¿Tenés que buscar miles de palabras clave en grandes volúmenes de texto y el proceso te toma una eternidad? El paquete AhoCorasickTrie resuelve esto usando un algoritmo óptimo que localiza todas las coincidencias en tiempo lineal O(N+M), donde N es la cantidad de palabras clave y M el tamaño del texto.
+
+✔️ Construye el árbol trie y ejecuta la búsqueda en una sola llamada, ahorrándote tiempo y código.
+✔️ Permite buscar en múltiples textos a la vez: pasás un vector o lista de textos y te devuelve las coincidencias para cada uno.
+✔️ Optimiza la memoria y la velocidad si reducís el tamaño del alfabeto, ideal para secuencias de ADN o proteínas.
+
+💡 Tip
+Si vas a trabajar con secuencias biológicas, acotá el conjunto de caracteres permitidos. Por ejemplo, el ADN suele usar solo 4 caracteres, lo que hace que el árbol sea mucho más eficiente. Tené en cuenta que por ahora solo soporta ASCII y no Unicode (UTF-8).
+
+🔗 https://yousa-mirage.github.io/r-ahocorasick/
+
+✍️ Yousa Mirage

@@ -5018,3 +5018,18 @@ Si vas a trabajar con secuencias biológicas, acotá el conjunto de caracteres p
 🔗 https://yousa-mirage.github.io/r-ahocorasick/
 
 ✍️ Yousa Mirage
+2026-09-08 14:13:34.604533 [Tip de R - Paquete 📦] · tooth: un paquete de R para investigación en salud pública dental que calcula índices de caries estandarizados y genera odontogramas listos para publicar.
+
+¿Estás cansado de escribir scripts ad-hoc y layouts manuales para cada nuevo proyecto de epidemiología dental? El paquete tooth reemplaza esos scripts de un solo uso con funciones flexibles y documentadas que funcionan en diferentes diseños de estudio.
+
+✔️ Cálculo de índices de caries: computa DMFT/dmft y DMFS/dmfs con umbrales ICDAS, códigos de actividad y restauración configurables.
+✔️ Odontogramas tipo heatmap: genera gráficos dentales de toda la boca codificados por color, mapeando tus valores de superficie en un gradiente para ver patrones a simple vista.
+✔️ Separación raíz vs corona: contabiliza las caries radiculares de forma independiente a los índices coronales.
+✔️ Flexibilidad de dentición y datos: funciona con dentición primaria o permanente y admite formatos de datos long o wide.
+
+💡 Tip
+Aprovechá que tooth puede renderizar hasta 9 superficies por diente, incluyendo las radiculares. Esto te da una visión completa del arco dental para tus análisis de caries o resultados de tratamientos, ahorrándote horas de diseño manual en ggplot.
+
+🔗 https://github.com/ddmsel/tooth
+
+✍️ ddmsel

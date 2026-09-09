@@ -5033,3 +5033,17 @@ Aprovechá que tooth puede renderizar hasta 9 superficies por diente, incluyendo
 🔗 https://github.com/ddmsel/tooth
 
 ✍️ ddmsel
+2026-09-09 14:15:10.737563 [Tip de R - Paquete 📦] · {frictionless}: Leé y escribí Frictionless Data Packages para organizar tus datos.
+
+¿Te cuesta compartir tus datos de forma que sean fáciles de entender, reutilizar y que cumplan con los principios FAIR? El paquete {frictionless} te ayuda a crear, leer y escribir Data Packages, un estándar sencillo para describir y empaquetar colecciones de datos, ¡ideal para compartir datasets abiertos y reproducibles!
+
+✔️ Leé Data Packages completos (locales o remotos) directamente en tu entorno R.
+✔️ Creá tus propios Data Packages, recursos y esquemas usando la especificación v2.
+✔️ Asegurá que tus datos sean Findable (encontrables), Accessible (accesibles), Interoperable (interoperables) y Reusable (reutilizables).
+
+💡 Tip
+Integrar Data Packages con {frictionless} te permite estructurar tus proyectos de datos para una máxima portabilidad y reproducibilidad. Pensá en esto como una caja de herramientas estandarizada para tus datos, metadatos y esquemas, facilitando la colaboración y la publicación.
+
+🔗 https://docs.ropensci.org/frictionless/
+
+✍️ Equipo ropensci

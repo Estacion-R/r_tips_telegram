@@ -5047,3 +5047,17 @@ Integrar Data Packages con {frictionless} te permite estructurar tus proyectos d
 🔗 https://docs.ropensci.org/frictionless/
 
 ✍️ Equipo ropensci
+2026-09-10 14:07:50.533034 [Tip de R - Paquete 📦] · osmnxr: Un toolkit compatible con tidyverse para descargar, modelar, simplificar, analizar y visualizar redes de calles de OpenStreetMap, impulsado por un núcleo de Rust.
+
+¿Querés analizar redes de calles de OpenStreetMap en R sin depender de Python o perder tiempo en cálculos lentos? El paquete osmnxr es una re-implementación nativa de OSMnx para R que hace el trabajo pesado en Rust, devolviéndote datos tidy sf listos para usar.
+
+✔️ oxgraphfrom_place() descarga la red de calles de un lugar específico, sin complicaciones.
+✔️ oxshortestpath() calcula la ruta más corta entre dos puntos usando Dijkstra en Rust, súper rápido.
+✔️ oxbasicstats() y oxorientationentropy() te permiten analizar métricas urbanas y el nivel de orden o desorden de la grilla de calles.
+
+💡 Tip
+No tenés conexión a internet o querés probar el paquete? Usá la función exampleosmgraph() para generar una red sintética y explorar toda la API offline. Además, osmnxr se integra perfecto con sfnetworks y tidygraph.
+
+🔗 https://strategicprojects.github.io/osmnxr/
+
+✍️ Andre Leite y colaboradores / StrategicProjects

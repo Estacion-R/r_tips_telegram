@@ -5061,3 +5061,17 @@ No tenés conexión a internet o querés probar el paquete? Usá la función exa
 🔗 https://strategicprojects.github.io/osmnxr/
 
 ✍️ Andre Leite y colaboradores / StrategicProjects
+2026-09-11 14:07:18.943598 [Tip de R - Paquete 📦] · circlecorR: crea gráficos circulares de correlación ("correlation wheel plots") directamente desde un data frame.
+
+¿Querés visualizar las correlaciones entre tus variables de una manera más intuitiva y atractiva que una simple matriz de calor? El paquete circlecorR te permite dibujar ruedas de correlación donde las variables se agrupan por categoría y se conectan mediante líneas curvas cuyo color indica el valor de la correlación.
+
+✔️ Calcula los coeficientes utilizando corr.test() del paquete psych de forma transparente mediante un wrapper liviano.
+✔️ Te deja enmascarar correlaciones no significativas, débiles o dentro de la misma categoría para que el gráfico no se sature y sea más fácil de leer.
+✔️ Categorías, colores y etiquetas son totalmente configurables, lo que te permite adaptar la visualización a la estética de tu informe o dashboard.
+
+💡 Tip
+Usá circlecorR cuando trabajes con conjuntos de datos que tengan variables agrupadas por temáticas (como bloques de preguntas en una encuesta). Al ocultar las correlaciones dentro de la misma categoría, el gráfico resalta directamente las relaciones cruzadas entre grupos distintos, ayudándote a descubrir patrones complejos a simple vista.
+
+🔗 https://kriz98.github.io/circlecorR/
+
+✍️ kriz98

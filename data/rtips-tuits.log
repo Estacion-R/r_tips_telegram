@@ -5075,3 +5075,21 @@ Usá circlecorR cuando trabajes con conjuntos de datos que tengan variables agru
 🔗 https://kriz98.github.io/circlecorR/
 
 ✍️ kriz98
+2026-09-14 16:13:13.369453 [Tip de R - Recurso 🎯] · Jarl 0.6.0
+
+¿Te frustra encontrar errores tontos o código ineficiente en tus scripts de R que podrías haber evitado? Jarl es un linter de R rapidísimo, escrito en Rust, que te ayuda a detectar patrones de código ineficientes, difíciles de leer o sospechosos.
+
+Este recurso es ideal para revisar muchísimos archivos y miles de líneas de código en milisegundos. Imaginate poder escanear todo tu proyecto y encontrar puntos de mejora al instante. Se destaca por su velocidad extrema gracias a que está escrito en Rust, optimizando el tiempo que le dedicás a la revisión.
+
+La versión 0.6.0 trae un montón de novedades, incluyendo una regla experimental para detectar objetos definidos pero nunca usados (¡ideal para limpiar tu código!) y 16 reglas nuevas adicionales. También mejoraron la experiencia con la interfaz de línea de comandos (CLI) y podés instalarlo fácilmente con herramientas como uv, pixi o mise, o como extensión en Positron, VS Code y Zed.
+
+✔️ Beneficios:
+✔️ Limpieza de código: Te ayuda a identificar y eliminar objetos que declaraste pero nunca usaste, haciendo tu código más conciso y fácil de mantener.
+✔️ Detección temprana de errores: Encontrá patrones problemáticos (ineficientes, poco legibles, sospechosos) antes de que se conviertan en errores o cuellos de botella.
+✔️ Desarrollo más rápido: Su velocidad te permite integrar el linting en tu flujo de trabajo sin demoras, obteniendo feedback casi instantáneo sobre la calidad de tu código.
+
+🔥 Tip: Usá Jarl como parte de tu CI/CD o como un paso previo a cada commit para asegurarte de que tu código siempre cumpla con tus estándares de calidad.
+
+↪ https://etiennebacher.com/posts/2026-08-24-jarl-0.6.0/
+
+¿Qué linter usás vos para mantener la calidad de tu código R?

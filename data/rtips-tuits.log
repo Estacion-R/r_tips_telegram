@@ -5093,3 +5093,17 @@ La versión 0.6.0 trae un montón de novedades, incluyendo una regla experimenta
 ↪ https://etiennebacher.com/posts/2026-08-24-jarl-0.6.0/
 
 ¿Qué linter usás vos para mantener la calidad de tu código R?
+2026-09-15 14:42:06.972197 [Tip de R - Paquete 📦] · ggplotplus: colección de herramientas para mejorar los gráficos de ggplot2 con un enfoque de diseño universal.
+
+¿Te pasó que tus gráficos de ggplot2 quedan bien pero sentís que les falta un toque más accesible y profesional sin tener que escribir veinte líneas extra? El paquete ggplotplus trae una actualización con opiniones y defaults pensados para que gráficos más claros y accesibles estén al alcance de cualquier usuario, especialmente si recién arrancás o andás con el tiempo justo.
+
+✔️ Combina con ggplot2 sin fricción, simplemente cargás ambos paquetes y ya podés aprovechar las mejoras.
+✔️ Ofrece defaults orientados al diseño universal, para que tus visualizaciones sean más legibles sin tanto ajuste manual.
+✔️ Está pensado para usuarios con poca experiencia o poco tiempo, ideal si querés resultados prolijos sin complicarte.
+
+💡 Tip
+Instalá la versión de desarrollo directo desde GitHub con pak::pak("MAISRC/ggplotplus") para acceder a las novedades más recientes antes de que lleguen a CRAN.
+
+🔗 https://maisrc.github.io/ggplotplus/
+
+✍️ Dr. Alex Bajcz, Quantitative Ecologist, Minnesota Aquatic Invasive Species Research Center

@@ -5107,3 +5107,17 @@ Instalá la versión de desarrollo directo desde GitHub con pak::pak("MAISRC/ggp
 🔗 https://maisrc.github.io/ggplotplus/
 
 ✍️ Dr. Alex Bajcz, Quantitative Ecologist, Minnesota Aquatic Invasive Species Research Center
+2026-09-16 14:41:42.705057 [Tip de R - Paquete 📦] · CDSimX: Toolkit avanzado de simulación y pronóstico de datos climáticos para R
+
+¿Necesitás generar series climáticas sintéticas para tus modelos o investigaciones y no tenés acceso a estaciones meteorológicas reales suficientes? CDSimX es un paquete que simula variables climáticas, aplica forecasting con machine learning, modela dependencias con cópulas y exporta a NetCDF, todo desde R.
+
+✔️ create_stations() te permite definir estaciones meteorológicas de forma rápida para arrancar tus simulaciones.
+✔️ generatetimeindex() construye el índice temporal de tus datos, asegurando series continuas y bien estructuradas entre las fechas que especifiques.
+✔️ simulate_climate() genera datos climáticos simulados para variables como temperatura, precipitación, humedad relativa, velocidad del viento y radiación solar.
+
+💡 Tip
+Podés integrar CDSimX en tu flujo de trabajo de investigación generando primero las estaciones y el índice temporal, y luego pasando ambos objetos directamente a simulate_climate(). Así obtenés un data frame listo para análisis exploratorio, visualización o como insumo para tus modelos de machine learning. Ideal para prototipar pipelines cuando los datos reales escasean.
+
+🔗 https://ikemillar.github.io/CDSimX/
+
+✍️ Isaac Osei

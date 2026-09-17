@@ -5121,3 +5121,17 @@ Podés integrar CDSimX en tu flujo de trabajo de investigación generando primer
 🔗 https://ikemillar.github.io/CDSimX/
 
 ✍️ Isaac Osei
+2026-09-17 14:45:40.458027 [Tip de R - Paquete 📦] · ggalttext: Genera automáticamente texto alternativo para tus gráficos de ggplot2.
+
+¿Te cuesta crear descripciones accesibles para tus gráficos de ggplot2? ¡Sabemos lo importante que es la inclusión en los datos! El paquete {ggalttext} te ayuda a que tus visualizaciones sean más inclusivas, creando automáticamente texto alternativo conciso y descriptivo.
+
+✔️ generatealttext(tu_plot) Generá una descripción concisa de tu gráfico ggplot2 al instante, ¡incluso en varios idiomas! Ideal para lectores de pantalla.
+✔️ enableautoalt_text() Activá esta función al principio de tu documento Quarto y todos tus gráficos ggplot2 tendrán texto alternativo automático, sin importar el formato de salida. ¡Accesibilidad por defecto!
+✔️ No se trata de una descripción literal, sino de un resumen inteligente del contenido: tipo de gráfico, cantidad de facetas, título y más, para dar un contexto rápido y útil.
+
+💡 Tip
+Para una integración sin esfuerzo, poné ggalttext::enableautoalt_text() al inicio de tu script o documento Quarto. ¡Así, cada gráfico de ggplot2 que generes tendrá su alt text automáticamente sin que tengas que pensarlo!
+
+🔗 https://github.com/y-sunflower/ggalttext
+
+✍️ y-sunflower

@@ -5162,3 +5162,29 @@ Si trabajás en la intersección de salud pública y clima, este recurso es para
 ✍🏼 @StatnMap @thinkR_fr 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-09-23 14:46:06.087201 [RECURSO 📚] - 🎯 [COMPILADO] De SPSS/SAS/STATA a R: ¡Suave transición con estos paquetes!
+
+¿Te cansaste de lidiar con SPSS, SAS o STATA y querés pasar a la comodidad de R? Estos recursos te van a facilitar la vida. Desde interfaces para conectar con Stata hasta paquetes que emularán la experiencia de trabajar con variables etiquetadas, vas a encontrar todo lo que necesitás para una transición sin dolores de cabeza.
+
+📦 *Recursos destacados:*
+
+▸ **RStata** - Una interfaz simple entre R y Stata que te permite ejecutar comandos de Stata, pasar datos entre ambos y hasta incluir "chunks" de Stata en tus documentos de knitr.
+
+▸ **sassy** - Un sistema de paquetes de R que mejora las debilidades de R en tareas como crear logs, formatear valores, manejar datasets y generar reportes. ¡Mucho más fácil que hacerlo a puro código!
+
+▸ **expss** - Un paquete que te permite trabajar con variables etiquetadas al estilo SPSS, crear tablas anidadas, aplicar pesos y hacer tests de significancia. ¡Sin renunciar a la potencia de R!
+
+✨ *¿Por qué estos recursos juntos?*
+Estos paquetes se complementan a la perfección para que puedas migrar de SPSS/SAS/STATA a R de manera suave. RStata te permite interactuar con Stata, sassy mejora la experiencia de trabajo cotidiana, y expss te da la familiaridad de las variables etiquetadas. ¡Usá la combinación que mejor se adapte a tus necesidades!
+
+💡 Tip: Empezá por RStata si tenés que interactuar con Stata, luego sumá sassy para optimizar tu flujo de trabajo en R, y finalmente usá expss para lidiar con variables etiquetadas. ¡Así vas a sentirte como pez en el agua en tu nueva plataforma R!
+
+🔗 Links:
+https://github.com/lbraglia/RStata
+https://r-sassy.org/
+https://gdemin.github.io/expss/ 
+ 
+🌐 https://github.com/lbraglia/RStata | https://r-sassy.org/ | https://gdemin.github.io/expss/
+✍🏼 David J. Bosak, lbraglia 
+ 
+#RStats #RStatsES #Rtips #DataScience

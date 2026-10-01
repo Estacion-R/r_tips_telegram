@@ -5227,3 +5227,9 @@ Usalo en conjunto con el paquete distributional para crear fácilmente los vecto
 ✔️ geom_surface() y geom_point() en 3D: Creá superficies, dispersiones, volúmenes y más, usando x, y y z para mapear tus datos.
 ✔️ coord_3d(): Una joyita que te da control total sobre la rotación, perspectiva y hasta la iluminación de tus gráficos 3D.
 ✔️ Flexibilidad total: Combiná capas 3D con 2D en las caras del cubo,
+2026-10-01 16:55:31.179561 [PAQUETE 📦] - 📄 ¿Trabajas con SQL en R? `SQLFormatteR` es un paquete que formatea consultas SQL dentro de R usando `sql_format` en Rust. Permite personalizar la indentación, formato de mayúsculas y más, asegurando código limpio y legible. 
+ 
+🌐 https://dataupsurge.github.io/SQLFormatteR/
+✍🏼 - 
+ 
+#RStats #RStatsES #Rtips #DataScience

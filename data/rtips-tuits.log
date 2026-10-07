@@ -5261,3 +5261,9 @@ Explorá la documentación del paquete para descubrir cómo filtrar datos por ju
 🔗 https://soyandrea.github.io/arcenso/
 
 ✍️ Andrea Gomez Vargas
+2026-10-07 17:19:52.016783 [PAQUETE 📦] - 📄 ¿Necesitas un parser más completo para LaTeX en R? `parseLatex` extiende las capacidades de `tools::parseLatex()`, soportando una mayor variedad de sintaxis y mejorando la compatibilidad con funciones como `knitr::kable()` y `kableExtra`. 
+ 
+🌐 https://dmurdoch.github.io/parseLatex/
+✍🏼 - 
+ 
+#RStats #RStatsES #Rtips #DataScience

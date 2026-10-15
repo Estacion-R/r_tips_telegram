@@ -5316,3 +5316,21 @@ El autor, con su experiencia, detalla las características clave que un lenguaje
 ✍🏼 @ColorBrewer 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-10-15 14:44:07.982315 [PAQUETE 📦] - 🧩 [RTIP] - bulkreadr: La herramienta definitiva para leer datos en masa
+
+¿Te encontrás lidiando con enormes volúmenes de datos y querés simplificar el proceso de lectura y procesamiento? El paquete bulkreadr es la solución que estabas buscando.
+
+✔️ read_excel_bulk() lee múltiples hojas de cálculo de Excel o Google Sheets de manera eficiente.
+✔️ read_csv_bulk() importa archivos CSV de un directorio completo con facilidad.
+✔️ Devuelve los datos como dataframes organizados, listos para ser analizados.
+
+💡 Tip
+Usá bulkreadr para agilizar tus flujos de trabajo de preparación de datos, ahorrando tiempo y esfuerzo. También funciona perfecto con datos etiquetados de SPSS y Stata.
+
+🔗 https://gbganalyst.github.io/bulkreadr/
+
+✍️ GBG Analyst 
+ 
+🌐 https://gbganalyst.github.io/bulkreadr/ 
+ 
+#RStats #RStatsES #Rtips #DataScience

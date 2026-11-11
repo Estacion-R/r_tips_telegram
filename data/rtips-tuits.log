@@ -5571,3 +5571,26 @@ Si trabajás con encuestas o datos administrativos donde el nombre de la comuna 
 🔗 https://bastianolea.github.io/territorial/articles/territorial.html
 
 ✍️ Bastian Olea
+2026-11-11 17:45:37.831945 [PAQUETE 📦] - 🌿 {BiodiversityR}: Análisis ecológico y de biodiversidad hecho fácil 🌱✨
+
+Con {BiodiversityR}, explora la diversidad ecológica y comunidades biológicas con herramientas poderosas e intuitivas. Este paquete integra análisis estadísticos avanzados con una interfaz gráfica fácil de usar a través de R-Commander.
+
+✨ Características destacadas:
+
+    📈 Curvas de acumulación de especies y perfiles de diversidad.
+    🔍 Modelos GLM para abundancia y presencia-ausencia de especies.
+    📊 Análisis de matrices de distancia, pruebas de Mantel y métodos de ordenación.
+    🌍 Funciones para modelado y mapeo de idoneidad ecológica.
+
+Ideal para ecólogos, investigadores ambientales y cualquier persona interesada en la biodiversidad.
+
+📚 Además, accede gratuitamente a un libro sobre análisis de biodiversidad y ecología comunitaria en el sitio web.
+
+📍 Descubre más aquí: BiodiversityR en CRAN
+
+¡Lleva tus análisis ecológicos al siguiente nivel con {BiodiversityR}! 🌿🚀 
+ 
+🌐 https://cran.r-project.org/web/packages/BiodiversityR/readme/README.html
+✍🏼 Roeland Kindt 
+ 
+#RStats #RStatsES #Rtips #DataScience

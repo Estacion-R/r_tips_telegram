@@ -5610,3 +5610,17 @@ El paquete soporta Windows, macOS y Linux. Dependiendo de la estrategia de runti
 ↪ https://r-pkg.thecoatlessprofessor.com/shinyelectron/
 
 ¿Alguna vez intentaste distribuir una app de Shiny a usuarios que no tienen R instalado? ¿Cómo lo resolviste?
+2026-11-13 17:33:27.487964 [Tip de R - Paquete 📦] · rankingQ: Toolkit para analizar preguntas de ranking en encuestas, con corrección de sesgos por respuestas aleatorias.
+
+¿Hiciste una encuesta con preguntas de ranking y te preocupa que algunos usuarios hayan respondido al azar? El paquete rankingQ te permite estimar promedios, probabilidades marginales y distribuciones de ranking, solucionando el problema de los encuestados inatentos.
+
+✔️ imprr_direct() estima cantidades de ranking y aplica corrección directa si le pasás argumentos de anclaje o tasas de error.
+✔️ imprr_weights() implementa ponderación por probabilidad inversa (IPW) para ajustar los sesgos de los que no prestan atención.
+✔️ Incluye argumentos como anccorrect o prandom para que integres tu propia corrección según los datos que tengas a mano.
+
+💡 Tip
+Si no tenés preguntas de anclaje ni tasas de error para corregir, podés usar igualmente las funciones. Por defecto, te van a devolver las estimaciones sin corregir y van a imprimir resultados muy útiles como los top-k rankings para que arranques tu análisis.
+
+🔗 https://cran.r-project.org/package=rankingQ
+
+✍️ Seo-young Silvia Kim & Yuki Atsusaka

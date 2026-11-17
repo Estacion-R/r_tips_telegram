@@ -5638,3 +5638,9 @@ Para empezar a scrapear, después de instalar twscrapeR desde CRAN, usá la func
 🔗 https://CRAN.R-project.org/package=twscrapeR
 
 ✍️ agusnieto77
+2026-11-17 18:59:05.942677 [PAQUETE 📦] - ¿Tu compu no soporta las millones y millones de filas de la base de datos? Probá importar y tratar datos con el 📦 arrow en apenas segundos! 
+ 
+🌐 https://arrow.apache.org/docs/r/
+✍🏼 @enpiar @ianmcook @jonkeane@fosstodon.org @romain_francois @opencpu 
+ 
+#RStats #RStatsES #Rtips #DataScience

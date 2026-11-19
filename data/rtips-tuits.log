@@ -5650,3 +5650,9 @@ Para empezar a scrapear, después de instalar twscrapeR desde CRAN, usá la func
 ✍🏼 ☓: @VincentAB 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-11-19 18:54:38.251124 [PAQUETE 📦] - Problemas con los datos faltantes (missing values)? {naniar} proporciona formas ordenadas y basadas en principios para resumir, visualizar y manipular datos que faltan con desviaciones mínimas de los flujos de trabajo en ggplot2 y tidy data 
+ 
+🌐 https://naniar.njtierney.com/index.html?utm_source=ready4r&utm_medium=email&utm_campaign=ready4r-2024-03-04-the-chronicles-of-naniar
+✍🏼 ☓: @nj_tierney | 🐘: @njtierney@aus.social | ☓: @_ColinFay |  🐘: @milesmcbain@fosstodon.org 
+ 
+#RStats #RStatsES #Rtips #DataScience

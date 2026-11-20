@@ -5656,3 +5656,19 @@ Para empezar a scrapear, después de instalar twscrapeR desde CRAN, usá la func
 ✍🏼 ☓: @nj_tierney | 🐘: @njtierney@aus.social | ☓: @_ColinFay |  🐘: @milesmcbain@fosstodon.org 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-11-20 18:23:45.427568 [Tip de R - Paquete 📦] · naniar: estructuras, resúmenes y visualizaciones tidy para datos faltantes
+
+¿Te frustra que ggplot2 te borre los NA sin avisar y no sepas dónde están tus datos faltantes? El paquete naniar te ofrece formas ordenadas y consistentes con el tidyverse para resumir, visualizar y manipular datos faltantes sin desviarte de tu flujo de trabajo habitual.
+
+✔️ bind_shadow() y nabular() crean matrices sombra que te permiten trabajar con los NA de forma tidy.
+✔️ nmiss(), ncomplete(), pctmiss() y pctcomplete() te dan resúmenes rápidos de cuántos datos faltan o están completos.
+✔️ geommisspoint() reemplaza los NA por un valor 10% menor al mínimo de la variable, así podés ver los faltantes directamente en el scatterplot en vez de que desaparezcan.
+✔️ missvarsummary() y misscasesummary() te dan resúmenes numéricos de missingness por variable y por caso.
+✔️ mcar_test() aplica el test de Little (1988) para evaluar si los datos faltan completamente al azar (MCAR).
+
+💡 Tip
+Combiná nabular() con geommisspoint() para explorar patrones de missingness en variables continuas. Así vas a detectar si los faltantes están concentrados en ciertos rangos y si podrían introducir sesgo en tu análisis.
+
+🔗 https://github.com/njtierney/naniar
+
+✍️ njtierney

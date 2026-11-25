@@ -5684,3 +5684,11 @@ Combiná nabular() con geommisspoint() para explorar patrones de missingness en 
 ✍🏼 @grrrck 
  
 #RStats #RStatsES #Rtips #DataScience
+2026-11-25 19:48:25.963787 [PAQUETE 📦] - ¿Sabías que se puede intentar predecir si un texto fue generado por "IA", como ChatGPT? 
+
+Y como no podía ser de otra manera, hay un paquete de R que lo permite! Probá {gptzeror}, quien proporciona una interfaz en R para la API de GPTZero. GPTZero predice si un texto fue generado por "IA" como ChatGPT 
+ 
+🌐 https://christophertkenny.com/gptzeror/
+✍🏼 ☓: @chris_t_kenny 
+ 
+#RStats #RStatsES #Rtips #DataScience
